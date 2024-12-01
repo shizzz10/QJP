@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <header>
+        <div class="fixed top-0 w-full z-50 c-bg-color text-white px-1 flex justify-center items-center border-b-4 border-white p-2">
+           <img src="./src/assets/qjp-logo.webp" alt="qjs logo" class="w-32">
+        </div>
+    </header>
+
+
+   <main class="mt-14">
+    <!-- head  -->
+     <div class="flex">
+        <div class="flex ml-auto">
+            <div class="flex justify-center items-center gap-2">
+                <div class="flex">
+            <span class="font-semibold">Choose Country</span>
+                </div>
+                <div class="flex">
+                    <select name="country" id="country" class="c-bg-color px-4 py-1 rounded-full text-white">
+                        <option value="qatar" >Qatar</option>
+                        <option value="dubai" class="">Dubai</option>
+                        <option value="pakistan" class="">Pakistan</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- body  -->
+      <div class="flex flex-col gap-4">
+        <div class="relative">
+            <div class="flex">
+            <img src="./src/assets/jobseeker.jpg" class="rounded-xl w-full h-60  object-cover object-top" alt="jobseeker">
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-10 bg-slate-400 rounded-b-xl bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-white text-lg font-bold  absolute bottom-1  right-5">For Job Seeker</h2>
+          </div>
+        </div>
+
+        <div class="relative">
+            <div class="flex">
+            <img src="./src/assets/business.jpg" class="rounded-xl w-full h-60  object-cover object-top" alt="jobseeker">
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-10 bg-slate-400 rounded-b-xl bg-opacity-50 flex items-center justify-center">
+            <h2 class="text-white text-lg font-bold absolute bottom-1  right-5">For Business</h2>
+          </div>
+        </div>
+
+      </div>
+     
+   </main>
+
+   <footer class="bg-white w-full flex flex-col gap-2 mt-auto px-6 py-2">
+    <div class="flex justify-between ">
+        <div class="flex flex-col gap-2">
+            <h4 class="text-sm font-semibold">For JobSeeker</h4>
+            <span class="text-xs">Find Job</span>
+            <span class="text-xs">Register as JobSeeker</span>
+            <span class="text-xs">Get a Professional Resume</span>
+        </div>
+        <div class="flex flex-col gap-2">
+            <h4 class="text-sm font-semibold">For Employer</h4>
+            <span class="text-xs">Find a condidate</span>
+            <span class="text-xs">Post a Job</span>
+            <span class="text-xs">Business Advertising</span>
+            <span class="text-xs">HR Outsourcing</span>
+        </div>
+        <div class="flex flex-col gap-2">
+            <h4 class="text-sm font-semibold">Other</h4>
+            <span class="text-xs">Contact Us</span>
+            <span class="text-xs">Register as JobSeeker</span>
+            <span class="text-xs">Book Calender</span>
+            <span class="text-xs">Submit Complaint</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="flex flex-col gap-2 justify-center items-center">
+        <span class="text-sm font-semibold">Privacy Policy | Refund Policy | Terms & Condition </span>
+        <span class="text-sm font-semibold">Copyright © 2024️</span>
+    </div>
+
+   </footer>
+</html>
