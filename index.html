@@ -40,52 +40,49 @@
 
       <!-- body  -->
       <div class="flex flex-col gap-4 rounded-xl">
-        <div class="relative overflow-hidden group rounded-xl">
-          <div class="relative w-full h-60 ">
-            <img
-              src="./src/assets/jobseeker.jpg"
-              class=" w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
-              alt="jobseeker"
-            />
-          </div>
-          <!-- Bottom Overlay -->
-          <div
-            class="absolute bottom-0 left-0 w-full h-10 bg-slate-400 rounded-b-xl bg-opacity-50 flex items-center justify-center transition-all duration-700 group-hover:h-40"
-          >
-            <!-- Main Title -->
-            <h2
-              id="toggleSeeker"
-              class="text-white text-lg font-bold absolute bottom-2 right-5 transition-opacity duration-700 group-hover:bottom-32 group-hover:opacity-100"
-            >
-              For Job Seeker
-            </h2>
-            <!-- Hidden Content -->
+        <div class="relative overflow-hidden group rounded-xl shadow-lg">
+            <!-- Image Section -->
+            <div class="relative w-full h-60">
+              <img
+                src="./src/assets/jobseeker.jpg"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                alt="jobseeker"
+              />
+            </div>
+          
+            <!-- Overlay Section -->
             <div
-              class="hidden-content opacity-0 transition-opacity duration-700 group-hover:opacity-100"
+              class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-700 group-hover:h-44"
             >
-              <h4
-                class="m-color text-base font-medium absolute bottom-20 right-5 underline"
+              <!-- Main Title -->
+              <h2
+                id="toggleSeeker"
+                class="text-white text-lg font-bold absolute bottom-2 right-5 transition-all duration-700 group-hover:bottom-32 group-hover:opacity-100"
               >
-                Find Job
-              </h4>
-              <span
-                class="m-color text-sm font-medium absolute bottom-16 right-5"
+                For Job Seeker
+              </h2>
+          
+              <!-- Hidden Content -->
+              <div
+                class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               >
-                Register as Candidate
-              </span>
-              <span
-                class="m-color text-sm font-medium absolute bottom-12 right-5"
-              >
-                Feature your profile
-              </span>
-              <span
-                class="m-color text-sm font-medium absolute bottom-8 right-5"
-              >
-                Get a Professional Resume
-              </span>
+                <h4 class="m-color text-sm font-medium absolute bottom-20 right-5 underline">
+                  Find Job
+                </h4>
+                <span class="m-color text-sm font-medium absolute bottom-16 right-5">
+                  Register as Candidate
+                </span>
+                <span class="m-color text-sm font-medium absolute bottom-12 right-5">
+                  Feature your profile
+                </span>
+                <span class="m-color text-sm font-medium absolute bottom-8 right-5">
+                  Get a Professional Resume
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+          
+          
 
         <div class="relative">
           <div class="flex">
@@ -96,7 +93,7 @@
             />
           </div>
           <div
-            class="absolute bottom-0 left-0 w-full h-10 bg-slate-400 rounded-b-xl bg-opacity-50 flex items-center justify-center"
+            class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 rounded-b-xl bg-opacity-50 flex items-center justify-center"
           >
             <h2 class="text-white text-lg font-bold absolute bottom-1 right-5">
               For Business
