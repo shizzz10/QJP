@@ -23,3 +23,7 @@ main {
     gap: 10px;
     margin: 20px 15px;
 }
+.c-underline{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
