@@ -13,6 +13,9 @@ body {
 .c-bg-color{
     background-color: #8E2157;
 }
+.m-color{
+    color: #8E2157 !important;
+}
 
 main {
     display: flex;
