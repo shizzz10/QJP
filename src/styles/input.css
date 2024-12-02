@@ -27,3 +27,19 @@ main {
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
+@media (min-width: 640px){
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 20px;
+    }
+}
+@media (min-width: 1024px){
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 24px 25px;
+    }
+}

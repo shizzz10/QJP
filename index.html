@@ -9,7 +9,7 @@
   <body>
     <header>
       <div
-        class="fixed top-0 w-full z-50 c-bg-color text-white  flex justify-center items-center border-b-4 border-white p-3"
+        class="fixed top-0 w-full z-50 c-bg-color text-white flex justify-center items-center border-b-4 border-white p-3"
       >
         <img src="./src/assets/qjp-logo.webp" alt="qjs logo" class="w-32" />
       </div>
@@ -24,17 +24,18 @@
               <span class="font-semibold">Choose Country: </span>
             </div>
             <div class="flex">
-                <select
-                  name="country"
-                  id="country"
-                  class="px-4 py-1 rounded-full bg-gray-100 text-black border"
-                >
-                  <option value="qatar" class="m-color">Qatar</option>
-                  <option value="dubai" class="text-orange-500">Dubai</option>
-                  <option value="pakistan" class="text-green-500">Pakistan</option>
-                </select>
-              </div>
-              
+              <select
+                name="country"
+                id="country"
+                class="px-4 py-1 rounded-full bg-gray-100 text-black border"
+              >
+                <option value="qatar" class="m-color">Qatar</option>
+                <option value="dubai" class="text-orange-500">Dubai</option>
+                <option value="pakistan" class="text-green-500">
+                  Pakistan
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -42,141 +43,193 @@
       <!-- body  -->
       <div class="flex flex-col gap-4 rounded-xl">
         <div class="relative overflow-hidden group rounded-xl shadow-lg">
-            <!-- Image Section -->
-            <div class="relative w-full h-60">
-              <img
-                src="./src/assets/jobseeker.jpg"
-                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                alt="jobseeker"
-              />
-            </div>
-          
-            <!-- Overlay Section -->
-            <div
-              class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-slate-600 group-hover:bg-opacity-50"
-            >
-            
-              <h2
-                id="toggleSeeker"
-                class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
-              >
-                For Job Seeker
-              </h2>
-          
-              <!-- Hidden Content -->
-              <div
-                class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-              >
-                <a href="" class="text-white text-sm absolute bottom-20 right-5">
-                  Find Job
-                </a>
-                <a href="" class="text-white text-sm absolute bottom-14 right-5">
-                  Register as Candidate
-                </a>
-                <a href="" class="text-white text-sm absolute bottom-8 right-5">
-                  Feature your profile
-                </a>
-                <a href="" class="text-white text-sm absolute bottom-2 right-5">
-                  Get a Professional Resume
-                </a>
-              </div>
-            </div>
+          <!-- Image Section -->
+          <div class="relative w-full h-60 sm:h-72 lg:h-92">
+            <img
+              src="./src/assets/jobseeker.jpg"
+              class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              alt="jobseeker"
+            />
           </div>
-          
-          
 
-          <div class="relative overflow-hidden group rounded-xl shadow-lg">
-            <!-- Image Section -->
-            <div class="relative w-full h-60">
-              <img
-                src="./src/assets/business.jpg"
-                class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                alt="jobseeker"
-              />
-            </div>
-          
-            <!-- Overlay Section -->
-            <div
-              class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-slate-600 group-hover:bg-opacity-50"
+          <!-- Overlay Section -->
+          <div
+            class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-slate-600 group-hover:bg-opacity-50"
+          >
+            <h2
+              id="toggleSeeker"
+              class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
             >
-            
-              <h2
-                id="toggleSeeker"
-                class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
-              >
-              For Business
-              </h2>
-          
-              <!-- Hidden Content -->
-              <div
-                class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-              >
-                <a href="" class="text-white text-sm absolute bottom-20 right-5">
-                    Find Talent
-                </a>
-                <a href="" class="text-white text-sm absolute bottom-14 right-5">
-                    Post a Job                </a>
-                <a href="" class="text-white text-sm absolute bottom-8 right-5">
-                    Business Advertisement  </a>
-                <a href="" class="text-white text-sm absolute bottom-2 right-5">
-                    Hr Advertisement
-                </a>
-              </div>
+              For Job Seeker
+            </h2>
+
+            <!-- Hidden Content -->
+            <div
+              class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <a href="" class="text-white text-sm absolute bottom-20 right-5">
+                Find Job
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-14 right-5">
+                Register as Candidate
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-8 right-5">
+                Feature your profile
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-2 right-5">
+                Get a Professional Resume
+              </a>
             </div>
           </div>
+        </div>
+
+        <div class="relative overflow-hidden group rounded-xl shadow-lg">
+          <!-- Image Section -->
+          <div class="relative w-full h-60 sm:h-72 lg:h-92">
+            <img
+              src="./src/assets/business.jpg"
+              class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              alt="jobseeker"
+            />
+          </div>
+
+          <!-- Overlay Section -->
+          <div
+            class="absolute bottom-0 right-0 w-full h-10 bg-slate-400 bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-slate-600 group-hover:bg-opacity-50"
+          >
+            <h2
+              id="toggleSeeker"
+              class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
+            >
+              For Business
+            </h2>
+
+            <!-- Hidden Content -->
+            <div
+              class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <a href="" class="text-white text-sm absolute bottom-20 right-5">
+                Find Talent
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-14 right-5">
+                Post a Job
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-8 right-5">
+                Business Advertisement
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-2 right-5">
+                Hr Advertisement
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer class="bg-white w-full flex flex-col gap-4 mt-auto px-4 pt-10 rounded-t-xl pb-2">
+    <footer
+      class="bg-white w-full flex flex-col gap-4 mt-auto px-4 pt-10 rounded-t-xl pb-2"
+    >
       <div class="flex flex-col gap-2">
-      <div class="accordion-item border-y border-gray-300 ">
-    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
-      <span class="text-sm text-slate-600">For JobSeeker</span>
-      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
-    </h4>
-    <div class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top">
-      <a href="" class="text-sm c-underline text-slate-700">Find Job</a>
-      <a href="" class="text-sm c-underline text-slate-700">Register as JobSeeker</a>
-      <a href="" class="text-sm c-underline text-slate-700">Get a Professional Resume</a>
-    </div>
-  </div>
+        <div class="accordion-item border-y border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">For JobSeeker</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">Find Job</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Register as JobSeeker</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Get a Professional Resume</a
+            >
+          </div>
+        </div>
 
-  <div class="accordion-item border-b border-gray-300 ">
-    <h4 class="accordion-header flex justify-between items-center p-3 cursor-pointer">
-      <span class="text-sm text-slate-600">For Employer</span>
-      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
-    </h4>
-    <div class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top">
-      <a href="" class="text-sm c-underline text-slate-700">Find a Candidate</a>
-      <a href="" class="text-sm c-underline text-slate-700">Post a Job</a>
-      <a href="" class="text-sm c-underline text-slate-700">Business Advertising</a>
-      <a href="" class="text-sm c-underline text-slate-700">HR Outsourcing</a>
-    </div>
-  </div>
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">For Employer</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Find a Candidate</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700">Post a Job</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Business Advertising</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >HR Outsourcing</a
+            >
+          </div>
+        </div>
 
-  <div class="accordion-item border-b border-gray-300 ">
-    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
-      <span class="text-sm text-slate-600">Other</span>
-      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
-    </h4>
-    <div class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top">
-      <a href="" class="text-sm c-underline text-slate-700">Contact Us</a>
-      <a href="" class="text-sm c-underline text-slate-700">Register as JobSeeker</a>
-      <a href="" class="text-sm c-underline text-slate-700">Book Calendar</a>
-      <a href="" class="text-sm c-underline text-slate-700">Submit Complaint</a>
-    </div>
-  </div>
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">Other</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">Contact Us</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Register as JobSeeker</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Book Calendar</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Submit Complaint</a
+            >
+          </div>
+        </div>
 
-  <div class="accordion-item border-b border-gray-300 ">
-    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
-      <span class="text-sm text-slate-600">Privacy Policy</span>
-      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
-    </h4>
-    <div class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top">
-      <a href="" class="text-sm c-underline text-slate-700"> Refund Policy </a>
-      <a href="" class="text-sm c-underline text-slate-700">Terms & Condition</a>
-    </div>
-  </div>
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">Privacy Policy</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">
+              Refund Policy
+            </a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Terms & Condition</a
+            >
+          </div>
+        </div>
       </div>
 
       <div class="flex flex-col gap-2 justify-center items-center">
@@ -191,43 +244,39 @@
         overlay.classList.toggle("opacity-0");
       });
 
+      // accordian & its animation
+      const accordionHeaders = document.querySelectorAll(".accordion-header");
 
+      accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          const arrow = header.querySelector(".arrow");
 
-// accordian & its animation
-const accordionHeaders = document.querySelectorAll(".accordion-header");
+          if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            requestAnimationFrame(() => {
+              content.classList.add("opacity-100", "scale-y-100");
+              content.classList.remove("opacity-0", "scale-y-0");
+            });
+          } else {
+            // Start collapsing animation
+            content.classList.add("opacity-0", "scale-y-0");
+            content.classList.remove("opacity-100", "scale-y-100");
 
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    const content = header.nextElementSibling;
-    const arrow = header.querySelector(".arrow");
+            // Wait for the animation to complete before adding 'hidden'
+            content.addEventListener(
+              "transitionend",
+              () => {
+                content.classList.add("hidden");
+              },
+              { once: true }
+            );
+          }
 
-    if (content.classList.contains("hidden")) {
-        
-      content.classList.remove("hidden");
-      requestAnimationFrame(() => {
-        content.classList.add("opacity-100", "scale-y-100");
-        content.classList.remove("opacity-0", "scale-y-0");
+          // Rotate the arrow
+          arrow.classList.toggle("rotate-180");
+        });
       });
-    } else {
-      // Start collapsing animation
-      content.classList.add("opacity-0", "scale-y-0");
-      content.classList.remove("opacity-100", "scale-y-100");
-
-      // Wait for the animation to complete before adding 'hidden'
-      content.addEventListener(
-        "transitionend",
-        () => {
-          content.classList.add("hidden");
-        },
-        { once: true } // Ensures the event listener is removed after one execution
-      );
-    }
-
-    // Rotate the arrow
-    arrow.classList.toggle("rotate-180");
-  });
-});
-
     </script>
   </body>
 </html>
