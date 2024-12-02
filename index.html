@@ -126,34 +126,59 @@
       </div>
     </main>
 
-    <footer class="bg-white w-full flex flex-col gap-2 mt-auto px-4 py-2">
-      <div class="flex justify-between gap-2">
-        <div class="flex flex-col gap-2">
-          <h4 class="text-sm font-semibold">For JobSeeker</h4>
-          <span class="text-xs">Find Job</span>
-          <span class="text-xs">Register as JobSeeker</span>
-          <span class="text-xs">Get a Professional Resume</span>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h4 class="text-sm font-semibold">For Employer</h4>
-          <span class="text-xs">Find a condidate</span>
-          <span class="text-xs">Post a Job</span>
-          <span class="text-xs">Business Advertising</span>
-          <span class="text-xs">HR Outsourcing</span>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h4 class="text-sm font-semibold">Other</h4>
-          <span class="text-xs">Contact Us</span>
-          <span class="text-xs">Register as JobSeeker</span>
-          <span class="text-xs">Book Calender</span>
-          <span class="text-xs">Submit Complaint</span>
-        </div>
+    <footer class="bg-white w-full flex flex-col gap-2 mt-auto px-4 pt-10 rounded-t-xl pb-2">
+      <div class="flex flex-col justify-between gap-2">
+      <div class="accordion-item border-y border-gray-300 ">
+    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
+      <span class="text-sm font-medium">For JobSeeker</span>
+      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
+    </h4>
+    <div class="accordion-content hidden flex flex-col gap-2 p-3">
+      <span class="text-xs">Find Job</span>
+      <span class="text-xs">Register as JobSeeker</span>
+      <span class="text-xs">Get a Professional Resume</span>
+    </div>
+  </div>
+
+  <div class="accordion-item border-b border-gray-300 ">
+    <h4 class="accordion-header flex justify-between items-center p-3 cursor-pointer">
+      <span class="text-sm font-medium">For Employer</span>
+      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
+    </h4>
+    <div class="accordion-content hidden flex flex-col gap-2 p-3">
+      <span class="text-xs">Find a Candidate</span>
+      <span class="text-xs">Post a Job</span>
+      <span class="text-xs">Business Advertising</span>
+      <span class="text-xs">HR Outsourcing</span>
+    </div>
+  </div>
+
+  <div class="accordion-item border-b border-gray-300 ">
+    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
+      <span class="text-sm font-medium">Other</span>
+      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
+    </h4>
+    <div class="accordion-content hidden flex flex-col gap-2 p-3">
+      <span class="text-xs">Contact Us</span>
+      <span class="text-xs">Register as JobSeeker</span>
+      <span class="text-xs">Book Calendar</span>
+      <span class="text-xs">Submit Complaint</span>
+    </div>
+  </div>
+
+  <div class="accordion-item border-b border-gray-300 ">
+    <h4 class="accordion-header flex justify-between items-center p-3  cursor-pointer">
+      <span class="text-sm font-medium">Privacy Policy</span>
+      <img src="./src/assets/arrow.svg" alt="arrow" class="w-3 arrow transition-transform duration-300">
+    </h4>
+    <div class="accordion-content hidden flex flex-col gap-2 p-3">
+      <span class="text-xs"> Refund Policy </span>
+      <span class="text-xs">Terms & Condition</span>
+    </div>
+  </div>
       </div>
 
       <div class="flex flex-col gap-2 justify-center items-center">
-        <span class="text-sm font-semibold"
-          >Privacy Policy | Refund Policy | Terms & Condition
-        </span>
         <span class="text-sm font-semibold">Copyright © 2024️</span>
       </div>
     </footer>
@@ -164,6 +189,23 @@
         overlay.classList.toggle("opacity-100");
         overlay.classList.toggle("opacity-0");
       });
+
+
+
+  // Select all accordion headers
+  const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector(".arrow");
+
+      // Toggle visibility of the content
+      content.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180");
+    });
+  });
+
     </script>
   </body>
 </html>
