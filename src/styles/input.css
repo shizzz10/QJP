@@ -53,6 +53,13 @@ main {
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
+.c-h-underline{
+    text-decoration: none;
+}
+.c-h-underline:hover{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
 @media (min-width: 640px){
     main {
         display: flex;

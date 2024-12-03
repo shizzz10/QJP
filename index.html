@@ -57,7 +57,7 @@
             class="absolute bottom-0 right-0 w-full h-10 bg-[#8E2157] bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-opacity-50"
           >
             <h2
-              id="toggleSeeker"
+              id=""
               class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
             >
               For Job Seeker
@@ -67,16 +67,16 @@
             <div
               class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
-              <a href="./src/pages/find-job.html" class="text-white text-sm absolute bottom-20 right-5">
+              <a href="./src/pages/find-job.html" class="text-white text-sm absolute bottom-20 right-5 c-h-underline">
                 Find Job
               </a>
-              <a href="" class="text-white text-sm absolute bottom-14 right-5">
+              <a href="" class="text-white text-sm absolute bottom-14 right-5 c-h-underline">
                 Register as Candidate
               </a>
-              <a href="" class="text-white text-sm absolute bottom-8 right-5">
+              <a href="" class="text-white text-sm absolute bottom-8 right-5 c-h-underline">
                 Feature your profile
               </a>
-              <a href="" class="text-white text-sm absolute bottom-2 right-5">
+              <a href="" class="text-white text-sm absolute bottom-2 right-5 c-h-underline">
                 Get a Professional Resume
               </a>
             </div>
@@ -98,8 +98,8 @@
             class="absolute bottom-0 right-0 w-full h-10 bg-[#8E2157] bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36  group-hover:bg-opacity-50"
           >
             <h2
-              id="toggleSeeker"
-              class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
+              id=""
+              class="toggleSeeker text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
             >
               For Business
             </h2>
@@ -108,16 +108,16 @@
             <div
               class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             >
-              <a href="" class="text-white text-sm absolute bottom-20 right-5">
+              <a href="" class="text-white text-sm absolute bottom-20 right-5 c-h-underline">
                 Find Talent
               </a>
-              <a href="" class="text-white text-sm absolute bottom-14 right-5">
+              <a href="" class="text-white text-sm absolute bottom-14 right-5 c-h-underline">
                 Post a Job
               </a>
-              <a href="" class="text-white text-sm absolute bottom-8 right-5">
+              <a href="" class="text-white text-sm absolute bottom-8 right-5 c-h-underline">
                 Business Advertisement
               </a>
-              <a href="" class="text-white text-sm absolute bottom-2 right-5">
+              <a href="" class="text-white text-sm absolute bottom-2 right-5 c-h-underline">
                 Hr Advertisement
               </a>
             </div>
@@ -238,15 +238,15 @@
     </footer>
 
     <script>
-      document.querySelector("#toggleSeeker").addEventListener("click", () => {
+      document.querySelector(".toggleSeeker").addEventListener("click", () => {
         const overlay = document.querySelector(".hidden-content");
         overlay.classList.toggle("opacity-100");
         overlay.classList.toggle("opacity-0");
       });
 
+      
       // accordian & its animation
       const accordionHeaders = document.querySelectorAll(".accordion-header");
-
       accordionHeaders.forEach((header) => {
         header.addEventListener("click", () => {
           const content = header.nextElementSibling;
