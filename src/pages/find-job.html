@@ -8,79 +8,86 @@
   </head>
   <body>
     <header>
+      <div class="fixed top-0 w-full z-50 c-bg-color text-white  border-b-4 border-white px-2 pt-2 pb-1 flex flex-col gap-2">
       <div
-        class="fixed top-0 w-full z-50 c-bg-color text-white flex justify-between items-center border-b-4 border-white p-3"
+        class="flex justify-between items-center"
       >
+      <a href="../../index.html">
         <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-24" />
-
-        <!-- Button  -->
+      </a>
+        <!-- Tabs Button  -->
         <div class="flex justify-start">
+          <div
+            class="border h-6 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
+          >
             <div
-              class="border h-6 lg:h-10 rounded-full  flex transition-all duration-300 relative overflow-hidden"
+              class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-2/4 h-full bg-white c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
+            ></div>
+            <button
+              id="jobSeekerTabBtn"
+              onclick="showTab(0, 'jobSeekerTab', this)"
+              class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
             >
-              <div
-                class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-2/4 h-full bg-green-200 rounded-full z-0 transition-transform duration-300 ease-in-out"
-              ></div>
-              <button
-                id="jobSeekerTabBtn"
-                onclick="showTab(0, 'jobSeekerTab')"
-                class="tab-btn font-semibold text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-36 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
-              >
-                JobSeeker
-              </button>
-              <button
-                id="businessTabBtn"
-                onclick="showTab(1, 'businessTab')"
-                class="tab-btn font-semibold text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-36 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
-              >
-                Business
-              </button>
-            </div>
+              JobSeeker
+            </button>
+            <button
+              id="businessTabBtn"
+              onclick="showTab(1, 'businessTab', this)"
+              class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
+            >
+              Business
+            </button>
           </div>
-
+        </div>
       </div>
+      <div class="flex flex-col gap-1">
+      <!-- Search bar  -->
+      <div class="flex">
+        <input type="text" placeholder="Search Jobs here" class="w-full rounded-xl px-2 text-black text-sm py-[2px]">
+      </div>
+      <!-- filters -->
+      <div class="flex justify-end items-end">
+        <a href="" class="text-white text-xs">Advance Filter</a>
+      </div>
+    </div>
+    </div>
     </header>
 
     <main class="mt-28">
-        
-
-
-
-
-
-
-
-
-
-
-          <div id="businessTab" class="hidden">hello</div>
-          <div id="jobSeekerTab" class="hidden">There</div>
+      <!-- JobSeeker tab  -->
+      <div id="jobSeekerTab" class="hidden">
+ Working on it
+      </div>
+      <!-- Business tab  -->
+      <div id="businessTab" class="hidden">hello</div>
     </main>
 
     <script>
-         function showTab(index, tabId, selectedBtn) {
+      function showTab(index, tabId, selectedBtn) {
         document.getElementById("jobSeekerTab").classList.add("hidden");
         document.getElementById("businessTab").classList.add("hidden");
 
         document.getElementById(tabId).classList.remove("hidden");
 
-        
+        // Move the slider
         const sliderBg = document.querySelector(".slider-bg");
         sliderBg.style.transform = `translateX(${index * 100}%)`;
 
-        const allButtons = document.querySelectorAll(".tab-btn");
-    allButtons.forEach(btn => {
-      btn.classList.remove("text-red-500");
-      btn.classList.add("text-white");
-    });
+        // Reset all buttons to their default text color
+        const buttons = document.querySelectorAll(".tab-btn");
+        buttons.forEach((button) => {
+          button.classList.remove("m-color");
+          button.classList.add("text-white");
+        });
+        selectedBtn.classList.add("m-color");
+        selectedBtn.classList.remove("text-white");
+      }
 
-    // Add 'text-red-500' to the selected button
-    selectedBtn.classList.remove("text-white");
-    selectedBtn.classList.add("text-red-500");
-    }
-    document.addEventListener("DOMContentLoaded", () => {
-        showTab(0, "jobSeekerTab");
-    })
+      // Initialize default tab
+      document.addEventListener("DOMContentLoaded", () => {
+        const defaultButton = document.getElementById("jobSeekerTabBtn");
+        showTab(0, "jobSeekerTab", defaultButton);
+      });
     </script>
   </body>
 </html>
