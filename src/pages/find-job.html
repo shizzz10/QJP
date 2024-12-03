@@ -80,12 +80,13 @@
           <!-- searchBar  -->
           <div class="flex flex-col gap-1">
             <!-- Search bar  -->
-            <div class="flex">
+            <div class="relative flex">
               <input
                 type="text"
                 placeholder="Search Jobs here"
-                class="w-full rounded-lg px-2 text-black text-sm py-2 border shadow-sm shadow-black/10"
+                class="w-full rounded-lg px-2 text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
               />
+              <img src="../assets/search.svg" class="w-4 absolute top-3 right-3" alt="">
             </div>
             <!-- filters -->
             <div class="flex justify-end items-end">
@@ -101,7 +102,7 @@
 
             <div class="flex flex-wrap justify-between gap-2 w-full">
               <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 bg-yellow-200 rounded-xl shadow-sm shadow-black/40"
+                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
                 ontouchstart="toggleContent(this, event)"
                 onclick="toggleContent(this, event)"
               >
@@ -111,7 +112,7 @@
                   alt="jobseeker"
                 />
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
                 >
                   Professional Resume
                 </span>
@@ -128,7 +129,7 @@
               </div>
 
               <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 bg-yellow-200 rounded-xl shadow-sm shadow-black/40"
+                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
                 ontouchstart="toggleContent(this, event)"
                 onclick="toggleContent(this, event)"
               >
@@ -138,7 +139,7 @@
                   alt="jobseeker"
                 />
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100  tracking-tight"
                 >
                   Linkedin profile Optimization
                 </span>
@@ -155,7 +156,7 @@
               </div>
 
               <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 bg-yellow-200 rounded-xl shadow-sm shadow-black/40"
+                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48  rounded-xl shadow-sm shadow-black/40"
                 ontouchstart="toggleContent(this, event)"
                 onclick="toggleContent(this, event)"
               >
@@ -165,7 +166,7 @@
                   alt="jobseeker"
                 />
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100  tracking-tight"
                 >
                   WhatsApp Job Alert
                 </span>
@@ -182,7 +183,7 @@
               </div>
 
               <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 bg-yellow-200 rounded-xl shadow-sm shadow-black/40"
+                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
                 ontouchstart="toggleContent(this, event)"
                 onclick="toggleContent(this, event)"
               >
@@ -192,7 +193,7 @@
                   alt="jobseeker"
                 />
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100  tracking-tight"
                 >
                   Become Feature
                 </span>
@@ -226,7 +227,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -243,7 +244,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -260,7 +261,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -277,7 +278,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -304,7 +305,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -321,7 +322,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -338,7 +339,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -355,7 +356,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -382,7 +383,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -399,7 +400,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -416,7 +417,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
@@ -433,7 +434,7 @@
                   <span class="text-xs text-stone-800">Amazon</span>
                 </div>
                 <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-4 py-1 m-btn text-sm rounded-full"
+                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
                     >Apply</a
                   >
                   <span class="c-text-sm text-stone-600 tracking-tight"
