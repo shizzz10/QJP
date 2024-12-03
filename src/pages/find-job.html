@@ -13,12 +13,12 @@
       >
         <div class="flex justify-between items-center">
           <a href="../../index.html">
-            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-24" />
+            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
           </a>
           <!-- Tabs Button  -->
           <div class="flex justify-start">
             <div
-              class="border h-6 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
+              class="border h-8 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
             >
               <div
                 class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-2/4 h-full bg-white c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
@@ -57,13 +57,15 @@
       </div>
     </header>
 
-    <main class="mt-24">
+    <main class="mt-24 mb-10">
       <!-- JobSeeker tab  -->
       <div id="jobSeekerTab" class="hidden">
         <div class="flex flex-col gap-4">
+
+          <!-- Listed & Applied Jobs  -->
           <div class="flex justify-center gap-2">
             <div
-              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-md"
+              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
             >
               <span class="m-color text-sm tracking-tight">Listed Jobs</span>
               <span class="m-color text-2xl font-bold tracking-tighter"
@@ -72,7 +74,7 @@
             </div>
 
             <div
-              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-md"
+              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
             >
               <span class="m-color text-sm tracking-tight">Job Applies</span>
               <span class="m-color text-2xl font-bold tracking-tighter"
@@ -89,7 +91,7 @@
               <div
                 class="flex flex-col gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
-                <span class="text-sm font-medium m-color">
+                <span class="text-sm font-medium text-black">
                   Professional Resume</span
                 >
                 <span class="c-text-sm text-slate-600">
@@ -134,30 +136,13 @@
           <!-- Featured Jobs  -->
           <div class="flex flex-col gap-1">
             <div class="flex justify-between items-center">
-            <h4 class="text-base font-medium m-color">Featured Jobs</h4>
-            <a href="" class="c-underline text-xs">View All</a>
-          </div> 
+              <h4 class="text-base font-medium m-color">Featured Jobs</h4>
+              <a href="" class="c-underline text-xs">View All</a>
+            </div>
 
             <div class="flex flex-wrap justify-between gap-2 w-full">
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-xs font-medium">Frontend Engineer</span>
-                  <span class="c-text-sm text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-              
-              <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -174,7 +159,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -191,7 +176,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -207,40 +192,35 @@
                 </div>
               </div>
 
-
+              <div
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+              >
+                <div class="flex flex-col justify-start gap-1">
+                  <span class="text-xs font-medium">Frontend Engineer</span>
+                  <span class="c-text-sm text-stone-800">Amazon</span>
+                </div>
+                <div class="flex flex-col justify-end items-end gap-1">
+                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
+                    >Apply</a
+                  >
+                  <span class="c-text-sm text-stone-600 tracking-tight"
+                    >117 Applicants</span
+                  >
+                </div>
+              </div>
             </div>
-
-
-            
           </div>
 
           <!-- Hot Jobs  -->
           <div class="flex flex-col gap-1">
             <div class="flex justify-between items-center">
-            <h4 class="text-base font-medium m-color">Hot Jobs</h4>
-            <a href="" class="c-underline text-xs">View All</a>
-          </div> 
+              <h4 class="text-base font-medium m-color">Hot Jobs</h4>
+              <a href="" class="c-underline text-xs">View All</a>
+            </div>
 
             <div class="flex flex-wrap justify-between gap-2 w-full">
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-xs font-medium">Frontend Engineer</span>
-                  <span class="c-text-sm text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-              
-              <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -257,7 +237,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -274,7 +254,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -290,40 +270,35 @@
                 </div>
               </div>
 
-
+              <div
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+              >
+                <div class="flex flex-col justify-start gap-1">
+                  <span class="text-xs font-medium">Frontend Engineer</span>
+                  <span class="c-text-sm text-stone-800">Amazon</span>
+                </div>
+                <div class="flex flex-col justify-end items-end gap-1">
+                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
+                    >Apply</a
+                  >
+                  <span class="c-text-sm text-stone-600 tracking-tight"
+                    >117 Applicants</span
+                  >
+                </div>
+              </div>
             </div>
-
-
-            
           </div>
 
           <!-- Latest Jobs  -->
           <div class="flex flex-col gap-1">
             <div class="flex justify-between items-center">
-            <h4 class="text-base font-medium m-color">Latest Jobs</h4>
-            <a href="" class="c-underline text-xs">View All</a>
-          </div> 
+              <h4 class="text-base font-medium m-color">Latest Jobs</h4>
+              <a href="" class="c-underline text-xs">View All</a>
+            </div>
 
             <div class="flex flex-wrap justify-between gap-2 w-full">
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-xs font-medium">Frontend Engineer</span>
-                  <span class="c-text-sm text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-              
-              <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -340,7 +315,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -357,7 +332,7 @@
               </div>
 
               <div
-                class="flex justify-between gap-1 c-w-48 bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
               >
                 <div class="flex flex-col justify-start gap-1">
                   <span class="text-xs font-medium">Frontend Engineer</span>
@@ -373,20 +348,173 @@
                 </div>
               </div>
 
-
+              <div
+                class="flex justify-between gap-1 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+              >
+                <div class="flex flex-col justify-start gap-1">
+                  <span class="text-xs font-medium">Frontend Engineer</span>
+                  <span class="c-text-sm text-stone-800">Amazon</span>
+                </div>
+                <div class="flex flex-col justify-end items-end gap-1">
+                  <a href="" class="px-2 py-1 m-btn text-xs rounded-lg"
+                    >Apply</a
+                  >
+                  <span class="c-text-sm text-stone-600 tracking-tight"
+                    >117 Applicants</span
+                  >
+                </div>
+              </div>
             </div>
-
-
-            
           </div>
 
+          <!-- Jobs by Department  -->
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-center">
+              <h4 class="text-base font-medium m-color">Jobs By Department</h4>
+              <a href="" class="c-underline text-xs">View All</a>
+            </div>
 
+            <div
+              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
+            >
+              <a href="" class="text-xs c-w-48"
+                >Admin Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Procurement Jobs<span class="ml-1"> (05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Business Development Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Engineering Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >R&D Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Finance Banking <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Sales & Marketing Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >HR Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Skilled Worker Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >HSE Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Supply Chain Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Operational Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Other Jobs<span class="ml-1">(05)</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Jobs by Industry  -->
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-center">
+              <h4 class="text-base font-medium m-color">Jobs By Industry</h4>
+              <a href="" class="c-underline text-xs">View All</a>
+            </div>
+
+            <div
+              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
+            >
+              <a href="" class="text-xs c-w-48"
+                >Advertisement Agency Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Energy Sector Jobs<span class="ml-1"> (05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Airline Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Fashion Beauty Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Automotive Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >FMGC Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Construction Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Freelance Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Delivery Service Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Energy Sector Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Ecommerce Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Energy Sector Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48"
+                >Education/Institutian Jobs<span class="ml-1"
+                  >(05)</span
+                ></a
+              >
+            </div>
+          </div>
         </div>
       </div>
       <!-- Business tab  -->
-      <div id="businessTab" class="hidden">Will start working on this later</div>
+      <div id="businessTab" class="hidden">
+        Will start working on this later
+      </div>
     </main>
 
+
+    <footer class="fixed bottom-0 w-full z-50 flex gap-3 items-center px-2 border-t-4 border-white c-bg-color">
+      <div class="flex gap-2 text-white items-center justify-between p-1 w-full">
+        
+        <a href="">
+          <div class="flex flex-col items-center">
+            <span class="font-medium text-xs sm:text-sm  text-white">Find Job</span>
+          </div>
+        </a>
+        
+        <a href="">
+          <div class="flex flex-col items-center">
+            <span class="font-medium text-xs sm:text-sm  text-white">Pro CV</span>
+          </div>
+        </a>
+        
+        <a href="">
+          <div class="flex flex-col items-center">
+            <span class="font-medium text-xs sm:text-sm  text-white">Become Feature</span>
+          </div>
+        </a>
+        
+        <a href="">
+          <div class="flex flex-col items-center">
+            <span class="font-medium text-xs sm:text-sm  text-white">Register</span>
+          </div>
+        </a>
+        
+        <a href="">
+          <div class="flex flex-col items-center">
+            <span class="font-medium text-xs sm:text-sm  text-white">WhatsApp</span>
+          </div>
+        </a>
+      </div>
+    </footer>
     <script>
       function showTab(index, tabId, selectedBtn) {
         document.getElementById("jobSeekerTab").classList.add("hidden");
