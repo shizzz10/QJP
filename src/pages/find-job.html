@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../styles/output.css" />
     <title>Find Job</title>
     <style>
-     #featureJobCarousel{
-      transform: translateX(0)
-     }
+      #featureJobCarousel {
+        transform: translateX(0);
+      }
     </style>
   </head>
   <body>
@@ -52,56 +52,60 @@
       <!-- JobSeeker tab  -->
       <div id="jobSeekerTab" class="hidden">
         <div class="flex flex-col gap-4">
-          <!-- Job Numbers  -->
-          <div class="flex justify-center gap-2">
-            <div
-              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-            >
-              <span class="m-color text-sm tracking-tight">Listed Jobs</span>
-              <span class="m-color text-2xl font-bold tracking-tighter"
-                >4150</span
+          <!-- Job Numbers searchBar Div   -->
+          <div
+            class="flex flex-col gap-4 bg-white px-2 py-3 rounded-lg shadow-sm shadow-black/20"
+          >
+            <!-- Job Numbers  -->
+            <div class="flex justify-center gap-2">
+              <div
+                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
               >
+                <span class="m-color text-sm tracking-tight">Listed Jobs</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >4150</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
+              >
+                <span class="m-color text-sm tracking-tight">Job Applies</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >5150</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
+              >
+                <span class="m-color text-sm tracking-tight">Jobseekers</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >9350</span
+                >
+              </div>
             </div>
 
-            <div
-              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-            >
-              <span class="m-color text-sm tracking-tight">Job Applies</span>
-              <span class="m-color text-2xl font-bold tracking-tighter"
-                >5150</span
-              >
-            </div>
-
-            <div
-              class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-            >
-              <span class="m-color text-sm tracking-tight">Jobseekers</span>
-              <span class="m-color text-2xl font-bold tracking-tighter"
-                >9350</span
-              >
-            </div>
-          </div>
-
-          <!-- searchBar  -->
-          <div class="flex flex-col gap-1 bg-white px-2 py-2 rounded-lg shadow-sm shadow-black/20">
             <!-- Search bar  -->
-            <div class="relative flex">
-              <input
-                type="text"
-                placeholder="Search Jobs here"
-                class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
-              />
-              <img
-                src="../assets/search.svg"
-                class="w-4 absolute top-3 right-3"
-                alt=""
-              />
-            </div>
-            <!-- filters -->
-            <div class="flex justify-end items-end">
-              <a href="" class="text-black text-xs c-underline">
-                Use Advance Filters</a
-              >
+            <div class="flex flex-col gap-1">
+              <div class="relative flex">
+                <input
+                  type="text"
+                  placeholder="Search Jobs here"
+                  class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                />
+                <img
+                  src="../assets/search.svg"
+                  class="w-4 absolute top-3 right-3"
+                  alt=""
+                />
+              </div>
+              <!-- filters -->
+              <div class="flex justify-end items-end">
+                <a href="" class="text-black text-xs c-underline">
+                  Use Advance Filters</a
+                >
+              </div>
             </div>
           </div>
 
@@ -249,7 +253,6 @@
               >
                 <!-- Slide 1 -->
                 <div class="flex flex-col gap-2 min-w-full px-1">
-                  
                   <!-- Card 1 -->
                   <div
                     class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
@@ -393,14 +396,10 @@
                       </span>
                     </div>
                   </div>
-
-                  
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="flex flex-col gap-2 min-w-full px-1">
-
-
                   <!-- Card 9 -->
                   <div
                     class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
@@ -473,7 +472,6 @@
                     </div>
                   </div>
 
-
                   <!-- Card 13 -->
                   <div
                     class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
@@ -545,9 +543,6 @@
                       </span>
                     </div>
                   </div>
-
-
-
                 </div>
               </div>
 
@@ -559,7 +554,6 @@
                 <button class="w-3 h-3 rounded-full bg-gray-300"></button>
               </div>
             </div>
-
           </div>
 
           <!-- Hot Jobs  -->
@@ -951,90 +945,98 @@
       });
 
       document.addEventListener("DOMContentLoaded", () => {
-  const featuredCarousel = document.querySelector("#featureJobCarousel");
-  const featuredDots = document.querySelectorAll(".featured-carousel-dots button");
-  const totalSlides = 2; // Adjust if more slides are added
-  let currentSlide = 0;
+        const featuredCarousel = document.querySelector("#featureJobCarousel");
+        const featuredDots = document.querySelectorAll(
+          ".featured-carousel-dots button"
+        );
+        const totalSlides = 2; // Adjust if more slides are added
+        let currentSlide = 0;
+        let isDragging = false;
+        let startX = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
 
-  // Drag variables
-  let isDragging = false;
-  let startX = 0;
-  let currentTranslate = 0;
-  let prevTranslate = 0;
-  let animationID;
+        // Function to display a specific slide
+        const showSlide = (index) => {
+          currentSlide = index;
+          const offset = `-${index * 100}%`;
+          featuredCarousel.style.transition = "transform 0.3s ease-in-out";
+          featuredCarousel.style.transform = `translateX(${offset})`;
 
-  // Function to display a specific slide
-  const showSlide = (index) => {
-    currentSlide = index;
-    const offset = `-${index * 100}%`;
-    featuredCarousel.style.transition = "transform 0.5s ease";
-    featuredCarousel.style.transform = `translateX(${offset})`;
+          // Update dot styles
+          featuredDots.forEach((dot, i) => {
+            dot.classList.toggle("c-bg-color", i === index);
+            dot.classList.toggle("bg-gray-300", i !== index);
+          });
+        };
 
-    // Update dot styles
-    featuredDots.forEach((dot, i) => {
-      dot.classList.toggle("c-bg-color", i === index);
-      dot.classList.toggle("bg-gray-300", i !== index);
-    });
-  };
+        // Auto-rotate slides every 4 seconds
+        const autoRotate = () =>
+          setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+          }, 4000);
 
-  // Auto-rotate slides every 4 seconds
-  const autoRotate = () =>
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }, 4000);
+        // Touch and Mouse Swipe Handlers
+        const startSwipe = (e) => {
+          isDragging = true;
+          startX = getPositionX(e);
+          prevTranslate = currentTranslate;
+          animationID = requestAnimationFrame(animation);
+          featuredCarousel.style.transition = "none";
+        };
 
-  // Event listeners for dots
-  featuredDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => showSlide(index));
-  });
+        const moveSwipe = (e) => {
+          if (!isDragging) return;
+          const currentPosition = getPositionX(e);
+          currentTranslate = prevTranslate + currentPosition - startX;
+          featuredCarousel.style.transform = `translateX(${currentTranslate}px)`;
+        };
 
-  // Initialize auto-rotate
-  showSlide(0);
-  autoRotate();
+        const endSwipe = () => {
+          cancelAnimationFrame(animationID);
+          isDragging = false;
 
-  // Handle dragging functionality
-  const startDrag = (e) => {
-    isDragging = true;
-    startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
-    prevTranslate = currentTranslate;
-    cancelAnimationFrame(animationID);
-  };
+          // Calculate swipe direction and determine slide
+          const movedBy = currentTranslate - prevTranslate;
+          if (movedBy < -100 && currentSlide < totalSlides - 1) {
+            currentSlide += 1;
+          } else if (movedBy > 100 && currentSlide > 0) {
+            currentSlide -= 1;
+          }
+          showSlide(currentSlide); // Snap to the closest slide
+        };
 
-  const moveDrag = (e) => {
-    if (!isDragging) return;
+        const getPositionX = (e) =>
+          e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
 
-    const currentPosition = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
-    currentTranslate = prevTranslate + currentPosition - startX;
-    featuredCarousel.style.transition = "none"; // Disable transition during dragging
-    featuredCarousel.style.transform = `translateX(${currentTranslate}px)`;
-  };
+        const animation = () => {
+          if (isDragging) {
+            requestAnimationFrame(animation);
+          }
+        };
 
-  const endDrag = () => {
-    isDragging = false;
-    const movedBy = currentTranslate - prevTranslate;
+        // Event Listeners for touch and mouse events
+        featuredCarousel.addEventListener("mousedown", startSwipe);
+        featuredCarousel.addEventListener("mousemove", moveSwipe);
+        featuredCarousel.addEventListener("mouseup", endSwipe);
+        featuredCarousel.addEventListener("mouseleave", () => {
+          if (isDragging) endSwipe();
+        });
+        featuredCarousel.addEventListener("touchstart", startSwipe);
+        featuredCarousel.addEventListener("touchmove", moveSwipe);
+        featuredCarousel.addEventListener("touchend", endSwipe);
 
-    // If dragged far enough, change slide
-    if (movedBy < -100) {
-      currentSlide = Math.min(currentSlide + 1, totalSlides - 1);
-    } else if (movedBy > 100) {
-      currentSlide = Math.max(currentSlide - 1, 0);
-    }
+        // Event listeners for dots
+        featuredDots.forEach((dot, index) => {
+          dot.addEventListener("click", () => showSlide(index));
+        });
 
-    showSlide(currentSlide);
-  };
-
-  // Handle touch and mouse events for drag functionality
-  featuredCarousel.addEventListener("mousedown", startDrag);
-  featuredCarousel.addEventListener("mousemove", moveDrag);
-  featuredCarousel.addEventListener("mouseup", endDrag);
-  featuredCarousel.addEventListener("mouseleave", endDrag);
-
-  featuredCarousel.addEventListener("touchstart", startDrag);
-  featuredCarousel.addEventListener("touchmove", moveDrag);
-  featuredCarousel.addEventListener("touchend", endDrag);
-});
-
+        // Initialize
+        showSlide(0);
+        autoRotate();
+      });
     </script>
   </body>
 </html>

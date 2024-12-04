@@ -4,741 +4,318 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/output.css" />
-    <title>Find Job</title>
+    <title>Home Page</title>
   </head>
   <body>
     <header>
       <div
-        class="fixed top-0 w-full z-50 c-bg-color text-white border-b-4 border-white px-2 pt-2 pb-1 flex flex-col gap-2"
+        class="fixed top-0 w-full z-50 c-bg-color text-white flex justify-center items-center border-b-4 border-white p-3"
       >
-        <div class="flex justify-between items-center">
-          <a href="../../index.html">
-            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
-          </a>
-          <!-- Tabs Button  -->
-          <div class="flex justify-start">
-            <div
-              class="border h-6 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
-            >
-              <div
-                class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-2/4 h-full bg-white c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
-              ></div>
-              <button
-                id="jobSeekerTabBtn"
-                onclick="showTab(0, 'jobSeekerTab', this)"
-                class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
-              >
-                JobSeeker
-              </button>
-              <button
-                id="businessTabBtn"
-                onclick="showTab(1, 'businessTab', this)"
-                class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-24 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
-              >
-                Business
-              </button>
-            </div>
-          </div>
-        </div>
+        <img src="./src/assets/qjp-logo.webp" alt="qjs logo" class="w-32" />
       </div>
     </header>
 
-    <main class="mt-16 mb-14">
-      <!-- JobSeeker tab  -->
-      <div id="jobSeekerTab" class="hidden">
-        <div class="flex flex-col gap-4">
-
-
-
-
-
-
-            
-
-
-
-          <!-- services -->
-          <div class="flex flex-col gap-1">
-            <div class="flex gap-2 items-center">
-              <img src="../assets/star.svg" class="w-3" alt="" />
-              <h4 class="text-base font-medium m-color">Job Seeker Services</h4>
-            </div>
-
-            <div class="flex flex-wrap justify-between gap-2 w-full">
-              <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
-                ontouchstart="toggleContent(this, event)"
-                onclick="toggleContent(this, event)"
-              >
-                <img
-                  src="../assets/business.jpg"
-                  class="relative w-full sm:h-72 lg:h-92 h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  alt="jobseeker"
-                />
-                <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
-                >
-                  Professional Resume
-                </span>
-                <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
-                >
-                  Starting from : <span>QAR 150</span>
-                </span>
-                <a
-                  href="block"
-                  class="group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300 absolute bottom-2 group.active:opacity-100 group.active:bottom-2 px-4 py-1 m-btn text-xs rounded-full"
-                >
-                  Learn More
-                </a>
-              </div>
-
-              <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
-                ontouchstart="toggleContent(this, event)"
-                onclick="toggleContent(this, event)"
-              >
-                <img
-                  src="../assets/business.jpg"
-                  class="relative w-full sm:h-72 lg:h-92 h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  alt="jobseeker"
-                />
-                <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
-                >
-                  Linkedin profile Optimization
-                </span>
-                <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
-                >
-                  Starting from : <span>QAR 150</span>
-                </span>
-                <a
-                  href="block"
-                  class="group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300 absolute bottom-2 group.active:opacity-100 group.active:bottom-2 px-4 py-1 m-btn text-xs rounded-full"
-                >
-                  Learn More
-                </a>
-              </div>
-
-              <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
-                ontouchstart="toggleContent(this, event)"
-                onclick="toggleContent(this, event)"
-              >
-                <img
-                  src="../assets/business.jpg"
-                  class="relative w-full sm:h-72 lg:h-92 h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  alt="jobseeker"
-                />
-                <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
-                >
-                  WhatsApp Job Alert
-                </span>
-                <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
-                >
-                  Starting from : <span>QAR 150</span>
-                </span>
-                <a
-                  href="block"
-                  class="transition-all duration-300 absolute bottom-2 left-2 opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 group.active:opacity-100 group.active:z-10 px-4 py-1 m-btn text-xs rounded-full"
-                >
-                  Learn More
-                </a>
-              </div>
-
-              <div
-                class="h-24 relative overflow-hidden group flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40"
-                ontouchstart="toggleContent(this, event)"
-                onclick="toggleContent(this, event)"
-              >
-                <img
-                  src="../assets/business.jpg"
-                  class="relative w-full sm:h-72 lg:h-92 h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  alt="jobseeker"
-                />
-                <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
-                >
-                  Become Feature
-                </span>
-                <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
-                >
-                  Starting from : <span>QAR 150</span>
-                </span>
-                <a
-                  href="block"
-                  class="group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-opacity duration-300 absolute bottom-2 group.active:opacity-100 group.active:bottom-2 px-4 py-1 m-btn text-xs rounded-full"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <main class="mt-16">
+      <!-- head  -->
+       <div class="flex justify-end items-center gap-1">
         
-          <!-- Featured Jobs  -->
-          <div class="flex flex-col gap-4">
-            <!-- head -->
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                <img src="../assets/star.svg" class="w-3" alt="" />
-                <h4 class="text-base font-medium m-color">Featured Jobs</h4>
-              </div>
-              <div>
-                <a href="#" class="c-underline text-xs">View All</a>
-              </div>
-            </div>
-
-            <!-- Carousel -->
-            <div class="relative overflow-hidden">
-              <!-- Carousel Wrapper -->
-              <div
-                class="flex transition-transform duration-500 ease-in-out"
-                id="featureJobCarousel"
-              >
-                <!-- Slide 1 -->
-                <div class="flex flex-col gap-2 min-w-full px-1">
-                  
-                  <!-- Card 1 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 5 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 6 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 7 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 8 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="flex flex-col gap-2 min-w-full px-1">
-
-
-                  <!-- Card 9 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 10 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 11 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 12 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-
-                  <!-- Card 13 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 14 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 15 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-                  <!-- Card 16 -->
-                  <div
-                    class="flex justify-between gap-2 w-full bg-white px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                  >
-                    <div class="flex flex-col justify-start gap-1">
-                      <span class="text-sm font-medium">Frontend Engineer</span>
-                      <span class="text-xs text-stone-800">Amazon</span>
-                    </div>
-                    <div class="flex flex-col justify-end items-end gap-1">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                        >Apply</a
-                      >
-                      <span class="c-text-sm text-stone-600 tracking-tight">
-                        117 Applicants
-                      </span>
-                    </div>
-                  </div>
-
-
-
-                </div>
-              </div>
-
-              <!-- Carousel Dots -->
-              <div
-                class="flex justify-center gap-2 mt-4 featured-carousel-dots"
-              >
-                <button class="w-3 h-3 rounded-full c-bg-color"></button>
-                <button class="w-3 h-3 rounded-full bg-gray-300"></button>
-              </div>
-            </div>
-
+        <div class="flex">
+          <span class="font-semibold">Choose Country: </span>
+        </div>
+      <div class="relative w-1/5">
+        <div class="countries-dropdown flex items-center justify-between px-2 py-1  border border-gray-300 rounded-md cursor-pointer">
+          <span id="selected-country">
+            <img src="../assets/facebook.svg" alt="" class="w-5 h-5">
+          </span>
+          
+          <div class="flex">
+            <img  src="../assets/arrow.svg" class="w-3" alt="">
           </div>
-
-
-          <!-- hello  -->
-           <div class="flex">
-            helo
-           </div>
-
 
         </div>
+        <div  id="country-list" class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden">
+          <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b" >
+            <div class="flex ">
+              <img src="../assets/facebook.svg" alt="" class="w-5 h-5">
+            </div>
+          </div>
+          <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer  border-b" >
+            <div class="flex ">
+              <img src="../assets/instagram.svg" alt="" class="w-5 h-5 ">
+            </div>
+          </div>
+          <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer" >
+            <div class="flex">
+              <img src="../assets/tiktok.svg" alt="" class="w-5 h-5">
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <!-- Business tab  -->
-      <div id="businessTab" class="hidden">
-        Will start working on this later
+      <!-- body  -->
+      <div class="flex flex-col gap-4 rounded-xl">
+        <div class="relative overflow-hidden group rounded-xl shadow-lg">
+          <!-- Image Section -->
+          <div class="relative w-full h-60 sm:h-72 lg:h-92">
+            <img
+              src="../assets/jobseeker.jpg"
+              class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              alt="jobseeker"
+            />
+          </div>
+
+          <!-- Overlay Section -->
+          <div
+            class="absolute bottom-0 right-0 w-full h-10 bg-[#8E2157] bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36 group-hover:bg-opacity-50"
+          >
+            <h2
+              id=""
+              class="text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
+            >
+              For Job Seeker
+            </h2>
+
+            <!-- Hidden Content -->
+            <div
+              class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <a href="./find-job.html" class="text-white text-sm absolute bottom-20 right-5 c-h-underline">
+                Find Job
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-14 right-5 c-h-underline">
+                Register as Candidate
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-8 right-5 c-h-underline">
+                Feature your profile
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-2 right-5 c-h-underline">
+                Get a Professional Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden group rounded-xl shadow-lg ">
+          <!-- Image Section -->
+          <div class="relative w-full h-60 sm:h-72 lg:h-92">
+            <img
+              src="../assets/business.jpg"
+              class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              alt="jobseeker"
+            />
+          </div>
+
+          <!-- Overlay Section -->
+          <div
+            class="absolute bottom-0 right-0 w-full h-10 bg-[#8E2157] bg-opacity-50 rounded-b-xl flex items-center justify-center transition-all duration-500 group-hover:h-36  group-hover:bg-opacity-50"
+          >
+            <h2
+              id=""
+              class="toggleSeeker text-white text-lg font-medium absolute bottom-2 right-5 transition-all duration-500 group-hover:bottom-28 group-hover:opacity-100"
+            >
+              For Business
+            </h2>
+
+            <!-- Hidden Content -->
+            <div
+              class="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <a href="" class="text-white text-sm absolute bottom-20 right-5 c-h-underline">
+                Find Talent
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-14 right-5 c-h-underline">
+                Post a Job
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-8 right-5 c-h-underline">
+                Business Advertisement
+              </a>
+              <a href="" class="text-white text-sm absolute bottom-2 right-5 c-h-underline">
+                Hr Advertisement
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </main>
 
     <footer
-      class="fixed bottom-0 w-full z-50 flex gap-3 items-center px-2 border-t-4 border-white c-bg-color"
+      class="bg-white w-full flex flex-col gap-3 mt-auto px-4 pt-10 rounded-t-xl pb-2"
     >
-      <div
-        class="flex gap-2 text-white items-center justify-between p-1 w-full"
-      >
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
-              >Find Job</span
+      <div class="flex flex-col gap-2">
+        <div class="accordion-item border-y border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">For JobSeeker</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">Find Job</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Register as JobSeeker</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Get a Professional Resume</a
             >
           </div>
-        </a>
+        </div>
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
-              >Pro CV</span
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">For Employer</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Find a Candidate</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700">Post a Job</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Business Advertising</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >HR Outsourcing</a
             >
           </div>
-        </a>
+        </div>
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
-              >Become Feature</span
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">Other</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">Contact Us</a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Register as JobSeeker</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Book Calendar</a
+            >
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Submit Complaint</a
             >
           </div>
-        </a>
+        </div>
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
-              >Register</span
+        <div class="accordion-item border-b border-gray-300">
+          <h4
+            class="accordion-header flex justify-between items-center p-3 cursor-pointer"
+          >
+            <span class="text-sm text-slate-600">Privacy Policy</span>
+            <img
+              src="./src/assets/arrow.svg"
+              alt="arrow"
+              class="w-3 arrow transition-transform duration-300"
+            />
+          </h4>
+          <div
+            class="accordion-content hidden flex flex-col gap-2 p-3 transition-all duration-300 ease-in-out opacity-0 scale-y-0 transform origin-top"
+          >
+            <a href="" class="text-sm c-underline text-slate-700">
+              Refund Policy
+            </a>
+            <a href="" class="text-sm c-underline text-slate-700"
+              >Terms & Condition</a
             >
           </div>
-        </a>
-
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
-              >WhatsApp</span
-            >
-          </div>
-        </a>
+        </div>
       </div>
+
+      <div class="flex  gap-1 justify-between items-center border-t  border-t-red-800">
+        <div class="flex mt-4">
+        <span class="text-sm font-medium m-color">Find Qatar Jobs On</span>
+      </div>
+
+      <div class="flex mt-4 gap-4">
+        <img src="./src/assets/facebook.svg" class="w-5" alt="">
+        <img src="./src/assets/instagram.svg" class="w-5" alt="">
+        <img src="./src/assets/tiktok.svg" class="w-5" alt="">
+        <img src="./src/assets/linkedin.svg" class="w-5" alt="">
+        <img src="./src/assets/youtube.svg" class="w-5" alt="">
+      </div>
+      </div>
+
     </footer>
 
     <script>
-      function showTab(index, tabId, selectedBtn) {
-        document.getElementById("jobSeekerTab").classList.add("hidden");
-        document.getElementById("businessTab").classList.add("hidden");
+      
+      // accordian & its animation
+      const accordionHeaders = document.querySelectorAll(".accordion-header");
+      accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          const content = header.nextElementSibling;
+          const arrow = header.querySelector(".arrow");
 
-        document.getElementById(tabId).classList.remove("hidden");
+          if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            requestAnimationFrame(() => {
+              content.classList.add("opacity-100", "scale-y-100");
+              content.classList.remove("opacity-0", "scale-y-0");
+            });
+          } else {
+            // Start collapsing animation
+            content.classList.add("opacity-0", "scale-y-0");
+            content.classList.remove("opacity-100", "scale-y-100");
 
-        // Move the slider
-        const sliderBg = document.querySelector(".slider-bg");
-        sliderBg.style.transform = `translateX(${index * 100}%)`;
-
-        // Reset all buttons to their default text color
-        const buttons = document.querySelectorAll(".tab-btn");
-        buttons.forEach((button) => {
-          button.classList.remove("m-color");
-          button.classList.add("text-white");
-        });
-        selectedBtn.classList.add("m-color");
-        selectedBtn.classList.remove("text-white");
-      }
-
-      // Initialize default tab
-      document.addEventListener("DOMContentLoaded", () => {
-        const defaultButton = document.getElementById("jobSeekerTabBtn");
-        showTab(0, "jobSeekerTab", defaultButton);
-      });
-
-      // services animation
-      function toggleContent(element, event) {
-        event.stopPropagation();
-        document.querySelectorAll(".group").forEach((card) => {
-          if (card !== element) {
-            card.classList.remove("active");
+            // Wait for the animation to complete before adding 'hidden'
+            content.addEventListener(
+              "transitionend",
+              () => {
+                content.classList.add("hidden");
+              },
+              { once: true }
+            );
           }
-        });
-        element.classList.toggle("active");
-      }
 
-      document.addEventListener("click", (event) => {
-        document.querySelectorAll(".group").forEach((card) => {
-          if (!card.contains(event.target)) {
-            card.classList.remove("active");
-          }
+          // Rotate the arrow
+          arrow.classList.toggle("rotate-180");
         });
       });
 
 
-     
-   document.addEventListener("DOMContentLoaded", () => {
-  const featuredCarousel = document.querySelector("#featureJobCarousel");
-  const featuredDots = document.querySelectorAll(".featured-carousel-dots button");
-  const totalSlides = 2; // Adjust if more slides are added
-  let currentSlide = 0;
 
-  // Drag variables
-  let isDragging = false;
-  let startX = 0;
-  let currentTranslate = 0;
-  let prevTranslate = 0;
-  let animationID;
+            // country filter 
+      const selectedCountry = document.querySelector('#selected-country');
+const countryList = document.querySelector('#country-list');
+const countryItems = document.querySelectorAll('#country-list > div');
 
-  // Function to display a specific slide
-  const showSlide = (index) => {
-    currentSlide = index;
-    const offset = `-${index * 100}%`;
-    featuredCarousel.style.transition = "transform 0.5s ease";
-    featuredCarousel.style.transform = `translateX(${offset})`;
-
-    // Update dot styles
-    featuredDots.forEach((dot, i) => {
-      dot.classList.toggle("c-bg-color", i === index);
-      dot.classList.toggle("bg-gray-300", i !== index);
-    });
-  };
-
-  // Auto-rotate slides every 4 seconds
-  const autoRotate = () =>
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
-    }, 4000);
-
-  // Event listeners for dots
-  featuredDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => showSlide(index));
-  });
-
-  // Initialize auto-rotate
-  showSlide(0);
-  autoRotate();
-
-  // Handle dragging functionality
-  const startDrag = (e) => {
-    isDragging = true;
-    startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
-    prevTranslate = currentTranslate;
-    cancelAnimationFrame(animationID);
-  };
-
-  const moveDrag = (e) => {
-    if (!isDragging) return;
-
-    const currentPosition = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
-    currentTranslate = prevTranslate + currentPosition - startX;
-    featuredCarousel.style.transition = "none"; // Disable transition during dragging
-    featuredCarousel.style.transform = `translateX(${currentTranslate}px)`;
-  };
-
-  const endDrag = () => {
-    isDragging = false;
-    const movedBy = currentTranslate - prevTranslate;
-
-    // If dragged far enough, change slide
-    if (movedBy < -100) {
-      currentSlide = Math.min(currentSlide + 1, totalSlides - 1);
-    } else if (movedBy > 100) {
-      currentSlide = Math.max(currentSlide - 1, 0);
-    }
-
-    showSlide(currentSlide);
-  };
-
-  // Handle touch and mouse events for drag functionality
-  featuredCarousel.addEventListener("mousedown", startDrag);
-  featuredCarousel.addEventListener("mousemove", moveDrag);
-  featuredCarousel.addEventListener("mouseup", endDrag);
-  featuredCarousel.addEventListener("mouseleave", endDrag);
-
-  featuredCarousel.addEventListener("touchstart", startDrag);
-  featuredCarousel.addEventListener("touchmove", moveDrag);
-  featuredCarousel.addEventListener("touchend", endDrag);
+// Toggle the country list on click
+document.querySelector('.countries-dropdown').addEventListener('click', () => {
+  countryList.classList.toggle('hidden');
 });
 
-
-
+// set the selected country and hide the list
+countryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const flagUrl = item.querySelector('img').src;
+    selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-5 h-5 mr-2">`;
+    countryList.classList.add('hidden');
+  });
+});
     </script>
   </body>
 </html>
