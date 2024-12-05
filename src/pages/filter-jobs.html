@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/output.css" />
-    <title>Find Job</title>
-    <style>
-      #featureJobCarousel {
-        transform: translateX(0);
-      }
-    </style>
+    <title></title>
   </head>
   <body>
     <header>
       <div
-        class="fixed top-0 w-full z-50 h-[56px] b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 p-2"
+        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2"
       >
-        <div class="flex justify-between items-center">
-          <a href="../../index.html">
-            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
+        <div class="flex justify-between items-center px-4">
+          <a href="../../index.html" class="p-2">
+            <img
+              src="../assets/qjp-logo.webp"
+              alt="qjs logo"
+              class="h-[20px]"
+            />
           </a>
           <!-- Tabs Button  -->
-          <div class="flex justify-start">
+          <div class="flex justify-start p-2">
             <div
               class="border h-6 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
             >
@@ -48,67 +47,75 @@
       </div>
     </header>
 
-    <main class="main !mt-16 !mb-14">
+    <main class="mt-12 !mb-14">
       <!-- JobSeeker tab  -->
       <div id="jobSeekerTab" class="hidden">
-        <div class="flex flex-col gap-4">
-          <!-- Job Numbers searchBar Div   -->
-          <div
-            class="flex flex-col gap-4 bg-white px-2 py-3 rounded-lg shadow-sm shadow-black/20"
-          >
-            <!-- Job Numbers  -->
-            <div class="flex justify-center gap-2">
-              <div
-                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-              >
-                <span class="m-color text-sm tracking-tight">Listed Jobs</span>
-                <span class="m-color text-2xl font-bold tracking-tighter"
-                  >4150</span
-                >
+        <!-- search job  -->
+        <div class="w-full">
+            <!-- Search Jobs Bar  -->
+            <div class="flex flex-col gap-2 b-bg-color text-white p-2">
+              <!-- search job  -->
+              <div class="flex justify-between items-center">
+                <div class="flex">
+                  <span class="text-base font-medium">Search Job</span>
+                </div>
+                <div class="flex w-2/4">
+                  <input
+                    type="text"
+                    class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+                    placeholder="Search Job here"
+                  />
+                </div>
               </div>
 
-              <div
-                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-              >
-                <span class="m-color text-sm tracking-tight">Job Applies</span>
-                <span class="m-color text-2xl font-bold tracking-tighter"
-                  >5150</span
-                >
+              <!-- posted on  -->
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-1">
+                  <div class="flex gap-1 text-sm">
+                    <input type="radio" name="" id="today" />
+                    <label for="today">Today (0)</label>
+                  </div>
+
+                  <div class="flex gap-1 text-sm">
+                    <input type="radio" name="" id="last7days" />
+                    <label for="last7days">Last 7 Days (10)</label>
+                  </div>
+
+                  <div class="flex gap-1 text-sm">
+                    <input type="radio" name="" id="last15day" />
+                    <label for="last15day">Last 15 Days (50)</label>
+                  </div>
+
+                  <div class="flex gap-1 text-sm">
+                    <input type="radio" name="" id="all" />
+                    <label for="all">All (95)</label>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-2 justify-center w-2/4">
+                  <input
+                    type="text"
+                    placeholder="Search Department here"
+                    class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Search Location"
+                    class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+                  />
+                </div>
               </div>
 
-              <div
-                class="flex flex-col items-center transparent-bg-color px-6 py-2 rounded-xl"
-              >
-                <span class="m-color text-sm tracking-tight">Jobseekers</span>
-                <span class="m-color text-2xl font-bold tracking-tighter"
-                  >9350</span
-                >
+              <div class="w-full">
+                <button class="w-full rounded-lg text-sm border py-1">
+                  Search
+                </button>
               </div>
             </div>
+        </div>
 
-            <!-- Search bar  -->
-            <div class="flex flex-col gap-1">
-              <div class="relative flex">
-                <input
-                  type="text"
-                  placeholder="Search Jobs here"
-                  class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
-                />
-                <img
-                  src="../assets/search.svg"
-                  class="w-4 absolute top-3 right-3"
-                  alt=""
-                />
-              </div>
-              <!-- filters -->
-              <div class="flex justify-end items-end">
-                <a href="./filter-jobs.html" class="text-black text-xs c-underline">
-                  Use Advance Filters</a
-                >
-              </div>
-            </div>
-          </div>
-
+        <div class="main flex flex-col gap-4">
           <!-- services -->
           <div class="flex flex-col gap-1">
             <div class="flex gap-2 items-center">
@@ -555,288 +562,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Hot Jobs  -->
-          <div class="flex flex-col gap-1">
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                <img src="../assets/star.svg" class="w-3" alt="" />
-                <h4 class="text-base font-medium m-color">Hot Jobs</h4>
-              </div>
-              <div class="flex">
-                <a href="" class="c-underline text-xs">View All</a>
-              </div>
-            </div>
-
-            <div class="flex flex-wrap justify-between gap-2 w-full">
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Latest Jobs  -->
-          <div class="flex flex-col gap-1">
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                <img src="../assets/star.svg" class="w-4" alt="" />
-                <h4 class="text-base font-medium m-color">Latest Jobs</h4>
-              </div>
-              <div class="flex">
-                <a href="" class="c-underline text-xs">View All</a>
-              </div>
-            </div>
-
-            <div class="flex flex-wrap justify-between gap-2 w-full">
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="flex justify-between gap-1 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-              >
-                <div class="flex flex-col justify-start gap-1">
-                  <span class="text-sm font-medium">Frontend Engineer</span>
-                  <span class="text-xs text-stone-800">Amazon</span>
-                </div>
-                <div class="flex flex-col justify-end items-end gap-1">
-                  <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Apply</a
-                  >
-                  <span class="c-text-sm text-stone-600 tracking-tight"
-                    >117 Applicants</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Jobs by Department  -->
-          <div class="flex flex-col gap-1">
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                <img src="../assets/star.svg" class="w-4" alt="" />
-                <h4 class="text-base font-medium m-color">
-                  Jobs By Department
-                </h4>
-              </div>
-              <div>
-                <a href="" class="c-underline text-xs">View All</a>
-              </div>
-            </div>
-
-            <div
-              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
-            >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Admin Jobs <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Procurement Jobs<span class="ml-1"> (05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Business Development Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Engineering Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >R&D Jobs <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Finance Banking <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Sales & Marketing Jobs <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >HR Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Skilled Worker Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >HSE Jobs <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Supply Chain Jobs <span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Operational Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Other Jobs<span class="ml-1">(05)</span></a
-              >
-            </div>
-          </div>
-
-          <!-- Jobs by Industry  -->
-          <div class="flex flex-col gap-1">
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                <img src="../assets/star.svg" class="w-4" alt="" />
-                <h4 class="text-base font-medium m-color">Jobs By Industry</h4>
-              </div>
-              <div>
-                <a href="" class="c-underline text-xs">View All</a>
-              </div>
-            </div>
-
-            <div
-              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
-            >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Advertisement Agency Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Energy Sector Jobs<span class="ml-1"> (05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Airline Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Fashion Beauty Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Automotive Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >FMGC Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Construction Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Freelance Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Delivery Service Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Energy Sector Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Ecommerce Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Energy Sector Jobs<span class="ml-1">(05)</span></a
-              >
-              <a href="" class="text-xs c-w-48 tracking-tight"
-                >Education/Institutian Jobs<span class="ml-1">(05)</span></a
-              >
-            </div>
-          </div>
         </div>
       </div>
 
@@ -898,6 +623,7 @@
         </a>
       </div>
     </footer>
+
     <script>
       function showTab(index, tabId, selectedBtn) {
         document.getElementById("jobSeekerTab").classList.add("hidden");
