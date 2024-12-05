@@ -65,6 +65,11 @@ body {
 .c-accent{
  accent-color: #5c0931;
 }
+
+
+.swiper-pagination-bullet-active{
+    background: #8E2157;
+  }
 @media (min-width: 640px){
     .main {
         display: flex;
