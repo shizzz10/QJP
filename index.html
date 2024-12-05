@@ -7,15 +7,22 @@
     <title>Home Page</title>
   </head>
   <body>
-    <header>
+    <header class="flex flex-col fixed top-0 w-full z-50">
+         
+  <div id="alert-box" class="bg-red-700 opacity-80 text-white relative h-7 text-sm flex items-center justify-between px-3" role="alert">
+    <a href="" class="font-medium c-underline">Go pro</a>
+    <picture class="remove-svg">
+      <svg class="fill-current h-6 w-6 text-white" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+    </picture>
+  </div>
       <div
-        class="fixed top-0 w-full z-50  h-12  b-bg-color text-white flex justify-center items-center border-b-4 border-white p-3"
+        class=" h-12  b-bg-color text-white flex justify-center items-center border-b-4 border-white p-3"
       >
         <img src="./src/assets/qjp-logo.webp" alt="qjs logo" class="w-32" />
       </div>
     </header>
 
-    <main class="main !mt-14">
+    <main class="main !mt-20">
       <!-- head  -->
       <div class="flex justify-end items-center gap-1">
         <div class="flex">
@@ -26,12 +33,12 @@
             class="countries-dropdown flex items-center justify-between px-2 py-1 border border-gray-300 rounded-md cursor-pointer"
           >
             <span id="selected-country">
-              <img src="./src/assets/facebook.svg" alt="" class="w-5 h-5" />
+              <img src="./src/assets/qa.svg" alt="" class="w-7" />
             </span>
 
-            <div class="flex">
+            <!-- <div class="flex">
               <img src="./src/assets/arrow.svg" class="w-3" alt="" />
-            </div>
+            </div> -->
           </div>
           <div
             id="country-list"
@@ -39,17 +46,17 @@
           >
             <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b">
               <div class="flex">
-                <img src="./src/assets/facebook.svg" alt="" class="w-5 h-5" />
+                <img src="./src/assets/qa.svg" alt="" class="w-7 " />
               </div>
             </div>
             <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b">
               <div class="flex">
-                <img src="./src/assets/instagram.svg" alt="" class="w-5 h-5" />
+                <img src="./src/assets/ae.svg" alt="" class="w-7 " />
               </div>
             </div>
             <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-              <div class="flex">
-                <img src="./src/assets/tiktok.svg" alt="" class="w-5 h-5" />
+              <div class="flex"> 
+                <img src="./src/assets/pk.svg" alt="" class="w-7 " />
               </div>
             </div>
           </div>
@@ -290,6 +297,16 @@
     </footer>
 
     <script>
+
+  // JavaScript to hide the alert and adjust the header position
+  const closeButton = document.querySelector('.remove-svg');
+  const alertBox = document.getElementById('alert-box');
+  const headerContent = document.getElementById('header-content');
+
+  closeButton.addEventListener('click', () => {
+    alertBox.style.display = 'none';
+  });
+
       // image overlay
 
       function toggleContent(element, event) {
@@ -359,7 +376,7 @@
       countryItems.forEach((item) => {
         item.addEventListener("click", () => {
           const flagUrl = item.querySelector("img").src;
-          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-5 h-5 mr-2">`;
+          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-8 mr-2">`;
           countryList.classList.add("hidden");
         });
       });
