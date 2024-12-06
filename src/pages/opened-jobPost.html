@@ -134,11 +134,11 @@
               <input
                 type="text"
                 placeholder="Search Jobs here"
-                class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
               />
               <img
                 src="../assets/search.svg"
-                class="w-4 absolute top-3 right-3"
+                class="w-4 absolute top-2.5 right-3"
                 alt=""
               />
             </div>
@@ -168,12 +168,12 @@
                 onclick="toggleContent(this, event)"
               >
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight"
                 >
                   Professional Resume
                 </span>
                 <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100"
                 >
                   Starting from : <span>QAR 150</span>
                 </span>
@@ -191,12 +191,12 @@
                 onclick="toggleContent(this, event)"
               >
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight"
                 >
                   Linkedin profile Optimization
                 </span>
                 <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100"
                 >
                   Starting from : <span>QAR 150</span>
                 </span>
@@ -214,12 +214,12 @@
                 onclick="toggleContent(this, event)"
               >
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight"
                 >
                   WhatsApp Job Alert
                 </span>
                 <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100"
                 >
                   Starting from : <span>QAR 150</span>
                 </span>
@@ -237,12 +237,12 @@
                 onclick="toggleContent(this, event)"
               >
                 <span
-                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 tracking-tight"
+                  class="text-sm font-medium text-white absolute bottom-5 left-2 transition-all duration-500 group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight"
                 >
                   Become Feature
                 </span>
                 <span
-                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-12 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100"
+                  class="c-text-sm font-medium text-stone-200 absolute bottom-1 left-2 transition-all duration-500 group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100"
                 >
                   Starting from : <span>QAR 150</span>
                 </span>
@@ -253,6 +253,7 @@
                   Learn More
                 </a>
               </div>
+
             </div>
           </div>
 
@@ -961,16 +962,17 @@
       </div>
     </main>
 
+  
     <footer
-      class="fixed bottom-0 w-full z-50 flex gap-3 items-center px-2 border-t-4 border-white b-bg-color"
+      class=""
     >
       <div
-        class="flex gap-2 text-white items-center justify-between p-1 w-full"
+        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-2 py-1 border-t-4 border-white b-bg-color"
       >
         <a href="">
           <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span class="font-medium text-xs sm:text-sm text-white tracking-tight"
               >Find Job</span
             >
           </div>
@@ -978,8 +980,8 @@
 
         <a href="">
           <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span class="font-medium text-xs sm:text-sm text-white tracking-tight"
               >Pro CV</span
             >
           </div>
@@ -987,8 +989,8 @@
 
         <a href="">
           <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span class="font-medium text-xs sm:text-sm text-white tracking-tight"
               >Become Feature</span
             >
           </div>
@@ -996,8 +998,8 @@
 
         <a href="">
           <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span class="font-medium text-xs sm:text-sm text-white tracking-tight"
               >Register</span
             >
           </div>
@@ -1005,8 +1007,8 @@
 
         <a href="">
           <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-6" />
-            <span class="font-medium text-xs sm:text-sm text-white"
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span class="font-medium text-xs sm:text-sm text-white tracking-tight"
               >WhatsApp</span
             >
           </div>
