@@ -8,21 +8,22 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../styles/output.css" />
-    <title>Advance Fiters</title>
+    <title>Opened jobPost</title>
   </head>
   <body>
+  
     <header>
-      <div
-        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
-      >
-        <div class="flex justify-between items-center h-full">
-          <a href="../../index.html" class="flex flex-shrink-0">
-            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
-          </a>
-
-          <!-- tab button & flags  -->
-          <div class="flex items-center gap-1">
-            <!-- Tabs Button  -->
+        <div
+          class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
+        >
+          <div class="flex justify-between items-center h-full">
+            <a href="../../index.html" class="flex flex-shrink-0">
+              <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
+            </a>
+            
+            <!-- tab button & flags  -->
+             <div class="flex items-center gap-1">
+              <!-- Tabs Button  -->
             <div class="flex justify-start">
               <div
                 class="border h-7 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
@@ -46,149 +47,113 @@
                 </button>
               </div>
             </div>
-
+  
             <!-- flag  -->
             <div class="relative w-14">
               <div
-                class="countries-dropdown flex justify-end rounded-md cursor-pointer"
+                class="countries-dropdown flex justify-end  rounded-md cursor-pointer"
               >
                 <picture id="selected-country">
                   <img src="../assets/qa.svg" alt="" class="w-10" />
                 </picture>
+  
               </div>
               <div
                 id="country-list"
                 class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
               >
-                <div
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
-                >
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b">
                   <div class="flex">
-                    <img src="../assets/qa.svg" alt="" class="w-7" />
+                    <img src="../assets/qa.svg" alt="" class="w-7 " />
                   </div>
                 </div>
-                <div
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
-                >
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b">
                   <div class="flex">
-                    <img src="../assets/ae.svg" alt="" class="w-7" />
+                    <img src="../assets/ae.svg" alt="" class="w-7 " />
                   </div>
                 </div>
                 <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  <div class="flex">
-                    <img src="../assets/pk.svg" alt="" class="w-7" />
+                  <div class="flex"> 
+                    <img src="../assets/pk.svg" alt="" class="w-7 " />
                   </div>
                 </div>
               </div>
+            </div>
+  
+  
+          </div>
+        </div>
+        </div>
+      </header>
+  
+
+    <main class="main !mt-14 !mb-14">
+      <!-- JobSeeker tab  -->
+      <div id="jobSeekerTab" class="hidden">
+       
+
+        <div class=" flex flex-col gap-4">
+
+             <!-- Job Numbers searchBar Div   -->
+          <div
+          class="flex flex-col gap-4 bg-white px-2 py-3 rounded-lg shadow-sm shadow-black/20"
+        >
+          <!-- Job Numbers  -->
+          <div class="flex justify-center gap-2">
+            <div
+              class="flex flex-col items-center transparent-bg-color px-4 py-2 rounded-xl"
+            >
+              <span class="m-color text-sm tracking-tight">Listed Jobs</span>
+              <span class="m-color text-2xl font-bold tracking-tighter"
+                >4150</span
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center transparent-bg-color px-4 py-2 rounded-xl"
+            >
+              <span class="m-color text-sm tracking-tight">Job Applies</span>
+              <span class="m-color text-2xl font-bold tracking-tighter"
+                >5150</span
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center transparent-bg-color px-4 py-2 rounded-xl"
+            >
+              <span class="m-color text-sm tracking-tight">Jobseekers</span>
+              <span class="m-color text-2xl font-bold tracking-tighter"
+                >9350</span
+              >
+            </div>
+          </div>
+
+          <!-- Search bar  -->
+          <div class="flex flex-col gap-1">
+            <div class="relative flex">
+              <input
+                type="text"
+                placeholder="Search Jobs here"
+                class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+              />
+              <img
+                src="../assets/search.svg"
+                class="w-4 absolute top-3 right-3"
+                alt=""
+              />
+            </div>
+            <!-- filters -->
+            <div class="flex justify-end items-end">
+              <a
+                href="./advancedFilter-jobs.html"
+                class="text-black text-xs c-underline"
+              >
+                Use Advance Filters</a
+              >
             </div>
           </div>
         </div>
-      </div>
-    </header>
 
-    <main class="mt-12 !mb-12">
-      <!-- JobSeeker tab  -->
-      <div id="jobSeekerTab" class="hidden">
-        <!-- search job  -->
-        <form class="w-full">
-          <!-- Search Jobs Bar  -->
-          <div class="flex flex-col gap-2 b-bg-color text-white py-2 px-3">
-            <!-- search job  -->
-            <div class="flex justify-between items-center">
-              <div class="flex">
-                <span class="text-base font-medium">Search Job</span>
-              </div>
-              <div class="flex w-3/5">
-                <input
-                  type="text"
-                  class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                  placeholder="Search Job here"
-                />
-              </div>
-            </div>
-
-            <!-- posted on  -->
-            <div class="flex flex-col gap-1">
-              <div class="flex">
-                <h4>Posted On</h4>
-              </div>
-              <div class="flex justify-between items-center">
-                <div class="flex flex-col gap-1">
-                  <div class="flex gap-1 text-sm">
-                    <input
-                      type="radio"
-                      name="date_filter"
-                      class="c-accent"
-                      id="today"
-                    />
-                    <label for="today">Today (0)</label>
-                  </div>
-
-                  <div class="flex gap-1 text-sm">
-                    <input
-                      type="radio"
-                      name="date_filter"
-                      class="c-accent"
-                      id="last7days"
-                    />
-                    <label for="last7days">Last 7 Days (10)</label>
-                  </div>
-
-                  <div class="flex gap-1 text-sm">
-                    <input
-                      type="radio"
-                      name="date_filter"
-                      class="c-accent"
-                      id="last15day"
-                    />
-                    <label for="last15day">Last 15 Days (50)</label>
-                  </div>
-
-                  <div class="flex gap-1 text-sm">
-                    <input
-                      type="radio"
-                      name="date_filter"
-                      class="c-accent"
-                      id="all"
-                    />
-                    <label for="all">All (95)</label>
-                  </div>
-                </div>
-
-                <div class="flex flex-col gap-2 justify-center w-2/4">
-                  <input
-                    type="text"
-                    placeholder="Search Department here"
-                    class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                  />
-
-                  <input
-                    type="text"
-                    placeholder="Search Location"
-                    class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- submit btn  -->
-            <div class="w-full rounded-lg text-sm border py-1 hover:bg-white hover:text-[#5c0931]">
-              <!-- <button
-                type="submit"
-                class="w-full rounded-lg text-sm border py-1 hover:bg-white hover:text-[#5c0931]"
-              >
-                Search
-              </button> -->
-              <a href="./searched-jobs.html"
-                class="flex justify-center"
-              >
-                Search
-              </a>
-            </div>
-          </div>
-        </form>
-
-        <div class="main flex flex-col gap-4">
           <!-- services -->
           <div class="flex flex-col gap-1">
             <div class="flex gap-2 items-center">
@@ -288,6 +253,90 @@
                   Learn More
                 </a>
               </div>
+            </div>
+          </div>
+
+          <!-- Open job Post  -->
+          <div
+            class="flex flex-col gap-3 bg-white hover:bg-stone-50 px-3 py-4 rounded-xl shadow-sm shadow-black/40"
+          >
+            <!-- opened job heading  -->
+            <div class="flex justify-between items-center">
+              <!-- heading  -->
+              <div class="flex flex-col gap-1">
+                <div class="flex">
+                  <h4 class="font-semibold text-sm">Frontend Engineer</h4>
+                </div>
+                <!-- Organization  -->
+                <div class="flex gap-1">
+                  <span class="text-xs text-stone-800">Organization:</span>
+                  <span class="text-xs font-medium">Amazon</span>
+                </div>
+                <!-- Location  -->
+                <div class="flex gap-1">
+                  <span class="text-xs text-stone-800">Location:</span>
+                  <span class="text-xs font-medium">Blue Area</span>
+                </div>
+                <!-- Posted on  -->
+                <div class="flex gap-1">
+                  <span class="text-xs text-stone-800">Posted on:</span>
+                  <span class="text-xs font-medium">12 Dec 2024</span>
+                </div>
+              </div>
+
+              <!-- Register & total Applicants  -->
+              <div class="flex flex-col gap-1 justify-end items-center">
+                <!-- total applies  -->
+                <span class="c-text-sm text-stone-800 font-medium"
+                  >115 Aplicants</span
+                >
+                <!-- register  -->
+                <span class="px-4 py-1 m-btn text-sm rounded-full"
+                  >Register</span
+                >
+              </div>
+            </div>
+
+            <!-- Description  -->
+            <div class="flex items-start">
+                <div class="flex flex-col gap-2">
+                    <!-- About Job  -->
+                    <div class="flex">
+                        <h4 class="font-semibold text-sm">About the Job</h4>
+                      </div>
+
+                      <!-- Description Deatil -->
+                       <div class="flex flex-col gap-1 text-stone-800 text-xs">
+                        <!-- intro  -->
+                         <div class="flex flex-col gap-0.5">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis possimus aliquam amet. Perferendis perspiciatis consequuntur accusantium possimus amet sunt fugit laboriosam porro dolore provident?</span>
+                         </div>
+                        <!-- key Resposibilities  -->
+                         <div class="flex flex-col gap-0.5">
+                            <!-- key Resposibilities  -->
+                             <span class="text-black font-medium">key Resposibilities</span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis possimus aliquam amet. Perferendis perspiciatis consequuntur accusantium possimus amet sunt fugit laboriosam porro dolore provident?</span>
+                         </div>
+                        <!--  Requirements  -->
+                         <div class="flex flex-col gap-0.5">
+                            <!-- Requirements  -->
+                             <span class="text-black font-medium">Requirements</span>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo debitis possimus aliquam amet. Perferendis perspiciatis consequuntur accusantium possimus amet sunt fugit laboriosam porro dolore provident?</span>
+                         </div>
+                       </div>
+
+                       <!-- apply on  -->
+                       <div class="flex items-center justify-center gap-2">
+                        <!-- WhatsApp  -->
+                        <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
+                        >Apply on WhatsApp</a
+                      >
+                      <!-- email  -->
+                      <a href="" class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply on Email</a
+                    >
+                       </div>
+                </div>
             </div>
           </div>
 
