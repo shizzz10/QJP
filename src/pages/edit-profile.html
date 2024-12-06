@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <title>Edit Profile</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
+      >
+        <div class="flex justify-between items-center h-full">
+          <a href="../../index.html" class="flex flex-shrink-0">
+            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
+          </a>
+
+          <!-- tab button & flags  -->
+          <div class="flex items-center gap-1">
+            <!-- Tabs Button  -->
+            <div class="flex justify-start">
+              <div
+                class="border h-7 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
+              >
+                <div
+                  class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-2/4 h-full bg-white c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
+                ></div>
+                <button
+                  id="jobSeekerTabBtn"
+                  onclick="showTab(0, 'jobSeekerTab', this)"
+                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
+                >
+                  JobSeeker
+                </button>
+                <button
+                  id="businessTabBtn"
+                  onclick="showTab(1, 'businessTab', this)"
+                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
+                >
+                  Business
+                </button>
+              </div>
+            </div>
+
+            <!-- flag  -->
+            <div class="relative w-14">
+              <div
+                class="countries-dropdown flex justify-end rounded-md cursor-pointer"
+              >
+                <picture id="selected-country">
+                  <img src="../assets/qa.svg" alt="" class="w-10" />
+                </picture>
+              </div>
+              <div
+                id="country-list"
+                class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
+              >
+                <div
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
+                >
+                  <div class="flex">
+                    <img src="../assets/qa.svg" alt="" class="w-7" />
+                  </div>
+                </div>
+                <div
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
+                >
+                  <div class="flex">
+                    <img src="../assets/ae.svg" alt="" class="w-7" />
+                  </div>
+                </div>
+                <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <div class="flex">
+                    <img src="../assets/pk.svg" alt="" class="w-7" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main !mt-14 !mb-14">
+      <!-- JobSeeker tab  -->
+      <div id="jobSeekerTab" class="hidden">
+        <div class="flex flex-col gap-4">
+          <!-- QID Verification  -->
+          <form
+            id="qidVerification"
+            class="flex flex-col rounded-lg b-bg-color py-3 px-6 shadow-sm shadow-black/40"
+          >
+            <div class="flex flex-col gap-4 text-white">
+              <div class="flex justify-center">
+                <h2 class="text-base font-medium">Edit Profile</h2>
+              </div>
+              <!-- Qid  -->
+              <div class="flex justify-between items-center">
+                <label for="qid" class="text-sm">Provide Registeed QID</label>
+                <input
+                  required
+                  type="text"
+                  name=""
+                  id="qid"
+                  placeholder="Provide Here"
+                  class="w-5/12 rounded-full px-2 placeholder:font-light text-black text-sm py-0.5 focus:outline-none transition"
+                />
+              </div>
+              <!-- DOB  -->
+              <div class="flex justify-between items-center">
+                <label for="dob" class="text-sm"
+                  >Provide Your Date Of Bith</label
+                >
+                <input
+                  required
+                  type="date"
+                  name=""
+                  id="dob"
+                  placeholder="Provide Here"
+                  class="w-5/12 rounded-full px-2 placeholder:font-light text-black text-sm py-0.5 focus:outline-none transition"
+                />
+              </div>
+              <!-- error  -->
+              <div class="flex">
+                <div class="flex gap-1 items-center">
+                  <span class="text-sm text-stone-100">Error:</span>
+                  <span class="text-sm text-stone-300"
+                    >The Provided Credentials does not match with our
+                    record</span
+                  >
+                </div>
+              </div>
+              <!-- submit btn !! remove the script -->
+              <div class="flex justify-center">
+                <button
+                  type="submit"
+                  class="px-5 py-1 m-btn-white text-sm rounded-full"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- profile card  -->
+          <form
+            id="editForm"
+            class="hidden flex flex-col gap-3 bg-white hover:bg-stone-50 px-3 py-4 rounded-xl shadow-sm shadow-black/40"
+          >
+            <!-- profile pic  -->
+            <div class="flex justify-center">
+              <!-- profile Picture   -->
+              <div class="flex flex-col gap-1 items-center justify-center">
+                <div
+                  class="flex rounded-full border-4 w-24 h-24 justify-center items-center flex-shrink-0"
+                >
+                  <img
+                    id="profileImage"
+                    src="../assets/profile3.webp"
+                    class="w-20 h-20 rounded-full object-cover object-top"
+                    alt=""
+                  />
+                </div>
+                <!-- File Input for Upload -->
+                <div class="flex flex-col justify-cente">
+                  <label
+                    for="uploadImage"
+                    class="font-semibold cursor-pointer text-sm"
+                  >
+                    Upload Photo
+                  </label>
+                  <input
+                    id="uploadImage"
+                    type="file"
+                    accept="image/*"
+                    class="hidden"
+                  />
+                  <span class="c-text-sm text-stone-800 tracking-tight"
+                    >Less than 10 KB only</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- input text fields  -->
+
+            <div class="flex flex-col gap-1">
+              <!-- Name  -->
+              <div class="flex">
+                <input
+                required
+                  type="text"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Enter You Name here (As per QID)"
+                />
+              </div>
+              <!-- Profession  -->
+              <div class="flex">
+                <select
+                required
+                  name=""
+                  class="w-full rounded-full border px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157]"
+                >
+                  <option value="" disabled selected>
+                    Select a profession
+                  </option>
+                  <option value="doctor">Doctor</option>
+                  <option value="engineer">Engineer</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="developer">Developer</option>
+                  <option value="designer">Designer</option>
+                </select>
+              </div>
+              <!-- About Me  -->
+              <div class="flex flex-col">
+                <label for="aboutMe" class="font-medium text-xs pl-2">
+                  About Me</label
+                >
+                <textarea
+                required
+                  rows="3"
+                  name=""
+                  id="aboutMe"
+                  class="border w-full rounded-lg text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                >
+Describe yourself</textarea
+                >
+              </div>
+              <!-- Highest Qualification  -->
+              <div class="flex flex-col">
+                <label
+                  for="highestQualification"
+                  class="font-medium text-xs pl-2"
+                >
+                  Highest Qualification</label
+                >
+                <input
+                required
+                  type="text"
+                  id="highestQualification"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Please write you Highest Qualification"
+                />
+              </div>
+
+              <!-- Total Experience  -->
+              <div class="flex flex-col">
+                <label for="totalExp" class="font-medium text-xs pl-2">
+                  Total Experience</label
+                >
+                <input
+                required
+                  type="text"
+                  id="totalExp"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write Your Total Experience"
+                />
+              </div>
+
+              <!-- Gulf Experience  -->
+              <div class="flex flex-col">
+                <label for="gulfExp" class="font-medium text-xs pl-2">
+                  Gulf Experience</label
+                >
+                <input
+                required
+                  type="text"
+                  id="gulfExp"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write Your Whole Gulf Experience"
+                />
+              </div>
+
+              <!-- Driving License  -->
+              <div class="flex flex-col">
+                <label for="drivingLicense" class="font-medium text-xs pl-2">
+                  Driving License</label
+                >
+                <input
+                required
+                  type="text"
+                  id="drivingLicense"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Your Driving License"
+                />
+              </div>
+
+              <!-- Current Location  -->
+              <div class="flex flex-col">
+                <label for="currLocation" class="font-medium text-xs pl-2">
+                  Current Location</label
+                >
+                <input
+                required
+                  type="text"
+                  id="currLocation"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write Your Current Location"
+                />
+              </div>
+
+              <!-- Nationality  -->
+              <div class="flex flex-col">
+                <label for="nationality" class="font-medium text-xs pl-2">
+                  Nationality</label
+                >
+                <input
+                required
+                  type="text"
+                  id="nationality"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write your Country"
+                />
+              </div>
+
+              <!-- Current Salary  -->
+              <div class="flex flex-col">
+                <label for="currSalary" class="font-medium text-xs pl-2">
+                  Current Salary</label
+                >
+                <input
+                required
+                  type="text"
+                  id="currSalary"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write Your Current Salary"
+                />
+              </div>
+
+              <!-- Expected Salary  -->
+              <div class="flex flex-col">
+                <label for="expectedSalary" class="font-medium text-xs pl-2">
+                  Expected Salary</label
+                >
+                <input
+                required
+                  type="text"
+                  id="expectedSalary"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Write Your Expected Salary"
+                />
+              </div>
+
+              <!-- Email  -->
+              <div class="flex flex-col">
+                <label for="email" class="font-medium text-xs pl-2">
+                  Email</label
+                >
+                <input
+                required
+                  type="email"
+                  id="email"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Please Enter Your Email"
+                />
+              </div>
+
+              <!-- Contact Number  -->
+              <div class="flex flex-col">
+                <label for="number" class="font-medium text-xs pl-2">
+                  Contact Number</label
+                >
+                <input
+                required
+                  type="text"
+                  id="number"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Please Enter Your Number"
+                />
+                <div class="flex justify-between px-3">
+                  <div class="flex">
+                    <span class="text-stone-700 c-text-xs">
+                      Do you want to Public Your Number</span
+                    >
+                  </div>
+                  <!-- yes no radio -->
+                  <div class="flex gap-2">
+                    <!-- yes  -->
+                    <div class="flex gap-0.5 c-text-uxs items-center">
+                      <input
+                        type="radio"
+                        name="contactNum"
+                        class="c-accent"
+                        id="yes"
+                      />
+                      <label for="yes" class="c-text-sm">Yes</label>
+                    </div>
+                    <!-- no  -->
+                    <div class="flex gap-0.5 c-text-uxs items-center">
+                      <input
+                        type="radio"
+                        name="contactNum"
+                        class="c-accent"
+                        id="no"
+                      />
+                      <label for="no" class="c-text-sm">No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LinkedIn Profile  -->
+              <div class="flex flex-col">
+                <label for="linkedin" class="font-medium text-xs pl-2">
+                  LinkedIn Profile Link (Optional)</label
+                >
+                <input
+                  type="url"
+                  id="linkedin"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Please Provide the url"
+                />
+              </div>
+
+              <!-- QID  -->
+              <div class="flex flex-col">
+                <label for="qid" class="font-medium text-xs pl-2"> QID</label>
+                <input
+                required
+                  type="text"
+                  id="qid"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  placeholder="Enter Your Valid Qatar ID 11 Digits"
+                />
+                <span class="text-stone-700 c-text-uxs px-3">
+                  The QID will be not be Public and only be used for validating
+                  the information.</span
+                >
+              </div>
+
+              <!-- Date Of Birth  -->
+              <div class="flex flex-col">
+                <label for="dob" class="font-medium text-xs pl-2">
+                  Date Of Birth</label
+                >
+                <input
+                  required
+                  type="date"
+                  id="dob"
+                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                />
+              </div>
+
+              <!-- submit button  -->
+              <button
+                type="submit"
+                class="px-5 py-1 m-btn text-sm rounded-full"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Business tab  -->
+      <div id="businessTab" class="hidden">
+        Will start working on this later
+      </div>
+    </main>
+
+    <footer class="">
+      <div
+        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-2 py-1 border-t-4 border-white b-bg-color"
+      >
+        <a href="">
+          <div class="flex flex-col items-center">
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight"
+              >Find Job</span
+            >
+          </div>
+        </a>
+
+        <a href="">
+          <div class="flex flex-col items-center">
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight"
+              >Pro CV</span
+            >
+          </div>
+        </a>
+
+        <a href="">
+          <div class="flex flex-col items-center">
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight"
+              >Become Feature</span
+            >
+          </div>
+        </a>
+
+        <a href="">
+          <div class="flex flex-col items-center">
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight"
+              >Register</span
+            >
+          </div>
+        </a>
+
+        <a href="">
+          <div class="flex flex-col items-center">
+            <img src="../assets/job.svg" alt="" class="w-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight"
+              >WhatsApp</span
+            >
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      // image upload
+      const uploadImage = document.getElementById("uploadImage");
+      const profileImage = document.getElementById("profileImage");
+
+      // Handle image preview
+      uploadImage.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (e) => (profileImage.src = e.target.result);
+          reader.readAsDataURL(file);
+        }
+      });
+
+      // qid form toggle
+      const qidForm = document.getElementById("qidVerification");
+      const editForm = document.getElementById("editForm");
+
+      qidForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent actual form submission
+        qidForm.classList.add("hidden");
+        editForm.classList.remove("hidden");
+      });
+
+      function showTab(index, tabId, selectedBtn) {
+        document.getElementById("jobSeekerTab").classList.add("hidden");
+        document.getElementById("businessTab").classList.add("hidden");
+
+        document.getElementById(tabId).classList.remove("hidden");
+
+        // Move the slider
+        const sliderBg = document.querySelector(".slider-bg");
+        sliderBg.style.transform = `translateX(${index * 100}%)`;
+
+        // Reset all buttons to their default text color
+        const buttons = document.querySelectorAll(".tab-btn");
+        buttons.forEach((button) => {
+          button.classList.remove("m-color");
+          button.classList.add("text-white");
+        });
+        selectedBtn.classList.add("m-color");
+        selectedBtn.classList.remove("text-white");
+      }
+
+      // Initialize default tab
+      document.addEventListener("DOMContentLoaded", () => {
+        const defaultButton = document.getElementById("jobSeekerTabBtn");
+        showTab(0, "jobSeekerTab", defaultButton);
+      });
+
+      // country filter
+      const selectedCountry = document.querySelector("#selected-country");
+      const countryList = document.querySelector("#country-list");
+      const countryItems = document.querySelectorAll("#country-list > div");
+
+      // Toggle the country list on click
+      document
+        .querySelector(".countries-dropdown")
+        .addEventListener("click", () => {
+          countryList.classList.toggle("hidden");
+        });
+
+      // set the selected country and hide the list
+      countryItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const flagUrl = item.querySelector("img").src;
+          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-10">`;
+          countryList.classList.add("hidden");
+        });
+      });
+
+     
+    </script>
+  </body>
+</html>

@@ -2315,6 +2315,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
@@ -2342,6 +2347,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pt-10 {
@@ -2554,6 +2563,11 @@ video {
 .text-stone-200 {
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity, 1));
+}
+
+.text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity, 1));
 }
 
 .text-stone-600 {
@@ -3059,6 +3073,14 @@ h1,h2,h3,h4,h5,h6{
   font-size: 0.7rem
 }
 
+.c-text-xs{
+  font-size: 0.7rem
+}
+
+.c-text-uxs{
+  font-size: 0.5rem
+}
+
 .m-btn{
   background-color: #8E2157 ;
   color: white;
@@ -3068,6 +3090,17 @@ h1,h2,h3,h4,h5,h6{
   background-color: white;
   border: 1px solid #8E2157;
   color: #8E2157;
+}
+
+.m-btn-white{
+  background-color: white ;
+  color: #5c0931;
+}
+
+.m-btn-white:hover{
+  background-color: #5c0931;
+  border: 1px solid white;
+  color: white;
 }
 
 .main {
@@ -3276,6 +3309,12 @@ h1,h2,h3,h4,h5,h6{
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:ring-1:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
 .focus\:ring-\[\#8E2157\]:focus {
