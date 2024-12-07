@@ -82,9 +82,9 @@
       </div>
     </header>
 
-    <main class="main !mt-14 !mb-14">
       <!-- JobSeeker tab  -->
       <div id="jobSeekerTab" class="hidden">
+    <main class="main !mt-14 !mb-14">
         <div class="flex flex-col gap-4">
           <!-- head  -->
           <div class="flex-col gap-4">
@@ -110,7 +110,7 @@
           <div class="flex gap-10 py-0.5 px-0.5 button-slider overflow-hidden">
             <!-- 10 Days  -->
             <div
-              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-36 w-28 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
+              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-40 w-32 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
               id="10days-tab"
               onclick="showAdvertTab('10days', this)"
             >
@@ -123,7 +123,7 @@
             </div>
             <!-- 20 Days  -->
             <div
-              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-36 w-28 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
+              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-40 w-32 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
               id="20days-tab"
               onclick="showAdvertTab('20days', this)"
             >
@@ -136,7 +136,7 @@
             </div>
             <!-- 30 Days  -->
             <div
-              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-36 w-28 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
+              class="flex flex-shrink-0 c-bg-color flex-col gap-0.5 items-center justify-center rounded-xl h-40 w-32 px-3 py-2 hover shadow-sm shadow-black/40 hover:shadow-black/60 text-white cursor-pointer"
               id="30days-tab"
               onclick="showAdvertTab('30days', this)"
             >
@@ -152,7 +152,9 @@
           <!-- tabs content  -->
 
           <div id="10days" class="hidden">
-            <div class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl  shadow-sm shadow-black/40 hover:bg-stone-50">
+            <div
+              class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl shadow-sm shadow-black/40 hover:bg-stone-50"
+            >
               <!-- head  -->
               <div class="flex">
                 <h3 class="text-base font-semibold m-color">
@@ -161,193 +163,187 @@
               </div>
 
               <!-- ul li points  -->
-               <div class="flex">
+              <div class="flex">
                 <ul class="flex flex-col gap-2">
-                    <li class="flex items-start gap-1  text-sm">
-                        <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                      <span class="text-stone-800  text-xs">Your Profile is featured on Qatar Jobs Portal for <span class="font-semibold"> 10 Days</span>.</span>
-                    </li>
-                    <li class="flex items-start gap-1  text-sm">
-                        <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                      <span class="text-stone-800 text-xs">Profile appearance on Home Page for 10 Days <span class="font-semibold"> 10 Days</span>.</span>
-                    </li>
-                    <li class="flex items-start  gap-1 ">
-                        <i class="fa-solid fa-square-check m-color text-sm"></i>
-                      <span class="text-stone-800 text-xs">Appear on the<span class="font-semibold"> top of list </span> of relevant searches by employers for 10 Days .</span>
-                    </li>
-                    <li class="flex items-start gap-1  ">
-                        <i class=" flex items-center fa-solid fa-square-check m-color text-sm"></i>
-                      <span class="text-stone-800 text-xs">Renew anytime.</span>
-                    </li>
-                  </ul>
-               </div>
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Your Profile is featured on Qatar Jobs Portal for
+                      <span class="font-semibold">10 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Profile appearance on Home Page for
+                      <span class="font-semibold">10 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Appear on the
+                      <span class="font-semibold">top of list</span> of relevant
+                      searches by employers for 10 Days .</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i
+                      class="flex items-center fa-solid fa-square-check m-color text-sm"
+                    ></i>
+                    <span class="text-stone-800 text-xs">Renew anytime.</span>
+                  </li>
+                </ul>
+              </div>
 
-
-               <!-- pricing button  -->
-                <div class="flex justify-center">
-                    <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                    >Only On <span class="font-semibold">75 QAR</span></a
-                  >
-                </div>
-
-
-
-
-
-
-
+              <!-- pricing button  -->
+              <div class="flex justify-center">
+                <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
+                  >Only On <span class="font-semibold">75 QAR</span></a
+                >
+              </div>
             </div>
           </div>
 
           <div id="20days" class="hidden">
-            <div class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl  shadow-sm shadow-black/40 hover:bg-stone-50">
-                <!-- head  -->
-                <div class="flex">
-                  <h3 class="text-base font-semibold m-color">
-                    20 Days Featured Profile
-                  </h3>
-                </div>
-  
-                <!-- ul li points  -->
-                 <div class="flex">
-                  <ul class="flex flex-col gap-2">
-                      <li class="flex items-start gap-1  text-sm">
-                          <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                        <span class="text-stone-800  text-xs">Your Profile is featured on Qatar Jobs Portal for <span class="font-semibold">20 Days</span>.</span>
-                      </li>
-                      <li class="flex items-start gap-1  text-sm">
-                          <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                        <span class="text-stone-800 text-xs">Profile appearance on Home Page for <span class="font-semibold"> 20 Days</span>.</span>
-                      </li>
-                      <li class="flex items-start  gap-1 ">
-                          <i class="fa-solid fa-square-check m-color text-sm"></i>
-                        <span class="text-stone-800 text-xs">Appear on the<span class="font-semibold"> top of list </span> of relevant searches by employers for 20 Days .</span>
-                      </li>
-                      <li class="flex items-start gap-1  ">
-                          <i class=" flex items-center fa-solid fa-square-check m-color text-sm"></i>
-                        <span class="text-stone-800 text-xs">Renew anytime.</span>
-                      </li>
-                    </ul>
-                 </div>
-  
-  
-                 <!-- pricing button  -->
-                  <div class="flex justify-center">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                      >Only On <span class="font-semibold">135 QAR</span></a
-                    >
-                  </div>
-  
-  
+            <div
+              class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl shadow-sm shadow-black/40 hover:bg-stone-50"
+            >
+              <!-- head  -->
+              <div class="flex">
+                <h3 class="text-base font-semibold m-color">
+                  20 Days Featured Profile
+                </h3>
               </div>
+
+              <!-- ul li points  -->
+              <div class="flex">
+                <ul class="flex flex-col gap-2">
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Your Profile is featured on Qatar Jobs Portal for
+                      <span class="font-semibold">20 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Profile appearance on Home Page for
+                      <span class="font-semibold"> 20 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Appear on the<span class="font-semibold">
+                        top of list
+                      </span>
+                      of relevant searches by employers for 20 Days .</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i
+                      class="flex items-center fa-solid fa-square-check m-color text-sm"
+                    ></i>
+                    <span class="text-stone-800 text-xs">Renew anytime.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- pricing button  -->
+              <div class="flex justify-center">
+                <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
+                  >Only On <span class="font-semibold">135 QAR</span></a
+                >
+              </div>
+            </div>
           </div>
 
           <div id="30days" class="hidden">
-            <div class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl  shadow-sm shadow-black/40 hover:bg-stone-50">
-                <!-- head  -->
-                <div class="flex">
-                  <h3 class="text-base font-semibold m-color">
-                    20 Days Featured Profile
-                  </h3>
-                </div>
-  
-                <!-- ul li points  -->
-                 <div class="flex">
-                  <ul class="flex flex-col gap-2">
-                      <li class="flex items-start gap-1  text-sm">
-                          <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                        <span class="text-stone-800  text-xs">Your Profile is featured on Qatar Jobs Portal for <span class="font-semibold">30 Days</span>.</span>
-                      </li>
-                      <li class="flex items-start gap-1  text-sm">
-                          <i class="fa-solid fa-square-check m-color  text-sm"></i>
-                        <span class="text-stone-800 text-xs">Profile appearance on Home Page for <span class="font-semibold">30 Days</span>.</span>
-                      </li>
-                      <li class="flex items-start  gap-1 ">
-                          <i class="fa-solid fa-square-check m-color text-sm"></i>
-                        <span class="text-stone-800 text-xs">Appear on the<span class="font-semibold"> top of list </span> of relevant searches by employers for 30 Days .</span>
-                      </li>
-                      <li class="flex items-start gap-1  ">
-                          <i class=" flex items-center fa-solid fa-square-check m-color text-sm"></i>
-                        <span class="text-stone-800 text-xs">Renew anytime.</span>
-                      </li>
-                    </ul>
-                 </div>
-  
-  
-                 <!-- pricing button  -->
-                  <div class="flex justify-center">
-                      <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
-                      >Only On <span class="font-semibold">175 QAR</span></a
-                    >
-                  </div>
-  
-  
+            <div
+              class="flex bg-white flex-col gap-3 px-3 py-4 rounded-xl shadow-sm shadow-black/40 hover:bg-stone-50"
+            >
+              <!-- head  -->
+              <div class="flex">
+                <h3 class="text-base font-semibold m-color">
+                  30 Days Featured Profile
+                </h3>
               </div>
+
+              <!-- ul li points  -->
+              <div class="flex">
+                <ul class="flex flex-col gap-2">
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Your Profile is featured on Qatar Jobs Portal for
+                      <span class="font-semibold">30 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1 text-sm">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Profile appearance on Home Page for
+                      <span class="font-semibold">30 Days</span>.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i class="fa-solid fa-square-check m-color text-sm"></i>
+                    <span class="text-stone-800 text-xs"
+                      >Appear on the<span class="font-semibold">
+                        top of list
+                      </span>
+                      of relevant searches by employers for 30 Days .</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-1">
+                    <i
+                      class="flex items-center fa-solid fa-square-check m-color text-sm"
+                    ></i>
+                    <span class="text-stone-800 text-xs">Renew anytime.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- pricing button  -->
+              <div class="flex justify-center">
+                <a href="#" class="px-5 py-1 m-btn text-sm rounded-full"
+                  >Only On <span class="font-semibold">175 QAR</span></a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Business tab  -->
-      <div id="businessTab" class="hidden">
-        Will start working on this later
-      </div>
+    
     </main>
 
-    <footer class="">
-      <div
-        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-2 py-1 border-t-4 border-white b-bg-color"
-      >
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-5" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight"
-              >Find Job</span
-            >
-          </div>
-        </a>
+    
+    <footer
+    class=""
+  >
+    <div
+      class="h-8 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-2 py-1 border-t-4 border-white b-bg-color"
+    >
+      
+    <div class="flex items-center justify-center w-full">
+      <h2 class="font-semibold text-base  text-white">Get Started ...</h2>
+  </div>
+ 
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-5" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight"
-              >Pro CV</span
-            >
-          </div>
-        </a>
+    
+    </div>
+  </footer>
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-5" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight"
-              >Become Feature</span
-            >
-          </div>
-        </a>
+</div>
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-5" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight"
-              >Register</span
-            >
-          </div>
-        </a>
+     
 
-        <a href="">
-          <div class="flex flex-col items-center">
-            <img src="../assets/job.svg" alt="" class="w-5" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight"
-              >WhatsApp</span
-            >
-          </div>
-        </a>
-      </div>
-    </footer>
+
+   <!-- Business tab  -->
+   <div id="businessTab" class="hidden">
+    Will start working on this later
+  </div>
 
     <script
       src="https://kit.fontawesome.com/a65c1abfe9.js"

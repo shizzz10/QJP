@@ -711,6 +711,10 @@ video {
   right: 0px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-3 {
   right: 0.75rem;
 }
@@ -803,6 +807,10 @@ video {
   margin-bottom: 3.5rem !important;
 }
 
+.\!mb-4 {
+  margin-bottom: 1rem !important;
+}
+
 .\!mt-14 {
   margin-top: 3.5rem !important;
 }
@@ -833,6 +841,18 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -950,12 +970,16 @@ video {
   height: 6rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-32 {
   height: 8rem;
 }
 
-.h-36 {
-  height: 9rem;
+.h-40 {
+  height: 10rem;
 }
 
 .h-6 {
@@ -968,6 +992,10 @@ video {
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-full {
@@ -984,6 +1012,10 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-14 {
@@ -2572,6 +2604,11 @@ video {
   color: rgb(51 65 85 / var(--tw-text-opacity, 1));
 }
 
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity, 1));
+}
+
 .text-stone-100 {
   --tw-text-opacity: 1;
   color: rgb(245 245 244 / var(--tw-text-opacity, 1));
@@ -3164,6 +3201,18 @@ h1,h2,h3,h4,h5,h6{
   scrollbar-width: none;
 }
 
+.button-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.resume-bg{
+  background: linear-gradient(149deg, #22c55e 0%, #a855f7 99.08%);
+}
+
+.resume-bg:hover{
+  background: linear-gradient(149deg, #16a34a 0%, #9333ea 99.08%);
+}
+
 .swiper-pagination-bullet-active{
   background: #8E2157;
 }
@@ -3394,6 +3443,10 @@ h1,h2,h3,h4,h5,h6{
   bottom: 7rem;
 }
 
+.active\:bottom-3:active {
+  bottom: 0.75rem;
+}
+
 .active\:bottom-8:active {
   bottom: 2rem;
 }
@@ -3462,6 +3515,10 @@ h1,h2,h3,h4,h5,h6{
 
 .group:hover .group-hover\:bottom-28 {
   bottom: 7rem;
+}
+
+.group:hover .group-hover\:bottom-3 {
+  bottom: 0.75rem;
 }
 
 .group:hover .group-hover\:bottom-8 {
@@ -3542,6 +3599,10 @@ h1,h2,h3,h4,h5,h6{
 
   .group:hover .lg\:group-hover\:bottom-24 {
     bottom: 6rem;
+  }
+
+  .group:hover .lg\:group-hover\:bottom-3 {
+    bottom: 0.75rem;
   }
 
   .group:hover .lg\:group-hover\:bottom-8 {

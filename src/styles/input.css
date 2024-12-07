@@ -98,7 +98,15 @@ color: #5c0931;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
-
+.button-slider::-webkit-scrollbar {
+    display: none; 
+  }
+.resume-bg{
+    background: linear-gradient(149deg, #22c55e 0%, #a855f7 99.08%);
+}
+.resume-bg:hover{
+    background: linear-gradient(149deg, #16a34a 0%, #9333ea 99.08%);
+}
 .swiper-pagination-bullet-active{
     background: #8E2157;
   }
