@@ -954,6 +954,10 @@ video {
   height: 8rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -1611,6 +1615,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -2285,6 +2293,11 @@ video {
   padding: 0.75rem;
 }
 
+.px-0\.5 {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2445,6 +2458,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -3057,6 +3074,10 @@ h1,h2,h3,h4,h5,h6{
   background-color: #8e215779;
 }
 
+.b-color{
+  color: #5c0931;
+}
+
 .m-color{
   color: #8E2157 !important;
 }
@@ -3074,7 +3095,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .c-text-xs{
-  font-size: 0.7rem
+  font-size: 0.65rem
 }
 
 .c-text-uxs{
@@ -3128,6 +3149,19 @@ h1,h2,h3,h4,h5,h6{
 
 .c-accent{
   accent-color: #5c0931;
+}
+
+.advertActiveTab{
+  background-color: white;
+  color: #8E2157;
+}
+
+.button-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
 .swiper-pagination-bullet-active{
@@ -3262,6 +3296,11 @@ h1,h2,h3,h4,h5,h6{
 .hover\:text-\[\#8E2157\]:hover {
   --tw-text-opacity: 1;
   color: rgb(142 33 87 / var(--tw-text-opacity, 1));
+}
+
+.hover\:shadow-black\/60:hover {
+  --tw-shadow-color: rgb(0 0 0 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .before\:hover\:text-center:hover::before {

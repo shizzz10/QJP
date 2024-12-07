@@ -28,6 +28,9 @@ h1,h2,h3,h4,h5,h6{
 .transparent-bg-color:hover{
     background-color: #8e215779;
 }
+.b-color{
+color: #5c0931;
+}
 .m-color{
     color: #8E2157 !important;
 }
@@ -41,7 +44,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 0.7rem
 }
 .c-text-xs{
-    font-size: 0.7rem
+    font-size: 0.65rem
 }
 .c-text-uxs{
     font-size: 0.5rem
@@ -84,7 +87,17 @@ h1,h2,h3,h4,h5,h6{
 .c-accent{
  accent-color: #5c0931;
 }
-
+.advertActiveTab{
+    background-color: white;
+    color: #8E2157;
+}
+.button-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
 
 .swiper-pagination-bullet-active{
     background: #8E2157;
