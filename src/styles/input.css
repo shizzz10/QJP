@@ -53,6 +53,10 @@ color: #5c0931;
     background-color: #8E2157 ;
     color: white;
 }
+.special{
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
 .m-btn:hover{
     background-color: white;
     border: 1px solid #8E2157;
