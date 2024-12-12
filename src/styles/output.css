@@ -574,6 +574,10 @@ video {
   right: -1rem;
 }
 
+.-right-9 {
+  right: -2.25rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -714,6 +718,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -802,16 +810,24 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
 .h-\[270px\] {
   height: 270px;
 }
 
-.h-full {
-  height: 100%;
+.h-\[300px\] {
+  height: 300px;
 }
 
-.h-9 {
-  height: 2.25rem;
+.h-full {
+  height: 100%;
 }
 
 .w-1\/5 {
@@ -904,6 +920,10 @@ video {
 
 .w-\[130\%\] {
   width: 130%;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-full {
@@ -1039,11 +1059,6 @@ video {
 .rounded-b-xl {
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
-}
-
-.rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
 }
 
 .rounded-t-xl {
@@ -1234,6 +1249,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1244,6 +1263,14 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -1310,12 +1337,12 @@ video {
   line-height: .75rem;
 }
 
-.leading-5 {
-  line-height: 1.25rem;
-}
-
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .tracking-tight {
@@ -1492,7 +1519,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: "Poppins", serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .c-bg-color{
@@ -1610,6 +1637,10 @@ h1,h2,h3,h4,h5,h6{
   accent-color: #5c0931;
 }
 
+.footer-leading{
+  line-height: 10px;
+}
+
 .advertActiveTab{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1631,11 +1662,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .resume-bg{
-  background: linear-gradient(149deg, #22c55e 0%, #a855f7 99.08%);
+  background: linear-gradient(149deg, rgb(198, 196, 196) 0%, #5c0931 99.08%);
 }
 
 .resume-bg:hover{
-  background: linear-gradient(149deg, #16a34a 0%, #9333ea 99.08%);
+  background: linear-gradient(149deg, rgb(228, 222, 200) 0%, #55082d 99.08%);
 }
 
 .swiper-pagination-bullet-active{
