@@ -89,67 +89,11 @@
     <main class="main !mt-14 !mb-14">
 
         <div class="flex flex-col gap-4">
-          <!-- QID Verification  -->
-          <form
-            id="qidVerification"
-            class="flex flex-col rounded-lg b-bg-color py-3 px-6 shadow-sm shadow-black/40"
-          >
-            <div class="flex flex-col gap-4 text-white">
-              <div class="flex justify-center">
-                <h2 class="text-base font-medium">Edit Profile</h2>
-              </div>
-              <!-- Qid  -->
-              <div class="flex justify-between items-center">
-                <label for="qid" class="text-sm">Provide Registeed QID</label>
-                <input
-                  required
-                  type="text"
-                  name=""
-                  id="qid"
-                  placeholder="Provide Here"
-                  class="w-5/12 rounded-full px-2 placeholder:font-light text-black text-sm py-0.5 focus:outline-none transition"
-                />
-              </div>
-              <!-- DOB  -->
-              <div class="flex justify-between items-center">
-                <label for="dob" class="text-sm"
-                  >Provide Your Date Of Bith</label
-                >
-                <input
-                  required
-                  type="date"
-                  name=""
-                  id="dob"
-                  placeholder="Provide Here"
-                  class="w-5/12 rounded-full px-2 placeholder:font-light text-black text-sm py-0.5 focus:outline-none transition"
-                />
-              </div>
-              <!-- error  -->
-              <div class="flex">
-                <div class="flex gap-1 items-center">
-                  <span class="text-sm text-stone-100">Error:</span>
-                  <span class="text-sm text-stone-300"
-                    >The Provided Credentials does not match with our
-                    record</span
-                  >
-                </div>
-              </div>
-              <!-- submit btn !! remove the script -->
-              <div class="flex justify-center">
-                <button
-                  type="submit"
-                  class="px-5 py-1 m-btn-white text-sm rounded-full"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-
+        
           <!-- profile card  -->
           <form
             id="editForm"
-            class="hidden flex flex-col gap-3 bg-white hover:bg-stone-50 px-3 py-4 rounded-xl shadow-sm shadow-black/40"
+            class="flex flex-col gap-3 bg-white hover:bg-stone-50 px-3 py-4 rounded-xl shadow-sm shadow-black/40"
           >
             <!-- profile pic  -->
             <div class="flex justify-center">
@@ -160,7 +104,7 @@
                 >
                   <img
                     id="profileImage"
-                    src="../assets/profile3.webp"
+                    src="../assets/user.svg"
                     class="w-20 h-20 rounded-full object-cover object-top"
                     alt=""
                   />
@@ -188,7 +132,7 @@
 
             <!-- input text fields  -->
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-2">
               <!-- Name  -->
               <div class="flex">
                 <input
@@ -459,7 +403,7 @@ Describe yourself</textarea
     </main>
 
     
-   
+ 
     <footer class="px-0 ">
       <div
         class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 b-bg-color border-t-4 border-white "
@@ -520,6 +464,7 @@ Describe yourself</textarea
         </a>
       </div>
     </footer>
+
 
       </div>
 
@@ -874,16 +819,6 @@ Describe yourself</textarea
           reader.onload = (e) => (profileImage.src = e.target.result);
           reader.readAsDataURL(file);
         }
-      });
-
-      // qid form toggle
-      const qidForm = document.getElementById("qidVerification");
-      const editForm = document.getElementById("editForm");
-
-      qidForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent actual form submission
-        qidForm.classList.add("hidden");
-        editForm.classList.remove("hidden");
       });
 
 
