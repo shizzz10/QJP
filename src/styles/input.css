@@ -121,6 +121,23 @@ color: #5c0931;
     --tw-shadow-color: rgba(80, 15, 15, 0.9);
     --tw-shadow: var(--tw-shadow-colored);
 }
+.growing-btn{
+        background-color: #5c0931;
+    }
+    .animate-growing-btn {
+        animation: growing 3s ease-out infinite;
+    }
+@keyframes growing {
+    0%, 100% {
+        opacity: 0.8; /* Keep visibility high at the start and end */
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5; /* Midpoint visibility is higher */
+    }
+}
+
+
 .button-slider {
     display: flex;
     overflow-x: auto;
@@ -132,10 +149,10 @@ color: #5c0931;
     display: none; 
   }
 .resume-bg{
-    background: linear-gradient(149deg, rgb(198, 196, 196) 0%, #5c0931 99.08%);
+    background: linear-gradient(149deg, #6d485a 0%, #5c0931 99.08%);
 }
 .resume-bg:hover{
-    background: linear-gradient(149deg, rgb(228, 222, 200) 0%, #55082d 99.08%);
+    background: linear-gradient(149deg, #925a75 0%, #55082d 99.08%);
 }
 .swiper-pagination-bullet-active{
     background: #8E2157;
