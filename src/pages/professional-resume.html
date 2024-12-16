@@ -272,7 +272,7 @@
           <div class="flex flex-col gap-1">
             <div class="flex flex-wrap gap-3 justify-between w-full">
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight">
                   Tailored Resume
@@ -283,7 +283,7 @@
               </div>
 
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight"
                   >ATS Friendly format
@@ -295,7 +295,7 @@
               </div>
 
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight">
                   Editable file provided
@@ -307,7 +307,7 @@
               </div>
 
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight">
                   No page limits
@@ -319,7 +319,7 @@
               </div>
 
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight">
                   Lifetime Free Update
@@ -330,7 +330,7 @@
               </div>
 
               <div
-                class="h-28 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
+                class="h-32 flex flex-col gap-1 c-w-48 rounded-xl shadow-sm shadow-black/40 resume-bg px-3 py-3"
               >
                 <span class="text-sm font-medium text-white tracking-tight">
                   Delivery in 2 days
@@ -1357,6 +1357,21 @@
           },
         });
       }, 100);
+
+            // swipper
+            var swiper = new Swiper(".addSwiper", {
+        speed: 600,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
 
       // accordian & its animation
       const accordionHeaders = document.querySelectorAll(".accordion-header");
