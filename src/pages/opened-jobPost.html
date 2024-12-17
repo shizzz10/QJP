@@ -986,20 +986,27 @@
         </a>
       </div>
 
-      <!-- WhatsApp icon  -->
-      <div
-        class="fixed bottom-14  right-2  bg-green-400 flex items-center justify-center hover:bg-green-500 h-14 w-14  rounded-full z-20 opacity-90"
-      >
-        <a href="" class="flex">
-          <div class="flex flex-col  items-center justify-center">
-            <img src="../assets/whatsapp.svg" class="w-6 flex mt-0.5" alt="" />
-            <span
-              class="flex flex-col items-center font-medium c-text-uxs sm:text-sm text-white tracking-tight"
-              > <span>WhatsApp</span> <span>Alerts</span>  </span
-            >
-          </div>
-        </a>
-      </div>
+             <!-- WhatsApp icon  -->
+             <div
+             class="fixed bottom-14 right-2 bg-slate-400 flex items-center hover:bg-green-500 h-7 w-32 rounded-full z-20 opacity-90"
+           >
+             <a href="" class="flex w-full">
+               <div class="flex justify-between items-center w-full">
+                 <div class="ml-2 flex w-full">
+                   <span
+                     class="flex font-medium text-white tracking-tight  c-text-uxs break-keep"
+                     >WhatsApp Job Alerts</span
+                   >
+                 </div>
+     
+                 <div
+                   class="flex justify-end bg-green-400 hover:bg-green-500 rounded-full ml-auto h-8 px-2"
+                 >
+                   <img src="../assets/whatsapp.svg" class="w-6 flex" alt="" />
+                 </div>
+               </div>
+             </a>
+           </div>
     </footer>
     
   </div>
@@ -1493,39 +1500,6 @@ selectedBtn.classList.remove("text-white");
       });
 
       
-       // accordian & its animation
-       const accordionHeaders = document.querySelectorAll(".accordion-header");
-      accordionHeaders.forEach((header) => {
-        header.addEventListener("click", () => {
-          const content = header.nextElementSibling;
-          const arrow = header.querySelector(".arrow");
-
-          if (content.classList.contains("hidden")) {
-            content.classList.remove("hidden");
-            requestAnimationFrame(() => {
-              content.classList.add("opacity-100", "scale-y-100");
-              content.classList.remove("opacity-0", "scale-y-0");
-            });
-          } else {
-            // Start collapsing animation
-            content.classList.add("opacity-0", "scale-y-0");
-            content.classList.remove("opacity-100", "scale-y-100");
-
-            // Wait for the animation to complete before adding 'hidden'
-            content.addEventListener(
-              "transitionend",
-              () => {
-                content.classList.add("hidden");
-              },
-              { once: true }
-            );
-          }
-
-          // Rotate the arrow
-          arrow.classList.toggle("rotate-180");
-        });
-      });
-
     </script>
   </body>
 </html>

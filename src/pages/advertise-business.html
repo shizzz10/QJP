@@ -29,19 +29,19 @@
               >
               <!-- slider  -->
                 <div
-                  class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-1/2 h-full bg-white bg-opacity-95 c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
+                  class="px-2 sm:px-4 py-1 slider-bg absolute top-0 right-0 w-1/2 h-full bg-white bg-opacity-95 c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
                 ></div>
                 <button
                   id="jobSeekerTabBtn"
                   onclick="showTab(0, 'jobSeekerTab', this)"
-                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-1 m-color"
+                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-1 text-white"
                 >
                   JobSeeker
                 </button>
                 <button
                   id="businessTabBtn"
                   onclick="showTab(1, 'businessTab', this)"
-                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 text-white"
+                  class="tab-btn font-medium text-xs sm:text-sm lg:text-lg w-20 sm:w-32 lg:w-32 rounded-full transition-transform duration-300 ease-in-out transform overflow-hidden scale-100 hover:scale-105 m-color"
                 >
                   Business
                 </button>
@@ -1047,7 +1047,8 @@ document.getElementById(tabId).classList.remove("hidden");
 
 // Move the slider
 const sliderBg = document.querySelector(".slider-bg");
-sliderBg.style.transform = `translateX(${index * 100}%)`;
+// Reverse the direction of translateX since slider is anchored to the right
+sliderBg.style.transform = `translateX(${(index - 1) * 100}%)`;
 
 // Reset all buttons to their default text color
 const buttons = document.querySelectorAll(".tab-btn");

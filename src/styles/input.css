@@ -34,6 +34,12 @@ h1,h2,h3,h4,h5,h6{
 .b-color{
 color: #5c0931;
 }
+.b-bg-h-color{
+    background-color: #5c0931;
+}
+.b-bg-h-color:hover{
+    background-color: #4f0629;
+}
 .m-color{
     color: #5c0931 !important;
 }
