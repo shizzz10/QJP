@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../styles/output.css" />
-    <title>Edit Profile</title>
+    <title>Find Job</title>
   </head>
   <body>
     <header>
@@ -83,332 +87,2425 @@
       </div>
     </header>
 
-    <!-- deafultContent tab  -->
+    <!-- Content tab  -->
     <div id="deafultContent" class="">
       <main class="main !mt-14 !mb-14">
         <div class="flex flex-col gap-4">
-          <!-- profile card  -->
-          <form
-            id="editForm"
-            class="flex flex-col gap-3 bg-white hover:bg-stone-50 px-3 py-4 rounded-xl shadow-sm shadow-black/40"
+          <!-- Job Numbers searchBar Div   -->
+          <div
+            class="flex flex-col gap-4 bg-white px-2 py-3 rounded-lg shadow-sm shadow-black/20"
           >
-            <!-- profile pic  -->
-            <div class="flex justify-center">
-              <!-- profile Picture   -->
-              <div class="flex flex-col gap-1 items-center justify-center">
-                <div
-                  class="flex rounded-full border-4 w-24 h-24 justify-center items-center flex-shrink-0"
-                >
-                  <img
-                    id="profileImage"
-                    src="../assets/user.svg"
-                    class="w-20 h-20 rounded-full object-cover object-top"
-                    alt=""
-                  />
-                </div>
-                <!-- File Input for Upload -->
-                <div class="flex flex-col justify-center items-center">
-                  <div
-                    class="b-bg-h-color flex gap-1 rounded-full pr-2 items-center border border-white"
-                  >
-                    <picture
-                      class="bg-white hover:bg-slate-100 rounded-full border border-white"
-                    >
-                      <img
-                        src="../assets/upload-photo.svg"
-                        alt=""
-                        class="w-4 m-1"
-                      />
-                    </picture>
-
-                    <label
-                      for="uploadImage"
-                      class="font-semibold cursor-pointer text-sm text-white"
-                    >
-                      Upload Photo
-                    </label>
-                    <input
-                      id="uploadImage"
-                      type="file"
-                      accept="image/*"
-                      class="hidden"
-                    />
-                  </div>
-                  <span class="flex c-text-sm text-stone-800 tracking-tight"
-                    >Less than 10 KB only</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- input text fields  -->
-
-            <div class="flex flex-col gap-2">
-              <!-- Name  -->
-              <div class="flex">
-                <input
-                  required
-                  type="text"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Enter You Name here (As per QID)"
-                />
-              </div>
-              <!-- Profession  -->
-              <div class="flex">
-                <select
-                  required
-                  name=""
-                  class="w-full rounded-full border px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157]"
-                >
-                  <option value="" disabled selected>
-                    Select a profession
-                  </option>
-                  <option value="doctor">Doctor</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="developer">Developer</option>
-                  <option value="designer">Designer</option>
-                </select>
-              </div>
-              <!-- About Me  -->
-              <div class="flex flex-col">
-                <label for="aboutMe" class="font-medium text-xs pl-2">
-                  About Me</label
-                >
-                <textarea
-                  required
-                  rows="3"
-                  name=""
-                  id="aboutMe"
-                  class="border w-full rounded-lg text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                >
-Describe yourself</textarea
-                >
-              </div>
-              <!-- Highest Qualification  -->
-              <div class="flex flex-col">
-                <label
-                  for="highestQualification"
-                  class="font-medium text-xs pl-2"
-                >
-                  Highest Qualification</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="highestQualification"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Please write you Highest Qualification"
-                />
-              </div>
-
-              <!-- Total Experience  -->
-              <div class="flex flex-col">
-                <label for="totalExp" class="font-medium text-xs pl-2">
-                  Total Experience</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="totalExp"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Total Experience"
-                />
-              </div>
-
-              <!-- Gulf Experience  -->
-              <div class="flex flex-col">
-                <label for="gulfExp" class="font-medium text-xs pl-2">
-                  Gulf Experience</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="gulfExp"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Whole Gulf Experience"
-                />
-              </div>
-
-              <!-- Driving License  -->
-              <div class="flex flex-col">
-                <label for="drivingLicense" class="font-medium text-xs pl-2">
-                  Driving License</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="drivingLicense"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Your Driving License"
-                />
-              </div>
-
-              <!-- Current Location  -->
-              <div class="flex flex-col">
-                <label for="currLocation" class="font-medium text-xs pl-2">
-                  Current Location</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="currLocation"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Current Location"
-                />
-              </div>
-
-              <!-- Nationality  -->
-              <div class="flex flex-col">
-                <label for="nationality" class="font-medium text-xs pl-2">
-                  Nationality</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="nationality"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write your Country"
-                />
-              </div>
-
-              <!-- Current Salary  -->
-              <div class="flex flex-col">
-                <label for="currSalary" class="font-medium text-xs pl-2">
-                  Current Salary</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="currSalary"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Current Salary"
-                />
-              </div>
-
-              <!-- Expected Salary  -->
-              <div class="flex flex-col">
-                <label for="expectedSalary" class="font-medium text-xs pl-2">
-                  Expected Salary</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="expectedSalary"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Expected Salary"
-                />
-              </div>
-
-              <!-- Email  -->
-              <div class="flex flex-col">
-                <label for="email" class="font-medium text-xs pl-2">
-                  Email</label
-                >
-                <input
-                  required
-                  type="email"
-                  id="email"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Please Enter Your Email"
-                />
-              </div>
-
-              <!-- Contact Number  -->
-              <div class="flex flex-col">
-                <label for="number" class="font-medium text-xs pl-2">
-                  Contact Number</label
-                >
-                <input
-                  required
-                  type="text"
-                  id="number"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Please Enter Your Number"
-                />
-                <div class="flex justify-between px-3">
-                  <div class="flex">
-                    <span class="text-stone-700 c-text-xs">
-                      Do you want to Public Your Number</span
-                    >
-                  </div>
-                  <!-- yes no radio -->
-                  <div class="flex gap-2">
-                    <!-- yes  -->
-                    <div class="flex gap-0.5 c-text-uxs items-center">
-                      <input
-                        type="radio"
-                        name="contactNum"
-                        class="c-accent"
-                        id="yes"
-                      />
-                      <label for="yes" class="c-text-sm">Yes</label>
-                    </div>
-                    <!-- no  -->
-                    <div class="flex gap-0.5 c-text-uxs items-center">
-                      <input
-                        type="radio"
-                        name="contactNum"
-                        class="c-accent"
-                        id="no"
-                      />
-                      <label for="no" class="c-text-sm">No</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- LinkedIn Profile  -->
-              <div class="flex flex-col">
-                <label for="linkedin" class="font-medium text-xs pl-2">
-                  LinkedIn Profile Link (Optional)</label
-                >
-                <input
-                  type="url"
-                  id="linkedin"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Please Provide the url"
-                />
-              </div>
-
-              <!-- QID  -->
-              <div class="flex flex-col">
-                <label for="qid" class="font-medium text-xs pl-2"> QID</label>
-                <input
-                  required
-                  type="text"
-                  id="qid"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Enter Your Valid Qatar ID 11 Digits"
-                />
-                <span class="text-stone-700 c-text-uxs px-3">
-                  The QID will be not be Public and only be used for validating
-                  the information.</span
-                >
-              </div>
-
-              <!-- Date Of Birth  -->
-              <div class="flex flex-col">
-                <label for="dob" class="font-medium text-xs pl-2">
-                  Date Of Birth</label
-                >
-                <input
-                  required
-                  type="date"
-                  id="dob"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                />
-              </div>
-
-              <!-- submit button  -->
-              <button
-                type="submit"
-                class="px-5 py-1 m-btn text-sm rounded-full"
+            <!-- Job Numbers  -->
+            <div class="flex justify-center gap-2">
+              <div
+                class="flex flex-col items-center transparent-bg-color px-1.5 w-28 py-2 rounded-xl"
               >
-                Submit
-              </button>
+                <span class="m-color text-sm tracking-tight">Listed Jobs</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >4150</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center transparent-bg-color px-1.5 w-28 py-2 rounded-xl"
+              >
+                <span class="m-color text-sm tracking-tight">Job Applies</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >5150</span
+                >
+              </div>
+
+              <div
+                class="flex flex-col items-center transparent-bg-color px-1.5 w-28 py-2 rounded-xl"
+              >
+                <span class="m-color text-sm tracking-tight">Jobseekers</span>
+                <span class="m-color text-2xl font-bold tracking-tighter"
+                  >9350</span
+                >
+              </div>
             </div>
-          </form>
+
+            <!-- Search bar  -->
+            <div class="flex flex-col gap-1">
+              <div class="relative flex">
+                <input
+                  type="text"
+                  placeholder="Search Jobs here"
+                  class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-2 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                />
+                <img
+                  src="../assets/search.svg"
+                  class="w-4 absolute top-2.5 right-3"
+                  alt=""
+                />
+              </div>
+              <!-- filters -->
+              <div class="flex justify-end items-end">
+                <a
+                  href="./advancedFilter-jobs.html"
+                  class="text-black text-xs c-underline"
+                >
+                  Use Advance Filters</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- services -->
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/star.svg" class="w-3" alt="" />
+              <h4 class="text-base font-medium m-color">Job Seeker Services</h4>
+            </div>
+
+            <div class="flex gap-2 flex-wrap justify-between w-full">
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-pink-50 hover:bg-pink-200 active:bg-pink-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <span
+                  class="text-sm font-semibold text-pink-400 absolute bottom-14 left-1 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[70%] leading-4"
+                >
+                  Professional Resume
+                </span>
+                <span
+                  class="c-text-sm font-medium text-stone-400 absolute bottom-5 left-1 transition-all duration-500 sm:group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100 w-[70%] leading-3"
+                >
+                  Starting from : <span>QAR 150</span>
+                </span>
+                <a
+                  href="block"
+                  class="hidden sm:!flex bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                >
+                  Learn More
+                </a>
+
+                <!-- emoji -->
+                <picture
+                  class="absolute -right-16 -top-2 bg-pink-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                >
+                </picture>
+
+                <img
+                  src="../assets/resume-emoji.webp"
+                  class="h-8 absolute right-1 top-8"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-blue-50 hover:bg-blue-200 active:bg-blue-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <span
+                  class="text-sm font-semibold text-blue-400 absolute bottom-14 left-1 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[70%] leading-4"
+                >
+                  Linkedin profile Optimization
+                </span>
+                <span
+                  class="c-text-sm font-medium text-stone-400 absolute bottom-5 left-1 transition-all duration-500 sm:group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100 w-[70%] leading-3"
+                >
+                  Starting from : <span>QAR 150</span>
+                </span>
+                <a
+                  href="block"
+                  class="hidden sm:!flex bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                >
+                  Learn More
+                </a>
+
+                <!-- emoji -->
+                <picture
+                  class="absolute -right-16 -top-2 bg-blue-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                >
+                </picture>
+
+                <img
+                  src="../assets/linkedin-emoji.webp"
+                  class="h-8 absolute right-1 top-8"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-purple-50 hover:bg-purple-200 active:bg-purple-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <span
+                  class="text-sm font-semibold text-purple-400 absolute bottom-14 left-1 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[70%] leading-4"
+                >
+                  WhatsApp Job Alert
+                </span>
+                <span
+                  class="c-text-sm font-medium text-stone-400 absolute bottom-5 left-1 transition-all duration-500 sm:group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100 w-[70%] leading-3"
+                >
+                  Starting from : <span>QAR 150</span>
+                </span>
+                <a
+                  href="block"
+                  class="hidden sm:!flex bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                >
+                  Learn More
+                </a>
+
+                <!-- emoji -->
+                <picture
+                  class="absolute -right-16 -top-2 bg-purple-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                >
+                </picture>
+
+                <img
+                  src="../assets/whatsapp-emoji.webp"
+                  class="h-8 absolute right-1 top-8"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-green-50 hover:bg-green-200 active:bg-green-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <span
+                  class="text-sm font-semibold text-green-400 absolute bottom-14 left-1 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[70%] leading-4"
+                >
+                  Become Feature
+                </span>
+                <span
+                  class="c-text-sm font-medium text-stone-400 absolute bottom-5 left-1 transition-all duration-500 sm:group-hover:bottom-8 lg:group-hover:bottom-8 group-hover:opacity-100 group.active:bottom-8 group.active:opacity-100 w-[70%] leading-3"
+                >
+                  Starting from : <span>QAR 150</span>
+                </span>
+                <a
+                  href="block"
+                  class="hidden sm:!flex bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                >
+                  Learn More
+                </a>
+
+                <!-- emoji -->
+                <picture
+                  class="absolute -right-16 -top-2 bg-green-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                >
+                </picture>
+
+                <img
+                  src="../assets/become-feature-emoji.webp"
+                  class="h-8 absolute right-1 top-8"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured jobs  -->
+          <div class="swiper mySwiper w-full flex flex-col gap-2">
+            <!-- head -->
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2">
+                <img src="../assets/star.svg" class="w-3" alt="" />
+                <h4 class="text-base font-medium m-color">Featured Jobs</h4>
+              </div>
+              <div>
+                <a href="" class="c-underline text-xs">View All</a>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper">
+              <!-- 1st slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!--  2nd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- 4th slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination relative mt-2"></div>
+          </div>
+
+          <!-- Hot jobs  -->
+          <div class="swiper mySwiper w-full flex flex-col gap-2">
+            <!-- head -->
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2">
+                <img src="../assets/star.svg" class="w-3" alt="" />
+                <h4 class="text-base font-medium m-color">Hot Jobs</h4>
+              </div>
+              <div>
+                <a href="" class="c-underline text-xs">View All</a>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper">
+              <!-- 1st slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!--  2nd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- 4th slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination relative mt-2"></div>
+          </div>
+
+          <!-- Latest jobs  -->
+          <div class="swiper mySwiper w-full flex flex-col gap-2">
+            <!-- head -->
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2">
+                <img src="../assets/star.svg" class="w-3" alt="" />
+                <h4 class="text-base font-medium m-color">Latest Jobs</h4>
+              </div>
+              <div>
+                <a href="" class="c-underline text-xs">View All</a>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper">
+              <!-- 1st slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!--  2nd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- 4th slide -->
+              <div
+                class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
+              >
+                <!-- Card 1 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-1">
+                    <span class="text-sm font-medium">Frontend Engineer</span>
+                    <span class="text-xs text-stone-800">Amazon</span>
+                  </div>
+                  <div class="flex flex-col justify-end items-end gap-1">
+                    <a
+                      href="./opened-jobPost.html"
+                      class="px-5 py-1 m-btn text-sm rounded-full"
+                      >Apply</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      117 Applicants
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination relative mt-2"></div>
+          </div>
+
+          <!-- Jobs by Department  -->
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2">
+                <img src="../assets/star.svg" class="w-4" alt="" />
+                <h4 class="text-base font-medium m-color">
+                  Jobs By Department
+                </h4>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
+            >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Admin Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Procurement Jobs<span class="ml-1"> (05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Business Development Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Engineering Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >R&D Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Finance Banking <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Sales & Marketing Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >HR Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Skilled Worker Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >HSE Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Supply Chain Jobs <span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Operational Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Health Care Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Other Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >IT Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >QA/QC Jobs<span class="ml-1">(05)</span></a
+              >
+            </div>
+          </div>
+
+          <!-- Jobs by Industry  -->
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-center">
+              <div class="flex gap-2">
+                <img src="../assets/star.svg" class="w-4" alt="" />
+                <h4 class="text-base font-medium m-color">Jobs By Industry</h4>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-wrap gap-2 text-slate-700 w-full justify-between bg-white shadow-sm shadow-black/40 px-3 py-3 rounded-lg"
+            >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Advertisement Agency Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Energy Sector Jobs<span class="ml-1"> (05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Airline Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Fashion Beauty Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Automotive Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >FMGC Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Construction Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Freelance Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Consultancy Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Delivery Service Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >General Trading Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Ecommerce Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Education/Institutian Jobs<span class="ml-1">(05)</span></a
+              >
+
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Hospital/Pharmacy Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Hotel/Resort Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Household Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Legal Services Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Manufacturing Industry Jobs<span class="ml-1">(05)</span></a
+              >
+
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Media and News Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Oil and Gas Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Pharma Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Printing and Packaging Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Real Estate Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Retail/Shoping Center Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Recruitment Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Restaurant Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Software House Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Sports and Leisure Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Telecom Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Textile Jobs<span class="ml-1">(05)</span></a
+              >
+              <a href="" class="text-xs c-w-48 tracking-tight"
+                >Other Industry<span class="ml-1">(05)</span></a
+              >
+            </div>
+          </div>
         </div>
       </main>
 
@@ -459,11 +2556,11 @@ Describe yourself</textarea
 
         <!-- WhatsApp icon  -->
         <div
-          class="fixed bottom-14 right-2 bg-green-300 flex items-center hover:bg-green-500 h-7 w-32 rounded-full z-20 opacity-90"
+          class="fixed bottom-14 right-2 bg-slate-400 flex items-center hover:bg-green-500 h-7 w-32 rounded-full z-20 opacity-90"
         >
           <a href="" class="flex w-full">
             <div class="flex justify-between items-center w-full">
-              <div class="ml-1 flex w-full">
+              <div class="ml-2 flex w-full">
                 <span
                   class="flex font-medium text-white tracking-tight c-text-uxs break-keep"
                   >WhatsApp Job Alerts</span
@@ -904,21 +3001,8 @@ Describe yourself</textarea
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      // image upload
-      const uploadImage = document.getElementById("uploadImage");
-      const profileImage = document.getElementById("profileImage");
-
-      // Handle image preview
-      uploadImage.addEventListener("change", (event) => {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = (e) => (profileImage.src = e.target.result);
-          reader.readAsDataURL(file);
-        }
-      });
-
       function showTab(index, tabId, selectedBtn) {
         // Hide the default global data when any tab is activated
         const deafultContent = document.getElementById("deafultContent");
@@ -945,6 +3029,24 @@ Describe yourself</textarea
         selectedBtn.classList.remove("text-white");
       }
 
+      // services animation
+      function toggleContent(element, event) {
+        event.stopPropagation();
+        document.querySelectorAll(".group").forEach((card) => {
+          if (card !== element) {
+            card.classList.remove("active");
+          }
+        });
+        element.classList.toggle("active");
+      }
+      document.addEventListener("click", (event) => {
+        document.querySelectorAll(".group").forEach((card) => {
+          if (!card.contains(event.target)) {
+            card.classList.remove("active");
+          }
+        });
+      });
+
       // country filter
       const selectedCountry = document.querySelector("#selected-country");
       const countryList = document.querySelector("#country-list");
@@ -966,25 +3068,18 @@ Describe yourself</textarea
         });
       });
 
-      // business tab animation
-
-      // image overlay
-      function toggleContent(element, event) {
-        event.stopPropagation();
-        document.querySelectorAll(".group").forEach((card) => {
-          if (card !== element) {
-            card.classList.remove("active");
-          }
-        });
-        element.classList.toggle("active");
-      }
-
-      document.addEventListener("click", (event) => {
-        document.querySelectorAll(".group").forEach((card) => {
-          if (!card.contains(event.target)) {
-            card.classList.remove("active");
-          }
-        });
+      // swipper
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
       });
     </script>
   </body>
