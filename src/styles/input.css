@@ -163,6 +163,16 @@ color: #5c0931;
 .swiper-pagination-bullet-active{
     background: #5c0931;
   }
+
+  .contact-us-bg{
+    background-image: url("../assets/qatar-tower.jpg");
+    object-fit: cover;
+    object-position: center;
+    background-size: cover; 
+    /* background-position: center;  */
+    position: relative; 
+
+  }
 @media (min-width: 640px){
     .main {
         display: flex;
