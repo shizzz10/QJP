@@ -165,7 +165,7 @@ color: #5c0931;
   }
 
   .contact-us-bg{
-    background-image: url("../assets/qatar-tower.jpg");
+    background-image: url("../assets/qatar-tower.webp");
     object-fit: cover;
     object-position: center;
     background-size: cover; 

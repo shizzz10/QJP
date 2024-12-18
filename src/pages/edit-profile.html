@@ -7,7 +7,6 @@
     <title>Edit Profile</title>
   </head>
   <body>
-    
     <header>
       <div
         class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
@@ -24,7 +23,7 @@
               <div
                 class="border h-7 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
               >
-              <!-- slider  -->
+                <!-- slider  -->
                 <div
                   class="px-2 sm:px-4 py-1 slider-bg absolute top-0 left-0 w-1/2 h-full bg-white bg-opacity-95 c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
                 ></div>
@@ -84,12 +83,9 @@
       </div>
     </header>
 
-    
-      <!-- deafultContent tab  -->
-      <div id="deafultContent" class="">
-
-    <main class="main !mt-14 !mb-14">
-
+    <!-- deafultContent tab  -->
+    <div id="deafultContent" class="">
+      <main class="main !mt-14 !mb-14">
         <div class="flex flex-col gap-4">
           <!-- QID Verification  -->
           <form
@@ -169,24 +165,32 @@
                 </div>
                 <!-- File Input for Upload -->
                 <div class="flex flex-col justify-center items-center">
-                  <div class="b-bg-h-color flex gap-1 rounded-full pr-2  items-center border border-white">
-                    <picture class="bg-white hover:bg-slate-100  rounded-full border border-white">
-                      <img src="../assets/upload-photo.svg" alt="" class="w-4 m-1">
-                    </picture>
-                 
-                  <label
-                    for="uploadImage"
-                    class="font-semibold cursor-pointer text-sm text-white"
+                  <div
+                    class="b-bg-h-color flex gap-1 rounded-full pr-2 items-center border border-white"
                   >
-                    Upload Photo
-                  </label>
-                  <input
-                    id="uploadImage"
-                    type="file"
-                    accept="image/*"
-                    class="hidden"
-                  />
-                </div>
+                    <picture
+                      class="bg-white hover:bg-slate-100 rounded-full border border-white"
+                    >
+                      <img
+                        src="../assets/upload-photo.svg"
+                        alt=""
+                        class="w-4 m-1"
+                      />
+                    </picture>
+
+                    <label
+                      for="uploadImage"
+                      class="font-semibold cursor-pointer text-sm text-white"
+                    >
+                      Upload Photo
+                    </label>
+                    <input
+                      id="uploadImage"
+                      type="file"
+                      accept="image/*"
+                      class="hidden"
+                    />
+                  </div>
                   <span class="c-text-sm text-stone-800 tracking-tight"
                     >Less than 10 KB only</span
                   >
@@ -196,31 +200,123 @@
 
             <!-- input text fields  -->
 
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-2.5">
               <!-- Name  -->
               <div class="flex">
                 <input
-                required
+                  required
+                  name=""
+                  id="name"
                   type="text"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                   placeholder="Enter You Name here (As per QID)"
                 />
               </div>
               <!-- Profession  -->
               <div class="flex">
                 <select
-                required
+                  required
                   name=""
-                  class="w-full rounded-full border px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157]"
+                  id="profession"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
                 >
                   <option value="" disabled selected>
                     Select a profession
                   </option>
-                  <option value="doctor">Doctor</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="developer">Developer</option>
-                  <option value="designer">Designer</option>
+                  <option value="3D_Designer">3D Designer</option>
+                  <option value="AC_Technician">AC Technician</option>
+                  <option value="Accounts">Accounts / Finance</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Architect">
+                    Architect / Interior Designer
+                  </option>
+                  <option value="Arabic_Translator">Arabic Translator</option>
+                  <option value="Barista">Barista / Bartender</option>
+                  <option value="Business_Developer">Business Developer</option>
+                  <option value="Carpenter">Carpenter</option>
+                  <option value="Cabin_Crew">Cabin Crew</option>
+                  <option value="CCTV_Operator">CCTV Operator</option>
+                  <option value="Chemical_Engineer">Chemical Engineer</option>
+                  <option value="Chef">Chef / Cook</option>
+                  <option value="Chiropractor">Chiropractor</option>
+                  <option value="Civil_Engineer">Civil Engineer</option>
+                  <option value="Cleaner">Cleaner</option>
+                  <option value="Compliance">Compliance</option>
+                  <option value="Computer_Programmer">
+                    Computer Programmer
+                  </option>
+                  <option value="Crane_Operator">Crane Operator</option>
+                  <option value="Customer_Service">
+                    Customer Service Representative
+                  </option>
+                  <option value="Dental_Assistant">Dental Assistant</option>
+                  <option value="Digital_Marketer">Digital Marketer</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Document_Controller">
+                    Document Controller
+                  </option>
+                  <option value="Driver">Driver / Biker</option>
+                  <option value="Electrician">Electrician</option>
+                  <option value="Electrical_Engineer">
+                    Electrical Engineer
+                  </option>
+                  <option value="Environmental_Engineer">
+                    Environmental Engineer
+                  </option>
+                  <option value="Event_Manager">Event Manager</option>
+                  <option value="Firefighter">Firefighter</option>
+                  <option value="Foreman">Foreman / Supervisor</option>
+                  <option value="Generator_Operator">Generator Operator</option>
+                  <option value="Graphics_Designer">Graphics Designer</option>
+                  <option value="Gym_Instructor">Gym Instructor</option>
+                  <option value="Hair_Stylist">Hair Stylist / Barber</option>
+                  <option value="HR">HR</option>
+                  <option value="HSE">HSE</option>
+                  <option value="IT_Engineer">IT Engineer</option>
+                  <option value="Journalist">Journalist</option>
+                  <option value="Lawyer">Lawyer</option>
+                  <option value="Librarian">Librarian</option>
+                  <option value="Loader">Loader</option>
+                  <option value="Machinist">Machinist</option>
+                  <option value="Maid">Maid / Khadim(a)</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Mason">Mason</option>
+                  <option value="Masseur">Masseur / Massage Therapist</option>
+                  <option value="Mechanical_Engineer">
+                    Mechanical Engineer
+                  </option>
+                  <option value="Mechanic">Mechanic</option>
+                  <option value="Metal_Worker">Metal Worker</option>
+                  <option value="Nurse">Nurse</option>
+                  <option value="Painter">Painter</option>
+                  <option value="Pharmacist">Pharmacist</option>
+                  <option value="Photographer">Photographer</option>
+                  <option value="Petroleum_Engineer">Petroleum Engineer</option>
+                  <option value="Plumber">Plumber</option>
+                  <option value="Police_Officer">Police Officer</option>
+                  <option value="PRO">PRO</option>
+                  <option value="Psychologist">Psychologist</option>
+                  <option value="Quran_Teacher">Quran Teacher</option>
+                  <option value="Radiologist">Radiologist</option>
+                  <option value="Receptionist">Receptionist</option>
+                  <option value="Sales">Sales</option>
+                  <option value="Secretary">Secretary</option>
+                  <option value="Security">Security</option>
+                  <option value="Software_Engineer">Software Engineer</option>
+                  <option value="Steel_Fixer">Steel Fixer</option>
+                  <option value="Storekeeper">Storekeeper</option>
+                  <option value="Supply_Chain">
+                    Supply Chain / Procurement
+                  </option>
+                  <option value="Tailor">Tailor</option>
+                  <option value="Tea_Boy">Tea Boy / Office Boy</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Therapist">Therapist</option>
+                  <option value="Trainer">Trainer</option>
+                  <option value="Typist">Typist</option>
+                  <option value="Welder">Welder</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Not_Listed">Not listed</option>
                 </select>
               </div>
               <!-- About Me  -->
@@ -229,11 +325,11 @@
                   About Me</label
                 >
                 <textarea
-                required
+                  required
                   rows="3"
                   name=""
                   id="aboutMe"
-                  class="border w-full rounded-lg text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-lg text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                 >
 Describe yourself</textarea
                 >
@@ -241,74 +337,105 @@ Describe yourself</textarea
               <!-- Highest Qualification  -->
               <div class="flex flex-col">
                 <label
-                  for="highestQualification"
+                  for="highest_Qualification"
                   class="font-medium text-xs pl-2"
                 >
-                  Highest Qualification</label
+                  Highest Qualification
+                </label>
+                <select
+                  required
+                  name=""
+                  id="highest_Qualification"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
                 >
-                <input
-                required
-                  type="text"
-                  id="highestQualification"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Please write you Highest Qualification"
-                />
+                  <option value="" disabled selected>
+                    Highest Qualification
+                  </option>
+                  <option value="Matric">Matric</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Diploma">Diploma</option>
+                  <option value="Bachelors">Bachelors</option>
+                  <option value="Masters">Masters</option>
+                  <option value="PhD">PhD</option>
+                  <option value="Not_listed">Not listed</option>
+                </select>
               </div>
 
               <!-- Total Experience  -->
               <div class="flex flex-col">
-                <label for="totalExp" class="font-medium text-xs pl-2">
+                <label for="total_Experience" class="font-medium text-xs pl-2">
                   Total Experience</label
                 >
-                <input
-                required
-                  type="text"
-                  id="totalExp"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Total Experience"
-                />
+                <select
+                  required
+                  name=""
+                  id="total_Experience"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>Total Experience</option>
+                  <option value="No_Experience">No Experience</option>
+                  <option value="1year">1 - 2 Years</option>
+                  <option value="3year">3 - 5 Years</option>
+                  <option value="6year">6 - 10 Years</option>
+                  <option value="11year">11 - 20 Years</option>
+                  <option value="20year">20+ Years</option>
+                </select>
               </div>
 
               <!-- Gulf Experience  -->
               <div class="flex flex-col">
-                <label for="gulfExp" class="font-medium text-xs pl-2">
+                <label for="gulf_Experience" class="font-medium text-xs pl-2">
                   Gulf Experience</label
                 >
-                <input
-                required
-                  type="text"
-                  id="gulfExp"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Whole Gulf Experience"
-                />
+                <select
+                  required
+                  name=""
+                  id="gulf_Experience"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>Gulf Experience</option>
+                  <option value="gulf_No_Experience">No Experience</option>
+                  <option value="gulf_1year">1 - 2 Years</option>
+                  <option value="gulf_3year">3 - 5 Years</option>
+                  <option value="gulf_6year">6 - 10 Years</option>
+                  <option value="gulf_11year">11 - 20 Years</option>
+                  <option value="gulf_20year">20+ Years</option>
+                </select>
               </div>
 
               <!-- Driving License  -->
               <div class="flex flex-col">
-                <label for="drivingLicense" class="font-medium text-xs pl-2">
+                <label for="driving_License" class="font-medium text-xs pl-2">
                   Driving License</label
                 >
-                <input
-                required
-                  type="text"
-                  id="drivingLicense"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Your Driving License"
-                />
+                <select
+                  required
+                  name=""
+                  id="driving_License"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>Driving License</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="Under_progress">Under progress</option>
+                </select>
               </div>
 
               <!-- Current Location  -->
               <div class="flex flex-col">
-                <label for="currLocation" class="font-medium text-xs pl-2">
+                <label for="curr_Location" class="font-medium text-xs pl-2">
                   Current Location</label
                 >
-                <input
-                required
-                  type="text"
-                  id="currLocation"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Current Location"
-                />
+                <select
+                  required
+                  name=""
+                  id="curr_Location"
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>Current Location</option>
+                  <option value="Outside_Qatar">Outside Qatar</option>
+                  <option value="Qatar">Qatar</option>
+                </select>
               </div>
 
               <!-- Nationality  -->
@@ -316,13 +443,43 @@ Describe yourself</textarea
                 <label for="nationality" class="font-medium text-xs pl-2">
                   Nationality</label
                 >
-                <input
-                required
-                  type="text"
+
+                <select
+                  required
+                  name=""
                   id="nationality"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write your Country"
-                />
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>Nationality</option>
+                  <option value="American">American</option>
+                  <option value="Bangladeshi">Bangladeshi</option>
+                  <option value="British">British</option>
+                  <option value="Canadian">Canadian</option>
+                  <option value="Egyptian">Egyptian</option>
+                  <option value="Filipino">Filipino</option>
+                  <option value="French">French</option>
+                  <option value="German">German</option>
+                  <option value="Ghanaian">Ghanaian</option>
+                  <option value="Indian">Indian</option>
+                  <option value="Indonesian">Indonesian</option>
+                  <option value="Jordanian">Jordanian</option>
+                  <option value="Kenyan">Kenyan</option>
+                  <option value="Lebanese">Lebanese</option>
+                  <option value="Palestine">Palestine</option>
+                  <option value="Malaysian">Malaysian</option>
+                  <option value="Moroccan">Moroccan</option>
+                  <option value="Nepalese">Nepalese</option>
+                  <option value="Pakistani">Pakistani</option>
+                  <option value="South_African">South African</option>
+                  <option value="Sri_lankan">Sri Lankan</option>
+                  <option value="Sudanese">Sudanese</option>
+                  <option value="Sudanese">Sudanese</option>
+                  <option value="Syrian">Syrian</option>
+                  <option value="Tunisian">Tunisian</option>
+                  <option value="Turkish">Turkish</option>
+                  <option value="Ugandan">Ugandan</option>
+                  <option value="Not_listed">Not listed</option>
+                </select>
               </div>
 
               <!-- Current Salary  -->
@@ -330,13 +487,26 @@ Describe yourself</textarea
                 <label for="currSalary" class="font-medium text-xs pl-2">
                   Current Salary</label
                 >
-                <input
-                required
-                  type="text"
+                <select
+                  required
+                  name=""
                   id="currSalary"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Current Salary"
-                />
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>
+                    Your Current Salary
+                  </option>
+                  <option value="unemployed">Unemployed</option>
+                  <option value="1k_qar">1000 - 2000 QAR</option>
+                  <option value="2k_qar">2000 - 4000 QAR</option>
+                  <option value="4k_qar">4000 - 6000 QAR</option>
+                  <option value="6k_qar">6000 - 8000 QAR</option>
+                  <option value="8k_qar">8000 - 10,000 QAR</option>
+                  <option value="10k_qar">10,000 - 15,000 QAR</option>
+                  <option value="15k_qar">15,000 - 20,000 QAR</option>
+                  <option value="20k_qar">20,000 - 30,000 QAR</option>
+                  <option value="30k_qar">30,000+ QAR</option>
+                </select>
               </div>
 
               <!-- Expected Salary  -->
@@ -344,13 +514,25 @@ Describe yourself</textarea
                 <label for="expectedSalary" class="font-medium text-xs pl-2">
                   Expected Salary</label
                 >
-                <input
-                required
-                  type="text"
+                <select
+                  required
+                  name=""
                   id="expectedSalary"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
-                  placeholder="Write Your Expected Salary"
-                />
+                  class="w-full rounded-full border px-2 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#8E2157] shadow-sm shadow-black/5"
+                >
+                  <option value="" disabled selected>
+                    Your Expected Salary
+                  </option>
+                  <option value="exp_1k_qar">1000 - 2000 QAR</option>
+                  <option value="exp_2k_qar">2000 - 4000 QAR</option>
+                  <option value="exp_4k_qar">4000 - 6000 QAR</option>
+                  <option value="exp_6k_qar">6000 - 8000 QAR</option>
+                  <option value="exp_8k_qar">8000 - 10,000 QAR</option>
+                  <option value="exp_10k_qar">10,000 - 15,000 QAR</option>
+                  <option value="exp_15k_qar">15,000 - 20,000 QAR</option>
+                  <option value="exp_20k_qar">20,000 - 30,000 QAR</option>
+                  <option value="exp_30k_qar">30,000+ QAR</option>
+                </select>
               </div>
 
               <!-- Email  -->
@@ -359,10 +541,10 @@ Describe yourself</textarea
                   Email</label
                 >
                 <input
-                required
+                  required
                   type="email"
                   id="email"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                   placeholder="Please Enter Your Email"
                 />
               </div>
@@ -373,10 +555,10 @@ Describe yourself</textarea
                   Contact Number</label
                 >
                 <input
-                required
+                  required
                   type="text"
                   id="number"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                   placeholder="Please Enter Your Number"
                 />
                 <div class="flex justify-between px-3">
@@ -419,7 +601,7 @@ Describe yourself</textarea
                 <input
                   type="url"
                   id="linkedin"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                   placeholder="Please Provide the url"
                 />
               </div>
@@ -428,10 +610,10 @@ Describe yourself</textarea
               <div class="flex flex-col">
                 <label for="qid" class="font-medium text-xs pl-2"> QID</label>
                 <input
-                required
+                  required
                   type="text"
                   id="qid"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                   placeholder="Enter Your Valid Qatar ID 11 Digits"
                 />
                 <span class="text-stone-700 c-text-uxs px-3">
@@ -449,489 +631,511 @@ Describe yourself</textarea
                   required
                   type="date"
                   id="dob"
-                  class="border w-full rounded-full text-xs px-2 py-1 focus:border-[#8E2157] focus:outline-none"
+                  class="border w-full rounded-full text-xs px-2 py-2 focus:border-[#8E2157] focus:outline-none shadow-sm shadow-black/5"
                 />
               </div>
 
               <!-- submit button  -->
               <button
                 type="submit"
-                class="px-5 py-1 m-btn text-sm rounded-full"
+                class="px-5 py-1 m-btn text-sm rounded-full shadow-sm shadow-black/15"
               >
                 Submit
               </button>
             </div>
           </form>
         </div>
+      </main>
 
-    </main>
-
-    
-   
-    <footer class="px-0 ">
-      <div
-        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 b-bg-color border-t-4 border-white "
-      >
-        <a href="./find-job.html" class="flex">
-          <div class="flex flex-col items-center gap-0.5">
-            <img src="../assets/job.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Find Job</span
-            >
-          </div>
-        </a>
-
-        <a href="./professional-resume.html" class="flex">
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/cv.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Pro CV</span
-            >
-          </div>
-        </a>
-
-        <a href="./feature-profile.html" class="flex">
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Become Feature</span
-            >
-          </div>
-        </a>
-
-        <a href="./register-profile.html" class="flex">
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/register.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Register</span
-            >
-          </div>
-        </a>
-      </div>
-
-      <!-- WhatsApp icon  -->
-      <div
-        class="fixed bottom-14  right-2  bg-green-400 flex items-center justify-center hover:bg-green-500 h-14 w-14  rounded-full z-20 opacity-90"
-      >
-        <a href="" class="flex">
-          <div class="flex flex-col  items-center justify-center">
-            <img src="../assets/whatsapp.svg" class="w-6 flex mt-0.5" alt="" />
-            <span
-              class="flex flex-col items-center font-medium c-text-uxs sm:text-sm text-white tracking-tight"
-              > <span>WhatsApp</span> <span>Alerts</span>  </span
-            >
-          </div>
-        </a>
-      </div>
-    </footer>
-
-      </div>
-
-
-    
-   
-   
-      <!-- JobSeeker tab  -->
-      <div id="jobSeekerTab" class="hidden">
-        <main class="main !mt-14 !mb-14">
-          
-    
-          <!-- body  -->
-          <div class="flex flex-col gap-4 rounded-xl">
-    
-    
-             <!-- find talent  -->
-             <a href="./feature-profile.html" class="">
-              <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-               <!-- image section  -->
-               <div class="relative w-full h-[200px]   rounded-t-2xl object">
-                 <img
-                   src="../assets/jobseeker.webp"
-                   class="w-full h-full object-cover object-top transition-transform duration-500"
-                   alt="jobseeker"
-                 />
-               </div>
-     
-               <!-- text section  -->
-                <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-                  
-                  <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                 <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-     
-                   <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-     
-                   <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-                   <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-                 </span>
-                 </span>
-                 </div>
-     
-                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                 <h2
-                   class="text-white text-lg font-semibold"
-                 >
-                 Feature your profile
-                 </h2>
-     
-                 <span class="text-stone-100 text-sm">Showcase Your Profile, Get Noticed.</span>
-     
-               </div>
-                </div>
-     
-     
-     
-              </div>
-             </a>
-     
-    
-             <!-- Get a Professional Resume  -->
-             <a href="./professional-resume.html" class="">
-              <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-               <!-- image section  -->
-               <div class="relative w-full h-[200px]   rounded-t-2xl object">
-                 <img
-                   src="../assets/business.webp"
-                   class="w-full h-full object-cover object-top transition-transform duration-500"
-                   alt="jobseeker"
-                 />
-               </div>
-     
-               <!-- text section  -->
-                <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-                  
-                  <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                 <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-     
-                   <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-     
-                   <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-                   <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-                 </span>
-                 </span>
-                 </div>
-     
-                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                 <h2
-                   class="text-white text-lg font-semibold"
-                 >
-                 Get a Professional Resume
-                 </h2>
-     
-                 <span class="text-stone-100 text-sm">Your Dream Job Starts with a Perfect Resume.</span>
-     
-               </div>
-                </div>
-     
-     
-     
-              </div>
-             </a>
-     
-    
-    
-          </div>
-    
-    
-        </main>
-    
-        <footer class="px-0 ">
-            <div
-              class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 b-bg-color border-t-4 border-white "
-            >
-              <a href="./find-job.html" class="flex">
-                <div class="flex flex-col items-center gap-0.5">
-                  <img src="../assets/job.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Find Job</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./professional-resume.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/cv.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Pro CV</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./feature-profile.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Become Feature</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./register-profile.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/register.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Register</span
-                  >
-                </div>
-              </a>
+      <footer class="px-0">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 b-bg-color border-t-4 border-white"
+        >
+          <a href="./find-job.html" class="flex">
+            <div class="flex flex-col items-center gap-0.5">
+              <img src="../assets/job.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Find Job</span
+              >
             </div>
-      
-           
-          </footer>
-     
-      </div>
+          </a>
 
-
-
-  <!-- Business tab  -->
-  <div id="businessTab" class="hidden">
-    <main class="main !mt-14 !mb-14">
-  
-      
-      <!-- body  -->
-      <div class="flex flex-col gap-4 rounded-xl">
-
-        <!-- find talent  -->
-         <a href="./find-talent.html" class="">
-         <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-          <!-- image section  -->
-          <div class="relative w-full h-[200px]   rounded-t-2xl object">
-            <img
-              src="../assets/find-talent.webp"
-              class="w-full h-full object-cover object-top transition-transform duration-500"
-              alt="jobseeker"
-            />
-          </div>
-
-          <!-- text section  -->
-           <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-             
-             <!-- spinner  -->
-            <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-            <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-
-              <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-
-              <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-              <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-            </span>
-            </span>
+          <a href="./professional-resume.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/cv.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Pro CV</span
+              >
             </div>
+          </a>
 
-            <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-            <h2
-              class="text-white text-lg font-semibold"
-            >
-              Find Talent
-            </h2>
-
-            <span class="text-stone-100 text-sm">Hire smarter, Find top talent.</span>
-
-          </div>
-           </div>
-
-
-
-         </div>
-        </a>
-
-
-       
-        <!-- Post a Job  -->
-        <a href="./post-job.html" class="">
-          <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-           <!-- image section  -->
-           <div class="relative w-full h-[200px]   rounded-t-2xl">
-             <img
-               src="../assets/post-job.webp"
-               class="w-full h-full object-cover object-top transition-transform duration-500"
-               alt="jobseeker"
-             />
-           </div>
- 
-           <!-- text section  -->
-            <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-              
-                 <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                  <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-      
-                    <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-      
-                    <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-                    <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-                  </span>
-                  </span>
-                  </div>
-      
- 
-             <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-             <h2
-               class="text-white text-lg font-semibold"
-             >
-             Post a Job
-             </h2>
- 
-             <span class="text-stone-100 text-sm">Reach top talent instantly.</span>
- 
-           </div>
+          <a href="./feature-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Become Feature</span
+              >
             </div>
- 
- 
- 
-          </div>
-         </a>
+          </a>
 
-
-
-
-         
-        <!--  Business Adevertisng   -->
-        <a href="./advertise-business.html" class="">
-          <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-           <!-- image section  -->
-           <div class="relative w-full h-[200px]   rounded-t-2xl">
-             <img
-               src="../assets/advertise-business.webp"
-               class="w-full h-full object-cover object-top transition-transform duration-500"
-               alt="jobseeker"
-             />
-           </div>
- 
-           <!-- text section  -->
-            <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-              
-                 <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                  <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-      
-                    <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-      
-                    <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-                    <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-                  </span>
-                  </span>
-                  </div>
-      
- 
-             <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-             <h2
-               class="text-white text-lg font-semibold"
-             >
-             Business Adevertisng
-             </h2>
- 
-             <span class="text-stone-100 text-sm">Your brand, everywhere it matters.</span>
- 
-           </div>
+          <a href="./register-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/register.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Register</span
+              >
             </div>
- 
- 
- 
-          </div>
-         </a>
-
-       <!--  HR Outsourcing   -->
-       <a href="./hr-outsourcing.html" class="">
-        <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-         <!-- image section  -->
-         <div class="relative w-full h-[200px]   rounded-t-2xl">
-           <img
-             src="../assets/hr-outsource.webp"
-             class="w-full h-full object-cover object-top transition-transform duration-500"
-             alt="jobseeker"
-           />
-         </div>
-
-         <!-- text section  -->
-          <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-            
-               <!-- spinner  -->
-               <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-    
-                  <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-    
-                  <span class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color">
-                  <img src="../assets/right-angle.svg" alt="" class=" flex w-6">
-                </span>
-                </span>
-                </div>
-    
-
-           <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-           <h2
-             class="text-white text-lg font-semibold"
-           >
-           HR Outsourcing
-           </h2>
-
-           <span class="text-stone-100 text-sm">Outsource HR, optimize efficiency.</span>
-
-         </div>
-          </div>
-
-
-
+          </a>
         </div>
-       </a>
 
-      </div>
-      
-    </main>
-
-
-     
-  <footer class="px-0">
-    <div
-      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 border-t-4 border-white b-bg-color"
-    >
-      <a href="./find-talent.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/find-talent.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Find Talent</span
-          >
-      </a>
-
-      <a href="./post-job.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/post-job.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Post Job</span
-          >
-      </a>
-
-      <a href="./advertise-business.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/business-ads.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Business Ads</span
-          >
-      </a>
-
-      <a href="" class="flex flex-col items-center gap-1">
-          <img src="../assets/contact-us.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Contact Us</span
-          >
-      </a>
+        <!-- WhatsApp icon  -->
+        <div
+          class="fixed bottom-14 right-2 bg-green-400 flex items-center justify-center hover:bg-green-500 h-14 w-14 rounded-full z-20 opacity-90"
+        >
+          <a href="" class="flex">
+            <div class="flex flex-col items-center justify-center">
+              <img
+                src="../assets/whatsapp.svg"
+                class="w-6 flex mt-0.5"
+                alt=""
+              />
+              <span
+                class="flex flex-col items-center font-medium c-text-uxs sm:text-sm text-white tracking-tight"
+              >
+                <span>WhatsApp</span> <span>Alerts</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </footer>
     </div>
-  </footer>
-   
-  </div>
 
+    <!-- JobSeeker tab  -->
+    <div id="jobSeekerTab" class="hidden">
+      <main class="main !mt-14 !mb-14">
+        <!-- body  -->
+        <div class="flex flex-col gap-4 rounded-xl">
+          <!-- find talent  -->
+          <a href="./feature-profile.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl object">
+                <img
+                  src="../assets/jobseeker.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
 
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">
+                    Feature your profile
+                  </h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Showcase Your Profile, Get Noticed.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Get a Professional Resume  -->
+          <a href="./professional-resume.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl object">
+                <img
+                  src="../assets/business.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">
+                    Get a Professional Resume
+                  </h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Your Dream Job Starts with a Perfect Resume.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <footer class="px-0">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 b-bg-color border-t-4 border-white"
+        >
+          <a href="./find-job.html" class="flex">
+            <div class="flex flex-col items-center gap-0.5">
+              <img src="../assets/job.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Find Job</span
+              >
+            </div>
+          </a>
+
+          <a href="./professional-resume.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/cv.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Pro CV</span
+              >
+            </div>
+          </a>
+
+          <a href="./feature-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Become Feature</span
+              >
+            </div>
+          </a>
+
+          <a href="./register-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1">
+              <img src="../assets/register.svg" alt="" class="h-4" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Register</span
+              >
+            </div>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Business tab  -->
+    <div id="businessTab" class="hidden">
+      <main class="main !mt-14 !mb-14">
+        <!-- body  -->
+        <div class="flex flex-col gap-4 rounded-xl">
+          <!-- find talent  -->
+          <a href="./find-talent.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl object">
+                <img
+                  src="../assets/find-talent.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">Find Talent</h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Hire smarter, Find top talent.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post a Job  -->
+          <a href="./post-job.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl">
+                <img
+                  src="../assets/post-job.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">Post a Job</h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Reach top talent instantly.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!--  Business Adevertisng   -->
+          <a href="./advertise-business.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl">
+                <img
+                  src="../assets/advertise-business.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">
+                    Business Adevertisng
+                  </h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Your brand, everywhere it matters.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!--  HR Outsourcing   -->
+          <a href="./hr-outsourcing.html" class="">
+            <div
+              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div class="relative w-full h-[200px] rounded-t-2xl">
+                <img
+                  src="../assets/hr-outsource.webp"
+                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full b-bg-color"
+                    >
+                      <img
+                        src="../assets/right-angle.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg font-semibold">
+                    HR Outsourcing
+                  </h2>
+
+                  <span class="text-stone-100 text-sm"
+                    >Outsource HR, optimize efficiency.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <footer class="px-0">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 border-t-4 border-white b-bg-color"
+        >
+          <a href="./find-talent.html" class="flex flex-col items-center gap-1">
+            <img src="../assets/find-talent.svg" alt="" class="h-4" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Find Talent</span
+            >
+          </a>
+
+          <a href="./post-job.html" class="flex flex-col items-center gap-1">
+            <img src="../assets/post-job.svg" alt="" class="h-4" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Post Job</span
+            >
+          </a>
+
+          <a
+            href="./advertise-business.html"
+            class="flex flex-col items-center gap-1"
+          >
+            <img src="../assets/business-ads.svg" alt="" class="h-4" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Business Ads</span
+            >
+          </a>
+
+          <a href="" class="flex flex-col items-center gap-1">
+            <img src="../assets/contact-us.svg" alt="" class="h-4" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Contact Us</span
+            >
+          </a>
+        </div>
+      </footer>
+    </div>
 
     <script>
       // image upload
@@ -958,38 +1162,32 @@ Describe yourself</textarea
         editForm.classList.remove("hidden");
       });
 
-
-      // tabs 
+      // tabs
       function showTab(index, tabId, selectedBtn) {
+        // Hide the default global data when any tab is activated
+        const deafultContent = document.getElementById("deafultContent");
+        if (deafultContent) {
+          deafultContent.classList.add("hidden");
+        }
 
-// Hide the default global data when any tab is activated
-const deafultContent = document.getElementById("deafultContent");
-if (deafultContent) {
-deafultContent.classList.add("hidden");
-}
+        document.getElementById("jobSeekerTab").classList.add("hidden");
+        document.getElementById("businessTab").classList.add("hidden");
 
+        document.getElementById(tabId).classList.remove("hidden");
 
+        // Move the slider
+        const sliderBg = document.querySelector(".slider-bg");
+        sliderBg.style.transform = `translateX(${index * 100}%)`;
 
-document.getElementById("jobSeekerTab").classList.add("hidden");
-document.getElementById("businessTab").classList.add("hidden");
-
-document.getElementById(tabId).classList.remove("hidden");
-
-// Move the slider
-const sliderBg = document.querySelector(".slider-bg");
-sliderBg.style.transform = `translateX(${index * 100}%)`;
-
-// Reset all buttons to their default text color
-const buttons = document.querySelectorAll(".tab-btn");
-buttons.forEach((button) => {
-button.classList.remove("m-color");
-button.classList.add("text-white");
-});
-selectedBtn.classList.add("m-color");
-selectedBtn.classList.remove("text-white");
-}
-
-
+        // Reset all buttons to their default text color
+        const buttons = document.querySelectorAll(".tab-btn");
+        buttons.forEach((button) => {
+          button.classList.remove("m-color");
+          button.classList.add("text-white");
+        });
+        selectedBtn.classList.add("m-color");
+        selectedBtn.classList.remove("text-white");
+      }
 
       // country filter
       const selectedCountry = document.querySelector("#selected-country");
@@ -1012,9 +1210,9 @@ selectedBtn.classList.remove("text-white");
         });
       });
 
-      // business tab animation 
+      // business tab animation
 
-      // image overlay 
+      // image overlay
       function toggleContent(element, event) {
         event.stopPropagation();
         document.querySelectorAll(".group").forEach((card) => {
@@ -1032,9 +1230,6 @@ selectedBtn.classList.remove("text-white");
           }
         });
       });
-
-  
-     
     </script>
   </body>
 </html>

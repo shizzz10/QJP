@@ -91,579 +91,302 @@
     <!-- deafultContent tab  -->
     <div id="deafultContent" class="">
       <main class="!mt-12 !mb-12">
-        <!-- search talent  -->
-        <form class="w-full">
-          <!-- Search talent Bar  -->
-          <div class="flex flex-col gap-4 b-bg-color text-white py-2 px-3">
-            <!-- search talent  -->
-            <div class="flex flex-col gap-1">
-              <div class="flex">
-                <span class="text-base font-medium">Find Talent</span>
-              </div>
-              <div class="flex justify-between gap-2">
-                <div class="flex w-full relative">
-                  <input
-                    type="text"
-                    class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                    placeholder="Write a Profession"
-                  />
-                  <img
-                    src="../assets/search.svg"
-                    alt=""
-                    class="w-4 absolute top-1.5 right-3"
-                  />
-                </div>
-
-                <!-- submit btn  -->
-                <div
-                  class="flex-shrink-0 rounded-full text-sm border py-1 hover:bg-white hover:text-[#5c0931] px-3"
-                >
-                  <button type="submit" class="flex justify-center">
-                    Search
-                  </button>
-                </div>
-              </div>
+       <!-- search talent  -->
+       <form class="w-full">
+        <!-- Search talent Bar  -->
+        <div class="flex flex-col gap-4 b-bg-color text-white py-2 px-3 pb-4">
+          <!-- search talent  -->
+          <div class="flex flex-col gap-1">
+            <div class="flex">
+              <span class="text-base font-medium">Find Talent</span>
             </div>
-
-            <!-- Dropdowns -->
-            <div class="flex justify-between gap-2 items-center flex-wrap">
-              <!-- Type of JobSeekers  -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Feature Jobseekers Only</option>
-                  <option value="admin">Admin Jobs</option>
-                  <option value="businessDevlopment">
-                    Business Development Jobs
-                  </option>
-                  <option value="eng">Engineering Jobs</option>
-                  <option value="financeAndBanking">
-                    Finance and Banking Jobs
-                  </option>
-                  <option value="hr">HR Jobs</option>
-                  <option value="hse">HSE Jobs</option>
-                  <option value="healthCare">Health Care Jobs</option>
-                  <option value="IT">IT Jobs</option>
-                  <option value="marketing">Marketing Jobs</option>
-                  <option value="operation">Operations Jobs</option>
-                  <option value="otherDep">Other Department</option>
-                  <option value="procurement">Procurement Jobs</option>
-                  <option value="qaQc">QA/QC Jobs</option>
-                  <option value="salesAndMark">Sales & Marketing Jobs</option>
-                  <option value="skilledWorker">Skilled Worker Jobs</option>
-                  <option value="supplyChain">Supply Chain Jobs</option>
-                </select>
+            <div class="flex justify-between gap-2">
+              <div class="flex w-full relative">
+                <input
+                  type="text"
+                  class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+                  placeholder="Write a Profession"
+                />
+                <img
+                  src="../assets/search.svg"
+                  alt=""
+                  class="w-4 absolute top-1.5 right-3"
+                />
               </div>
 
-              <!-- Select Qualification   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">No Education</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Total Experience   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">No Experience</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Gulf Experience   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">No Gulf Experience</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Select Current Location   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Global</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!--  Select Gender  -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Both Genders</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Select Current Salary  -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Current Salary</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Employment Status   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Employment Status</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Driving License   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">Driving License</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
-              </div>
-
-              <!-- Select Nationality   -->
-              <div class="flex c-w-48">
-                <select
-                  name=""
-                  id=""
-                  class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-0.5 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
-                >
-                  <option value="all">All Nationalities</option>
-                  <option value="advertisementAgency">
-                    Advertisement Agency Jobs
-                  </option>
-                  <option value="airline">Airline Jobs</option>
-                  <option value="automotive">Automotive Jobs</option>
-                  <option value="construction">Construction Jobs</option>
-                  <option value="consultancy">Consultancy Jobs</option>
-                  <option value="deliveryService">Delivery Service Jobs</option>
-                  <option value="ecom">Ecommerce Jobs</option>
-                  <option value="educationInst">
-                    Education/Institute Jobs
-                  </option>
-                  <option value="energySector">Energy Sector Jobs</option>
-                  <option value="fashionAndBeauty">
-                    Fashion and Beauty Jobs
-                  </option>
-                  <option value="FMCG">FMCG Jobs</option>
-                  <option value="freelance">Freelance Jobs</option>
-                  <option value="GeneralTrading">General Trading Jobs</option>
-
-                  <option value="hospital">Hospital/Pharmacy Jobs</option>
-                  <option value="hotel">Hotel/Resort Jobs</option>
-                  <option value="household">Household Jobs</option>
-                  <option value="legalServices">Legal Services Jobs</option>
-                  <option value="manufacturing">
-                    Manufacturing Industry Jobs
-                  </option>
-
-                  <option value="mediaAndNews">Media and News Jobs</option>
-                  <option value="oilAndGas">Oil and Gas Jobs</option>
-                  <option value="pharma">Pharma Jobs</option>
-                  <option value="printingAndPacking">
-                    Printing and Packaging Jobs
-                  </option>
-                  <option value="realEstate">Real Estate Jobs</option>
-                  <option value="retail">Retail/Shoping Center Jobs</option>
-                  <option value="Recruitment">Recruitment Jobs</option>
-                  <option value="Restaurant">Restaurant Jobs</option>
-                  <option value="softwareHouse">Software House Jobs</option>
-                  <option value="sportsAndLeisure">
-                    Sports and Leisure Jobs
-                  </option>
-                  <option value="telecom">Telecom Jobs</option>
-                  <option value="textile">Textile Jobs</option>
-                  <option value="otherIndustry">Other Industry</option>
-                </select>
+              <!-- submit btn  -->
+              <div
+                class="flex-shrink-0 rounded-full text-sm border py-1 hover:bg-white hover:text-[#5c0931] px-3"
+              >
+              <a href="./searched-talent.html" class="flex justify-center">
+                Search
+              </a>
+                <!-- <button type="submit" class="flex justify-center">
+                  Search
+                </button> -->
               </div>
             </div>
           </div>
-        </form>
+
+          <!-- Dropdowns -->
+          <div class="flex justify-between gap-2 items-center flex-wrap">
+            <!-- Type of JobSeekers  -->
+            <div class="flex c-w-48">
+              <select
+                name=""
+                id=""
+                class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+              >
+                <option value="" disabled selected>Featured Jobseekers Only</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+               
+              </select>
+            </div>
+
+            <!-- Select Qualification   -->
+            <div class="flex c-w-48">
+
+
+              <select
+              required
+              name=""
+              id="highest_Qualification"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>
+                Select Qualification
+              </option>
+              <option value="Matric">Matric</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Bachelors">Bachelors</option>
+              <option value="Masters">Masters</option>
+              <option value="PhD">PhD</option>
+              <option value="Not_listed">Not listed</option>
+            </select>
+
+
+              
+            </div>
+
+            <!-- Total Experience   -->
+            <div class="flex c-w-48">
+              
+              
+              
+              
+              <select
+                required
+                name=""
+                id="total_Experience"
+                class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+              >
+                <option value="" disabled selected>Select Total Experience</option>
+                <option value="No_Experience">No Experience</option>
+                <option value="1year">1 - 2 Years</option>
+                <option value="3year">3 - 5 Years</option>
+                <option value="6year">6 - 10 Years</option>
+                <option value="11year">11 - 20 Years</option>
+                <option value="20year">20+ Years</option>
+              </select>
+              
+              
+              
+              
+              
+              
+              
+              
+            </div>
+
+            <!-- Gulf Experience   -->
+            <div class="flex c-w-48">
+
+
+
+
+              <select
+              required
+              name=""
+              id="gulf_Experience"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>Select Gulf Experience</option>
+              <option value="gulf_No_Experience">No Experience</option>
+              <option value="gulf_1year">1 - 2 Years</option>
+              <option value="gulf_3year">3 - 5 Years</option>
+              <option value="gulf_6year">6 - 10 Years</option>
+              <option value="gulf_11year">11 - 20 Years</option>
+              <option value="gulf_20year">20+ Years</option>
+            </select>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Select Current Location   -->
+            <div class="flex c-w-48">
+
+
+              <select
+              required
+              name=""
+              id="curr_Location"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>Select Current Location</option>
+              <option value="Outside_Qatar">Outside Qatar</option>
+              <option value="Qatar">Qatar</option>
+            </select>
+
+
+
+             
+            </div>
+
+            <!--  Select Gender  -->
+            <div class="flex c-w-48">
+              <select
+                name=""
+                id="gender"
+                class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+              >
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+                
+              </select>
+            </div>
+
+            <!-- Select Current Salary  -->
+            <div class="flex c-w-48">
+
+
+
+              <select
+              required
+              name=""
+              id="currSalary"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>
+                Select Current Salary
+              </option>
+              <option value="unemployed">Unemployed</option>
+              <option value="1k_qar">1000 - 2000 QAR</option>
+              <option value="2k_qar">2000 - 4000 QAR</option>
+              <option value="4k_qar">4000 - 6000 QAR</option>
+              <option value="6k_qar">6000 - 8000 QAR</option>
+              <option value="8k_qar">8000 - 10,000 QAR</option>
+              <option value="10k_qar">10,000 - 15,000 QAR</option>
+              <option value="15k_qar">15,000 - 20,000 QAR</option>
+              <option value="20k_qar">20,000 - 30,000 QAR</option>
+              <option value="30k_qar">30,000+ QAR</option>
+            </select>
+
+
+
+
+
+             
+            </div>
+
+            <!-- Employment Status   -->
+            <div class="flex c-w-48">
+
+
+              <select
+              required
+              name=""
+              id="emloyment_status"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>
+                Employment Status
+              </option>
+              <option value="unemployed">Unemployed</option>
+              <option value="Employed">Employed</option>
+            </select>
+
+            
+            </div>
+
+            <!-- Driving License   -->
+            <div class="flex c-w-48">
+
+              <select
+                required
+                name=""
+                id="driving_License"
+                class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+              >
+                <option value="" disabled selected>Driving License</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="Under_progress">Under progress</option>
+              </select>
+
+
+
+
+
+            
+            </div>
+
+            <!-- Select Nationality   -->
+            <div class="flex c-w-48">
+
+
+              <select
+              required
+              name=""
+              id="nationality"
+              class="w-full rounded-full px-2 placeholder:font-light text-black text-xs py-1 border shadow-sm shadow-white/10 focus:shadow-md focus:shadow-white/20 focus:border-white focus:ring-white focus:outline-none transition"
+            >
+              <option value="" disabled selected>Select Nationality</option>
+              <option value="American">American</option>
+              <option value="Bangladeshi">Bangladeshi</option>
+              <option value="British">British</option>
+              <option value="Canadian">Canadian</option>
+              <option value="Egyptian">Egyptian</option>
+              <option value="Filipino">Filipino</option>
+              <option value="French">French</option>
+              <option value="German">German</option>
+              <option value="Ghanaian">Ghanaian</option>
+              <option value="Indian">Indian</option>
+              <option value="Indonesian">Indonesian</option>
+              <option value="Jordanian">Jordanian</option>
+              <option value="Kenyan">Kenyan</option>
+              <option value="Lebanese">Lebanese</option>
+              <option value="Palestine">Palestine</option>
+              <option value="Malaysian">Malaysian</option>
+              <option value="Moroccan">Moroccan</option>
+              <option value="Nepalese">Nepalese</option>
+              <option value="Pakistani">Pakistani</option>
+              <option value="South_African">South African</option>
+              <option value="Sri_lankan">Sri Lankan</option>
+              <option value="Sudanese">Sudanese</option>
+              <option value="Sudanese">Sudanese</option>
+              <option value="Syrian">Syrian</option>
+              <option value="Tunisian">Tunisian</option>
+              <option value="Turkish">Turkish</option>
+              <option value="Ugandan">Ugandan</option>
+              <option value="Not_listed">Not listed</option>
+            </select>
+
+             
+            </div>
+          </div>
+        </div>
+      </form>
 
         <div class="main flex flex-col gap-4">
           <!-- services -->
