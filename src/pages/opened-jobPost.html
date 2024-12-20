@@ -49,19 +49,21 @@
               </div>
             </div>
 
-            <!-- flag  -->
-            <div class="relative w-14">
-              <div
-                class="countries-dropdown flex justify-end rounded-md cursor-pointer"
-              >
-                <picture id="selected-country">
-                  <img src="../assets/qa.svg" alt="" class="w-10" />
-                </picture>
-              </div>
-              <div
-                id="country-list"
-                class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
-              >
+          
+           <!-- flag  -->
+           <div class="relative w-14">
+            <div
+              class="countries-dropdown flex justify-end rounded-md cursor-pointer"
+            >
+              <picture id="selected-country">
+                <img src="../assets/qa.svg" alt="" class="w-10" />
+              </picture>
+            </div>
+            <div
+              id="country-list"
+              class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
+            >
+              <a href="">
                 <div
                   class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
                 >
@@ -69,20 +71,16 @@
                     <img src="../assets/qa.svg" alt="" class="w-7" />
                   </div>
                 </div>
-                <div
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
-                >
-                  <div class="flex">
-                    <img src="../assets/ae.svg" alt="" class="w-7" />
-                  </div>
-                </div>
+              </a>
+              <a href="">
                 <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   <div class="flex">
                     <img src="../assets/pk.svg" alt="" class="w-7" />
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -108,7 +106,7 @@
              <input
                type="text"
                placeholder="Search Jobs here"
-               class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+               class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-black/25 focus:shadow-md focus:shadow-[#8E2157]/35 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
              />
              <img
                src="../assets/search.svg"
@@ -122,7 +120,7 @@
                href="./advancedFilter-jobs.html"
                class="text-black text-xs c-underline"
              >
-               Use Advance Filters</a
+               Use Advanced Filters</a
              >
          
 
@@ -1028,27 +1026,34 @@
         </a>
       </div>
 
+         
              <!-- WhatsApp icon  -->
-             <div
-             class="fixed bottom-14 right-2 bg-slate-400 flex items-center hover:bg-green-500 h-7 w-32 rounded-full z-20 opacity-90"
-           >
-             <a href="" class="flex w-full">
-               <div class="flex justify-between items-center w-full">
-                 <div class="ml-2 flex w-full">
-                   <span
-                     class="flex font-medium text-white tracking-tight  c-text-uxs break-keep"
-                     >WhatsApp Job Alerts</span
-                   >
-                 </div>
-     
-                 <div
-                   class="flex justify-end bg-green-400 hover:bg-green-500 rounded-full ml-auto h-8 px-2"
-                 >
-                   <img src="../assets/whatsapp.svg" class="w-6 flex" alt="" />
-                 </div>
-               </div>
-             </a>
-           </div>
+        <div
+        class="fixed bottom-14 right-2 bg-slate-400 flex items-center hover:bg-green-500 h-7 w-28 rounded-full z-20 opacity-90"
+      >
+        <a href="" class="flex w-full">
+          <div class="flex justify-between items-center w-full">
+            <div class="ml-2 flex w-full">
+              <span
+                class="flex font-medium text-white tracking-tight  c-text-xxs break-keep wa-text top-2"
+                >Join Whatsapp</span
+              >
+              <span
+                class="flex font-medium text-white tracking-tight  c-text-xxs break-keep wa-text top-2"
+                >For Job Alerts</span
+              >
+            </div>
+
+            <div
+              class="flex justify-end bg-green-400 hover:bg-green-500 rounded-full ml-auto h-8 px-2 whatsapp-btn"
+            >
+              <img src="../assets/whatsapp.svg" class="w-6 flex whatsapp-btn" alt="" />
+            </div>
+          </div>
+        </a>
+      </div>
+
+
     </footer>
     
   </div>
@@ -1521,14 +1526,6 @@ selectedBtn.classList.remove("text-white");
           countryList.classList.toggle("hidden");
         });
 
-      // set the selected country and hide the list
-      countryItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          const flagUrl = item.querySelector("img").src;
-          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-10">`;
-          countryList.classList.add("hidden");
-        });
-      });
 
       // swiper
       var swiper = new Swiper(".mySwiper", {

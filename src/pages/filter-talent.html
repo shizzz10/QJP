@@ -48,19 +48,21 @@
               </div>
             </div>
 
-            <!-- flag  -->
-            <div class="relative w-14">
-              <div
-                class="countries-dropdown flex justify-end rounded-md cursor-pointer"
-              >
-                <picture id="selected-country">
-                  <img src="../assets/qa.svg" alt="" class="w-10" />
-                </picture>
-              </div>
-              <div
-                id="country-list"
-                class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
-              >
+          
+           <!-- flag  -->
+           <div class="relative w-14">
+            <div
+              class="countries-dropdown flex justify-end rounded-md cursor-pointer"
+            >
+              <picture id="selected-country">
+                <img src="../assets/qa.svg" alt="" class="w-10" />
+              </picture>
+            </div>
+            <div
+              id="country-list"
+              class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
+            >
+              <a href="">
                 <div
                   class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
                 >
@@ -68,20 +70,16 @@
                     <img src="../assets/qa.svg" alt="" class="w-7" />
                   </div>
                 </div>
-                <div
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
-                >
-                  <div class="flex">
-                    <img src="../assets/ae.svg" alt="" class="w-7" />
-                  </div>
-                </div>
+              </a>
+              <a href="">
                 <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   <div class="flex">
                     <img src="../assets/pk.svg" alt="" class="w-7" />
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -2040,14 +2038,7 @@ selectedBtn.classList.remove("text-white");
           countryList.classList.toggle("hidden");
         });
 
-      // set the selected country and hide the list
-      countryItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          const flagUrl = item.querySelector("img").src;
-          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-10">`;
-          countryList.classList.add("hidden");
-        });
-      });
+  
 
       // swipper
       var swiper = new Swiper(".mySwiper", {

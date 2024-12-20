@@ -48,19 +48,21 @@
               </div>
             </div>
 
-            <!-- flag  -->
-            <div class="relative w-14">
-              <div
-                class="countries-dropdown flex justify-end rounded-md cursor-pointer"
-              >
-                <picture id="selected-country">
-                  <img src="../assets/qa.svg" alt="" class="w-10" />
-                </picture>
-              </div>
-              <div
-                id="country-list"
-                class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
-              >
+         
+           <!-- flag  -->
+           <div class="relative w-14">
+            <div
+              class="countries-dropdown flex justify-end rounded-md cursor-pointer"
+            >
+              <picture id="selected-country">
+                <img src="../assets/qa.svg" alt="" class="w-10" />
+              </picture>
+            </div>
+            <div
+              id="country-list"
+              class="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg hidden"
+            >
+              <a href="">
                 <div
                   class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
                 >
@@ -68,20 +70,16 @@
                     <img src="../assets/qa.svg" alt="" class="w-7" />
                   </div>
                 </div>
-                <div
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
-                >
-                  <div class="flex">
-                    <img src="../assets/ae.svg" alt="" class="w-7" />
-                  </div>
-                </div>
+              </a>
+              <a href="">
                 <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   <div class="flex">
                     <img src="../assets/pk.svg" alt="" class="w-7" />
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -100,32 +98,35 @@
                 <!-- jobSeeker Numbers  -->
                 <div class="flex justify-center gap-2">
       
-                  <div
+                  <a
+                  href=""
                     class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28"
                   >
                     <span class="m-color text-sm tracking-tight">JobSeeker</span>
                     <span class="m-color text-2xl font-bold tracking-tighter"
                       >1350</span
                     >
-                  </div>
+                  </a>
       
-                  <div
+                  <a
+                  href=""
                     class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28"
                   >
                     <span class="m-color text-sm tracking-tight">Set to Join</span>
                     <span class="m-color text-2xl font-bold tracking-tighter"
                       >5150</span
                     >
-                  </div>
+                  </a>
 
-                  <div
+                  <a
+                  href=""
                     class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28"
                   >
                     <span class="m-color text-sm tracking-tight">Inside Qatar</span>
                     <span class="m-color text-2xl font-bold tracking-tighter"
                       >9350</span
                     >
-                  </div>
+                  </a>
       
                 </div>
       
@@ -135,7 +136,7 @@
                     <input
                       type="text"
                       placeholder="Search Talent By Keyword here"
-                      class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-[#8E2157]/10 focus:shadow-lg focus:shadow-[#8E2157]/20 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                      class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-black/25 focus:shadow-md focus:shadow-[#8E2157]/35 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
                     />
                     <img
                       src="../assets/search.svg"
@@ -149,7 +150,7 @@
                       href="./filter-talent.html"
                       class="text-black text-xs c-underline"
                     >
-                      Use Advance Filters</a
+                      Use Advanced Filters</a
                     >
                   </div>
                 </div>
@@ -1794,14 +1795,7 @@ sliderBg.style.transform = `translateX(${(index - 1) * 100}%)`;
           countryList.classList.toggle("hidden");
         });
 
-      // set the selected country and hide the list
-      countryItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          const flagUrl = item.querySelector("img").src;
-          selectedCountry.innerHTML = `<img src="${flagUrl}" alt="Flag" class="w-10">`;
-          countryList.classList.add("hidden");
-        });
-      });
+    
 
       // swipper
       var swiper = new Swiper(".mySwiper", {

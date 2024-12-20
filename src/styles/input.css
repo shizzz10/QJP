@@ -58,6 +58,9 @@ color: #5c0931;
 .c-text-xs{
     font-size: 0.65rem
 }
+.c-text-xxs{
+    font-size: 0.6rem
+}
 .c-text-uxs{
     font-size: 0.5rem
 }
@@ -127,6 +130,17 @@ color: #5c0931;
     --tw-shadow-color: rgba(80, 15, 15, 0.9);
     --tw-shadow: var(--tw-shadow-colored);
 }
+.whatsapp-btn{
+    animation: whatsapp-growing 3s ease-out infinite;
+}
+@keyframes whatsapp-growing {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
 .growing-btn{
         background-color: #5c0931;
     }
@@ -143,6 +157,36 @@ color: #5c0931;
     }
 }
 
+.wa-text {
+    position: absolute;
+    opacity: 0;
+    animation: fadeInOut 6s infinite;
+}
+
+/* First text starts immediately */
+.wa-text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/* Second text starts after the first finishes */
+.wa-text:nth-child(2) {
+    animation-delay: 3s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10%, 40% {
+        opacity: 1; /* Text fully visible */
+    }
+    50% {
+        opacity: 0; /* Text starts fading out */
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 .button-slider {
     display: flex;
@@ -155,24 +199,15 @@ color: #5c0931;
     display: none; 
   }
 .resume-bg{
-    background: linear-gradient(149deg, #6d485a 0%, #5c0931 99.08%);
+    background: linear-gradient(149deg, #fef2f2  0%, #fecaca   99.08%);
 }
 .resume-bg:hover{
-    background: linear-gradient(149deg, #925a75 0%, #55082d 99.08%);
+    background: linear-gradient(149deg, #fee2e2  0%, #fca5a5  99.08%);
 }
 .swiper-pagination-bullet-active{
     background: #5c0931;
   }
 
-  .contact-us-bg{
-    background-image: url("../assets/qatar-tower.webp");
-    object-fit: cover;
-    object-position: center;
-    background-size: cover; 
-    /* background-position: center;  */
-    position: relative; 
-
-  }
 @media (min-width: 640px){
     .main {
         display: flex;
