@@ -197,9 +197,9 @@ color: #5c0931;
 }
 .button-slider::-webkit-scrollbar {
     display: none; 
-  }
+  } 
 .resume-bg{
-    background: linear-gradient(149deg, #fef2f2  0%, #fecaca   99.08%);
+    background: linear-gradient(149deg, #fecaca   0%, #fca5a5     99.08%);
 }
 .resume-bg:hover{
     background: linear-gradient(149deg, #fee2e2  0%, #fca5a5  99.08%);

@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../styles/output.css" />
-    <title>Find Job</title>
+    <title>Post Job</title>
   </head>
   <body>
     <header>
@@ -89,79 +89,24 @@
     <div id="deafultContent" class="">
       <main class="!mt-12 !mb-14">
         <!-- carousal add  -->
-        <div class="swiper addSwiper w-full h-full">
-            <div
-              class="parallax-bg absolute top-0 left-0 w-[130%] h-full bg-cover bg-center add-bg-img"
-              data-swiper-parallax="-23%"
-            ></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-white box-border p-10 md:p-16">
-                <div
-                  class="title text-2xl font-light"
-                  data-swiper-parallax="-300"
-                >
-                  Slide 1
-                </div>
-                <div class="subtitle text-xl" data-swiper-parallax="-200">
-                  Subtitle
-                </div>
-                <div class="text-base font-medium" data-swiper-parallax="-100">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam dictum mattis velit, sit amet faucibus felis iaculis
-                    nec. Nulla
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide text-white box-border p-10 md:p-16">
-                <div
-                  class="title text-2xl font-light"
-                  data-swiper-parallax="-300"
-                >
-                  Slide 2
-                </div>
-                <div class="subtitle text-xl" data-swiper-parallax="-200">
-                  Subtitle
-                </div>
-                <div class="text-base font-medium" data-swiper-parallax="-100">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam dictum mattis velit, sit amet faucibus felis iaculis
-                    nec.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide text-white box-border p-10 md:p-16">
-                <div
-                  class="title text-2xl font-light"
-                  data-swiper-parallax="-300"
-                >
-                  Slide 3
-                </div>
-                <div class="subtitle text-xl" data-swiper-parallax="-200">
-                  Subtitle
-                </div>
-                <div class="text-base font-medium" data-swiper-parallax="-100">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam dictum mattis velit, sit amet faucibus felis iaculis
-                    nec. Nulla laoreet justo vitae porttitor porttitor.
-                    Suspendisse in sem
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
-            <div class="swiper-pagination text-white"></div>
-          </div>
-  
+            <!-- Product Swiper -->
+  <div class="swiper prod-swiper w-full h-32">
+    <div class="swiper-wrapper cursor-pointer">
+      <div class="swiper-slide flex">
+        <img src="../assets/Banner Post a Job.webp" alt="" class="w-full h-full object-fill">
+      </div>
+      <div class="swiper-slide flex justify-center items-center text-lg">
+        <img src="../assets/Banner Post a Job.webp" alt="" class="w-full h-full object-fill">
+      </div>
+    </div>
+  </div>
+
 
         <div class="main flex flex-col ">
              <!-- head  -->
              <div class="flex-col gap-4">
                 <div class="flex">
-                  <h4 class="text-base font-medium m-color">
+                  <h4 class="text-base font-semibold m-color">
                     Post a Job on Qatar Jobs Portal
                   </h4>
                 </div>
@@ -238,7 +183,8 @@
             </div>
             <div class="flex absolute bottom-4 px-2">
               <span class="text-sm font-medium leading-4"
-                >Best for small businesses</span
+                >Best for small businesses
+                </span
               >
             </div>
             <!-- tab Numbers  -->
@@ -271,7 +217,7 @@
             </div>
             <div class="flex absolute bottom-4 px-2">
               <span class="text-sm font-medium leading-4"
-                >Best for large corporation</span
+                >Best for frequent job posters</span
               >
             </div>
             <!-- tab Numbers  -->
@@ -304,7 +250,8 @@
             </div>
             <div class="flex absolute bottom-4 px-2">
               <span class="text-sm font-medium leading-4"
-                >All in One</span
+                >Best for large organizations
+                </span
               >
             </div>
             <!-- tab Numbers  -->
@@ -393,9 +340,12 @@
                 </div>
 
                 <!-- pricing button  -->
-                <div class="flex justify-center">
+                <div class="flex justify-center gap-1">
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
                     >Only On <span class="font-semibold">60 QAR</span></a
+                  >
+                  <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
+                    >Download Media Kit</a
                   >
                 </div>
               </div>
@@ -409,8 +359,8 @@
                 <!-- head  -->
                 <div class="flex flex-col gap-1">
                   <h3 class="text-base font-semibold m-color">Silver Package Includes</h3>
-                  <span class="text-stone-800 text-xs">This package is best for single job post which
-                    includes:</span>
+                  <span class="text-stone-800 text-xs">This package is best for small businesses
+                    which includes:</span>
                 </div>
 
                 <!-- ul li points  -->
@@ -477,9 +427,13 @@
                 </div>
 
                 <!-- pricing button  -->
-                <div class="flex justify-center">
+                <div class="flex justify-center gap-1">
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
                     >Only On <span class="font-semibold">110 QAR</span></a
+                  >
+                  
+                  <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
+                    >Download Media Kit</a
                   >
                 </div>
               </div>
@@ -495,8 +449,8 @@
                   <h3 class="text-base font-semibold m-color">
                     Gold Package Includes
                   </h3>
-                  <span class="text-stone-800 text-xs">This package is best for single job post which
-                    includes:</span>
+                  <span class="text-stone-800 text-xs">This package is best for frequent job posters
+                    which includes:</span>
                 </div>
 
                 <!-- ul li points  -->
@@ -563,9 +517,13 @@
                 </div>
 
                 <!-- pricing button  -->
-                <div class="flex justify-center">
+                <div class="flex justify-center gap-1">
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
                     >Only On <span class="font-semibold">250 QAR</span></a
+                  >
+                  
+                  <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
+                    >Download Media Kit</a
                   >
                 </div>
               </div>
@@ -581,7 +539,7 @@
                   <h3 class="text-base font-semibold m-color">
                     Platinum Package Includes
                   </h3>
-                  <span class="text-stone-800 text-xs">Our Platinum Package includes:</span>
+                  <span class="text-stone-800 text-xs">This package is best for large organizations which includes:</span>
                 </div>
 
                 <!-- ul li points  -->
@@ -648,9 +606,13 @@
                 </div>
 
                 <!-- pricing button  -->
-                <div class="flex justify-center">
+                <div class="flex justify-center gap-1">
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
-                    >Only On <span class="font-semibold">300 QAR</span></a
+                    >Only On <span class="font-semibold">800 QAR</span></a
+                  >
+                  
+                  <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
+                    >Download Media Kit</a
                   >
                 </div>
               </div>
@@ -760,49 +722,13 @@
             </div>
           </div>
 
-          <!-- Email form -->
-          <div class="flex flex-col gap-2 w-full">
-            <!-- Register For Job Alerts -->
-            <div class="flex justify-center">
-              <label
-                for="registerEmail"
-                class="text-base font-semibold text-slate-950"
-                >Register For Job Alerts Via Email</label
-              >
-            </div>
-            <!-- form submition  -->
-            <form class="flex gap-2 items-center w-full">
-              <div class="flex w-full">
-                <input
-                  type="email"
-                  id="registerEmail"
-                  class="w-full rounded-lg px-2 placeholder:font-light text-black text-sm py-1 border shadow-sm shadow-black/10 focus:shadow-md focus:shadow-black/20 focus:ring-red-950 outline-none transition c-border"
-                  placeholder="abc@gmail.com"
-                />
-              </div>
-              <div
-                class="flex m-btn flex-shrink-0 px-2 py-1 rounded-lg gap-1 items-center"
-              >
-                <button
-                  type="submit"
-                  class="font-semibold text-base"
-                >
-                  Get Started
-                </button>
-                <i class="fa-solid fa-arrow-right font-bold"></i>
-              </div>
-            </form>
-          </div>
-
-          
-
         </div>
       </main>
 
        
   <footer class="px-0">
     <div
-      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 border-t-4 border-white bg-[#5c0931] bg-opacity-70"
+      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
     >
       <a href="./find-talent.html" class="flex flex-col items-center gap-1">
           <img src="../assets/find-talent.svg" alt="" class="h-4" />
@@ -828,7 +754,7 @@
           >
       </a>
 
-      <a href="" class="flex flex-col items-center gap-1">
+      <a href="./contact-us.html" class="flex flex-col items-center gap-1">
           <img src="../assets/contact-us.svg" alt="" class="h-4" />
           <span
             class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
@@ -950,7 +876,7 @@
     
         <footer class="px-0 ">
             <div
-              class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 bg-[#5c0931] bg-opacity-70 border-t-4 border-white "
+              class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 bg-[#5c0931] bg-opacity-70  "
             >
               <a href="./find-job.html" class="flex">
                 <div class="flex flex-col items-center gap-0.5">
@@ -1201,7 +1127,7 @@
      
   <footer class="px-0">
     <div
-      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 border-t-4 border-white bg-[#5c0931] bg-opacity-70"
+      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
     >
       <a href="./find-talent.html" class="flex flex-col items-center gap-1">
           <img src="../assets/find-talent.svg" alt="" class="h-4" />
@@ -1227,7 +1153,7 @@
           >
       </a>
 
-      <a href="" class="flex flex-col items-center gap-1">
+      <a href="./contact-us.html" class="flex flex-col items-center gap-1">
           <img src="../assets/contact-us.svg" alt="" class="h-4" />
           <span
             class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
@@ -1373,19 +1299,17 @@ selectedBtn.classList.remove("text-white");
         });
 
 
-      // swipper
-      var swiper = new Swiper(".addSwiper", {
-        speed: 600,
-        parallax: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+    
+            // swipper
+            var swiper = new Swiper(".prod-swiper", {
+      direction: "vertical",
+      autoplay: {
+  delay: 3000, // 3 seconds
+  disableOnInteraction: false, // Ensures auto-play continues after manual slide navigation
+},
+loop: true,
+speed: 800, 
+    });
 
 
       // accordian & its animation
