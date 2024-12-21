@@ -64,6 +64,12 @@ color: #5c0931;
 .c-text-uxs{
     font-size: 0.5rem
 }
+.t-xs-plus{
+    font-size: .9rem
+}
+.t-xs{
+    font-size: .8rem
+}
 .m-btn{
     background-color: #5c0931 ;
     color: white;
@@ -119,7 +125,7 @@ color: #5c0931;
  accent-color: #5c0931;
 }
 .footer-leading{
-    line-height: 10px;
+    line-height: 10px !important;
 }
 .advertActiveTab{
 
@@ -208,19 +214,27 @@ color: #5c0931;
     background: #5c0931;
   }
 
-@media (min-width: 640px){
+@media (min-width: 500px){
     .main {
         display: flex;
         flex-direction: column;
-        gap: 18px;
-        margin: 20px 20px;
+        gap: 28px;
+        margin: 26px 30px;
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 768px){
     .main {
+        gap: 28px;
+        margin: 6px 12px;
+        width: 755px;
+    }
+    .hide-full-width {
+        gap: 28px;
+        margin: 6px 12px;
+        width: 755px;
+    }
+    body{
         display: flex;
-        flex-direction: column;
-        gap: 14px;
-        margin: 24px 25px;
+        align-items: center;
     }
 }

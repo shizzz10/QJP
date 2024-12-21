@@ -5,10 +5,12 @@ module.exports = {
     "./src/**/*.{html,js}" // Match HTML and JS files in the src folder and its subfolders
   ],
   theme: {
-    extend: {},
+   extend: {
+      screens: {
+        'c-md': '500px', // Custom breakpoint at 500px
+      },
+    },
   },
   plugins: [],
 }
-
-
 

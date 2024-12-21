@@ -11,9 +11,9 @@
     <title>Advertise Business</title>
   </head>
   <body>
-    <header>
+    <header class="w-full">
       <div
-        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
+        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1 md:px-10"
       >
         <div class="flex justify-between items-center h-full">
           <a href="../../index.html" class="flex flex-shrink-0">
@@ -54,7 +54,7 @@
                 class="countries-dropdown flex justify-end rounded-md cursor-pointer"
               >
                 <picture id="selected-country">
-                  <img src="../assets/qa.svg" alt="" class="w-10" />
+                  <img src="../assets/qa.svg" alt="" class="w-10 md:w-12" />
                 </picture>
               </div>
               <div
@@ -63,17 +63,17 @@
               >
                 <a href="">
                   <div
-                    class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
+                    class="px-2 py-2 hover:bg-gray-100 cursor-pointer border-b"
                   >
                     <div class="flex">
-                      <img src="../assets/qa.svg" alt="" class="w-7" />
+                      <img src="../assets/qa.svg" alt="" class="w-7 md:w-12" />
                     </div>
                   </div>
                 </a>
                 <a href="">
-                  <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <div class="px-2 py-2 hover:bg-gray-100 cursor-pointer">
                     <div class="flex">
-                      <img src="../assets/pk.svg" alt="" class="w-7" />
+                      <img src="../assets/pk.svg" alt="" class="w-7 md:w-12" />
                     </div>
                   </div>
                 </a>
@@ -85,20 +85,28 @@
     </header>
 
     <!-- deafultContent tab  -->
-    <div id="deafultContent" class="">
+    <div id="deafultContent" class="md:w-full flex md:items-center flex-col">
       <main class="!mt-12 !mb-14">
         <!-- carousal add  -->
-     <!-- Product Swiper -->
-     <div class="swiper prod-swiper w-full h-32">
-      <div class="swiper-wrapper cursor-pointer">
-        <div class="swiper-slide flex">
-          <img src="../assets/Banner Digital Advertising.webp" alt="" class="w-full h-full object-fill">
+        <!-- Product Swiper -->
+        <div class="swiper prod-swiper w-full h-32">
+          <div class="swiper-wrapper cursor-pointer">
+            <div class="swiper-slide flex">
+              <img
+                src="../assets/Banner Digital Advertising.webp"
+                alt=""
+                class="w-full h-full object-fill"
+              />
+            </div>
+            <div class="swiper-slide flex justify-center items-center text-lg">
+              <img
+                src="../assets/Banner Digital Advertising.webp"
+                alt=""
+                class="w-full h-full object-fill"
+              />
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide flex justify-center items-center text-lg">
-          <img src="../assets/Banner Digital Advertising.webp" alt="" class="w-full h-full object-fill">
-        </div>
-      </div>
-    </div>
 
         <div class="main flex flex-col gap-4">
           <!-- head  -->
@@ -110,10 +118,10 @@
             </div>
 
             <div class="flex flex-col gap-0.5">
-              <h4 class="text-sm font-medium text-black">
+              <h4 class="text-sm font-semibold text-black">
                 Start advertising here
               </h4>
-              <span class="text-xs text-stone-800 tracking-tight">
+              <span class="text-sm text-stone-800 tracking-tight">
                 Advertise your business and products on Qatar Jobs Portal to
                 reach a large audience on daily basis
               </span>
@@ -122,7 +130,7 @@
 
           <!-- tabs  -->
           <div
-            class="flex gap-7 py-4 px-1.5 button-slider overflow-hidden pl-2"
+            class="flex sm:justify-center gap-7 py-4 px-1.5 button-slider overflow-hidden pl-2"
           >
             <!-- Pay per Click  -->
             <div
@@ -261,7 +269,7 @@
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
                     >Only On <span class="font-semibold">500 QAR</span></a
                   >
-                  
+
                   <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
                     >Download Media Kit</a
                   >
@@ -336,7 +344,7 @@
                   <a href="#" class="px-3.5 py-1.5 m-btn text-sm rounded-full"
                     >Only On <span class="font-semibold">500 QAR</span></a
                   >
-                  
+
                   <a href="#" class="px-3 py-1.5 m-btn text-sm rounded-full"
                     >Download Media Kit</a
                   >
@@ -457,25 +465,29 @@
               </div>
             </div>
           </div>
-
-      
         </div>
       </main>
 
-      <footer class="px-0">
+      <footer class="px-0 w-full">
         <div
-          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
         >
-          <a href="./find-talent.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/find-talent.svg" alt="" class="h-4" />
+          <a
+            href="./find-talent.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/find-talent.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Find Talent</span
             >
           </a>
 
-          <a href="./post-job.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/post-job.svg" alt="" class="h-4" />
+          <a
+            href="./post-job.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/post-job.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Post Job</span
@@ -484,17 +496,20 @@
 
           <a
             href="./advertise-business.html"
-            class="flex flex-col items-center gap-1"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
           >
-            <img src="../assets/business-ads.svg" alt="" class="h-4" />
+            <img src="../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Business Ads</span
             >
           </a>
 
-          <a href="./contact-us.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/contact-us.svg" alt="" class="h-4" />
+          <a
+            href="./contact-us.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Contact Us</span
@@ -504,21 +519,27 @@
       </footer>
     </div>
 
+  
     <!-- JobSeeker tab  -->
-    <div id="jobSeekerTab" class="hidden">
+    <div
+      id="jobSeekerTab"
+      class="hidden md:w-full flex md:items-center flex-col"
+    >
       <main class="main !mt-14 !mb-14">
         <!-- body  -->
         <div class="flex flex-col gap-4 rounded-xl">
           <!-- find talent  -->
           <a href="./feature-profile.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl object">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/jobseeker.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -535,7 +556,7 @@
                     class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
                   >
                     <circle
-                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                      class="absolute h-16 w-16 md:text-xl growing-btn animate-growing-btn flex items-center justify-center rounded-full"
                     ></circle>
 
                     <span
@@ -551,11 +572,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
                     Feature your profile
                   </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Showcase Your Profile, Get Noticed.</span
                   >
                 </div>
@@ -566,13 +587,15 @@
           <!-- Get a Professional Resume  -->
           <a href="./professional-resume.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl object">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/business.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -605,11 +628,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
                     Get a Professional Resume
                   </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Your Dream Job Starts with a Perfect Resume.</span
                   >
                 </div>
@@ -619,13 +642,13 @@
         </div>
       </main>
 
-      <footer class="px-0">
+      <footer class="px-0 w-full">
         <div
-          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 bg-[#5c0931] bg-opacity-70 "
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
         >
           <a href="./find-job.html" class="flex">
-            <div class="flex flex-col items-center gap-0.5">
-              <img src="../assets/job.svg" alt="" class="h-4" />
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/job.svg" alt="" class="h-4 md:h-5" />
               <span
                 class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
                 >Find Job</span
@@ -634,8 +657,8 @@
           </a>
 
           <a href="./professional-resume.html" class="flex">
-            <div class="flex flex-col items-center gap-1">
-              <img src="../assets/cv.svg" alt="" class="h-4" />
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/cv.svg" alt="" class="h-4 md:h-5" />
               <span
                 class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
                 >Pro CV</span
@@ -644,8 +667,12 @@
           </a>
 
           <a href="./feature-profile.html" class="flex">
-            <div class="flex flex-col items-center gap-1">
-              <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img
+                src="../assets/becomeFeature.svg"
+                alt=""
+                class="h-4 md:h-5"
+              />
               <span
                 class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
                 >Become Feature</span
@@ -654,8 +681,8 @@
           </a>
 
           <a href="./register-profile.html" class="flex">
-            <div class="flex flex-col items-center gap-1">
-              <img src="../assets/register.svg" alt="" class="h-4" />
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/register.svg" alt="" class="h-4 md:h-5" />
               <span
                 class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
                 >Register</span
@@ -667,20 +694,25 @@
     </div>
 
     <!-- Business tab  -->
-    <div id="businessTab" class="hidden">
+    <div
+      id="businessTab"
+      class="hidden md:w-full flex md:items-center flex-col"
+    >
       <main class="main !mt-14 !mb-14">
         <!-- body  -->
         <div class="flex flex-col gap-4 rounded-xl">
           <!-- find talent  -->
           <a href="./find-talent.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl object">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/find-talent.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -713,9 +745,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">Find Talent</h2>
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Find Talent
+                  </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Hire smarter, Find top talent.</span
                   >
                 </div>
@@ -726,13 +760,15 @@
           <!-- Post a Job  -->
           <a href="./post-job.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/post-job.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -765,9 +801,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">Post a Job</h2>
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Post a Job
+                  </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Reach top talent instantly.</span
                   >
                 </div>
@@ -778,13 +816,15 @@
           <!--  Business Adevertisng   -->
           <a href="./advertise-business.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/advertise-business.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -817,11 +857,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
                     Business Adevertisng
                   </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Your brand, everywhere it matters.</span
                   >
                 </div>
@@ -832,13 +872,15 @@
           <!--  HR Outsourcing   -->
           <a href="./hr-outsourcing.html" class="">
             <div
-              class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
             >
               <!-- image section  -->
-              <div class="relative w-full h-[200px] rounded-t-2xl">
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
                 <img
                   src="../assets/hr-outsource.webp"
-                  class="w-full h-full object-cover object-top transition-transform duration-500"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
                   alt="jobseeker"
                 />
               </div>
@@ -871,11 +913,11 @@
                 </div>
 
                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg font-semibold">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
                     HR Outsourcing
                   </h2>
 
-                  <span class="text-stone-100 text-sm"
+                  <span class="text-stone-100 text-sm md:text-base"
                     >Outsource HR, optimize efficiency.</span
                   >
                 </div>
@@ -885,20 +927,26 @@
         </div>
       </main>
 
-      <footer class="px-0">
+      <footer class="px-0 w-full">
         <div
-          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
         >
-          <a href="./find-talent.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/find-talent.svg" alt="" class="h-4" />
+          <a
+            href="./find-talent.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/find-talent.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Find Talent</span
             >
           </a>
 
-          <a href="./post-job.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/post-job.svg" alt="" class="h-4" />
+          <a
+            href="./post-job.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/post-job.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Post Job</span
@@ -907,17 +955,20 @@
 
           <a
             href="./advertise-business.html"
-            class="flex flex-col items-center gap-1"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
           >
-            <img src="../assets/business-ads.svg" alt="" class="h-4" />
+            <img src="../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Business Ads</span
             >
           </a>
 
-          <a href="./contact-us.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/contact-us.svg" alt="" class="h-4" />
+          <a
+            href="./contact-us.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >Contact Us</span
@@ -1028,17 +1079,16 @@
           countryList.classList.toggle("hidden");
         });
 
-    
-            // swipper
-            var swiper = new Swiper(".prod-swiper", {
-      direction: "vertical",
-      autoplay: {
-  delay: 3000, // 3 seconds
-  disableOnInteraction: false, // Ensures auto-play continues after manual slide navigation
-},
-loop: true,
-speed: 800, 
-    });
+      // swipper
+      var swiper = new Swiper(".prod-swiper", {
+        direction: "vertical",
+        autoplay: {
+          delay: 3000, // 3 seconds
+          disableOnInteraction: false, // Ensures auto-play continues after manual slide navigation
+        },
+        loop: true,
+        speed: 800,
+      });
 
       // accordian & its animation
       const accordionHeaders = document.querySelectorAll(".accordion-header");

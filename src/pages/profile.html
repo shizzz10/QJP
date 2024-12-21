@@ -11,9 +11,9 @@
     <title>Profile</title>
   </head>
   <body>
-    <header>
+    <header class="w-full">
       <div
-        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1"
+        class="fixed top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1 md:px-10"
       >
         <div class="flex justify-between items-center h-full">
           <a href="../../index.html" class="flex flex-shrink-0">
@@ -27,7 +27,7 @@
               <div
                 class="border h-7 lg:h-8 rounded-full flex transition-all duration-300 relative overflow-hidden"
               >
-              <!-- slider  -->
+                <!-- slider  -->
                 <div
                   class="px-2 sm:px-4 py-1 slider-bg absolute top-0 right-0 w-1/2 h-full bg-white bg-opacity-95 c-border rounded-full z-0 transition-transform duration-300 ease-in-out"
                 ></div>
@@ -48,13 +48,13 @@
               </div>
             </div>
 
-             <!-- flag  -->
-             <div class="relative w-14">
+            <!-- flag  -->
+            <div class="relative w-14">
               <div
                 class="countries-dropdown flex justify-end rounded-md cursor-pointer"
               >
                 <picture id="selected-country">
-                  <img src="../assets/qa.svg" alt="" class="w-10" />
+                  <img src="../assets/qa.svg" alt="" class="w-10 md:w-12" />
                 </picture>
               </div>
               <div
@@ -63,17 +63,17 @@
               >
                 <a href="">
                   <div
-                    class="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b"
+                    class="px-2 py-2 hover:bg-gray-100 cursor-pointer border-b"
                   >
                     <div class="flex">
-                      <img src="../assets/qa.svg" alt="" class="w-7" />
+                      <img src="../assets/qa.svg" alt="" class="w-7 md:w-12" />
                     </div>
                   </div>
                 </a>
                 <a href="">
-                  <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  <div class="px-2 py-2 hover:bg-gray-100 cursor-pointer">
                     <div class="flex">
-                      <img src="../assets/pk.svg" alt="" class="w-7" />
+                      <img src="../assets/pk.svg" alt="" class="w-7 md:w-12" />
                     </div>
                   </div>
                 </a>
@@ -83,9 +83,10 @@
         </div>
       </div>
     </header>
+
      
     <!-- deafultContent tab  -->
-    <div id="deafultContent" class="">
+    <div id="deafultContent" class="md:w-full flex md:items-center flex-col">
       <main class="main !mt-14 !mb-14">
         <div class="flex flex-col gap-5">
           <!-- profile card  -->
@@ -114,29 +115,29 @@
                     <h3 class="text-base font-semibold m-color">Sheraz Khan</h3>
 
                     <!-- profession  -->
-                    <span class="flex text-xs font-medium text-stone-800"
+                    <span class="flex t-xs font-medium text-stone-800 "
                       >Graphic Designer</span
                     >
 
                     <!-- emplyment status  -->
-                    <span class="flex text-xs font-medium text-stone-800"
+                    <span class="flex t-xs font-medium text-stone-800"
                       >Unemployed</span
                     >
                   </div>
                 </div>
                 <!-- edit profile link  -->
                 <div class="flex w-16">
-                  <a href="./edit-profile.html" class="c-underline text-xs">Edit profile</a>
+                  <a href="./edit-profile.html" class="c-underline text-xs font-semibold">Edit profile</a>
                 </div>
               </div>
 
               <!-- about me  -->
               <div class="flex flex-col gap-0.5">
                 <div class="flex">
-                  <h4 class="text-base font-medium text-black">About Me</h4>
+                  <h4 class="t-xs-plus font-semibold text-black">About Me</h4>
                 </div>
                 <!-- about me Description  -->
-                <div class="flex text-xs text-stone-800">
+                <div class="flex t-xs text-stone-800">
                   <p class="flex">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur vel aperiam quibusdam quas, consequuntur amet
@@ -153,114 +154,114 @@
                 <!-- highest Qualification  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Highest Qualification
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">Matric</span>
+                    <span class="t-xs text-stone-800">Matric</span>
                   </div>
                 </div>
 
                 <!-- Nationality  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">Nationality</h4>
+                    <h4 class="t-xs-plus font-medium text-black">Nationality</h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">Pakistan</span>
+                    <span class="t-xs text-stone-800">Pakistan</span>
                   </div>
                 </div>
 
                 <!--Total Experience   -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Total Experience
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">2 years</span>
+                    <span class="t-xs text-stone-800">2 years</span>
                   </div>
                 </div>
 
                 <!--Gulf Experience   -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Gulf Experience
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">none</span>
+                    <span class="t-xs text-stone-800">none</span>
                   </div>
                 </div>
 
                 <!-- Current Location   -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Current Location
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">Qatar</span>
+                    <span class="t-xs text-stone-800">Qatar</span>
                   </div>
                 </div>
 
                 <!-- Driving License   -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Driving License
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">Yes</span>
+                    <span class="t-xs text-stone-800">Yes</span>
                   </div>
                 </div>
 
                 <!-- Current Salary  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
+                    <h4 class="t-xs-plus font-medium text-black">
                       Current Salary
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">1,000-2,000 QAR</span>
+                    <span class="t-xs text-stone-800">1,000-2,000 QAR</span>
                   </div>
                 </div>
 
                 <!-- Expected Salary  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">
-                      Current Salary
+                    <h4 class="t-xs-plus font-medium text-black">
+                      Expected Salary
                     </h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">1,000-2,000 QAR</span>
+                    <span class="t-xs text-stone-800">1,000-2,000 QAR</span>
                   </div>
                 </div>
 
                 <!-- Gender  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">Gender</h4>
+                    <h4 class="t-xs-plus font-medium text-black">Gender</h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">Male</span>
+                    <span class="t-xs text-stone-800">Male</span>
                   </div>
                 </div>
 
                 <!-- Languages  -->
                 <div class="flex flex-col gap-0.5 w-5/12">
                   <div class="flex">
-                    <h4 class="text-sm font-medium text-black">Languages</h4>
+                    <h4 class="t-xs-plus font-medium text-black">Languages</h4>
                   </div>
                   <div class="flex">
-                    <span class="text-xs text-stone-800">English, Arabic</span>
+                    <span class="t-xs text-stone-800">English, Arabic</span>
                   </div>
                 </div>
               </div>
@@ -269,18 +270,18 @@
 
               <div class="flex flex-col gap-0.5 items-center justify-center">
                 <div class="flex">
-                  <h4 class="text-base font-medium m-color">Contact Details</h4>
+                  <h4 class="text-base font-semibold m-color">Contact Details</h4>
                 </div>
 
                 <div class="flex gap-2">
                   <div class="flex">
-                    <a href="" class="px-6 py-1.5 m-btn text-sm rounded-full"
+                    <a href="" class="px-6 py-1.5 m-btn t-xs-plus rounded-full"
                       >Call</a
                     >
                   </div>
 
                   <div class="flex">
-                    <a href="" class="px-4 py-2 m-btn text-sm rounded-full"
+                    <a href="" class="px-4 py-2 m-btn t-xs-plus rounded-full"
                       >Send Email</a
                     >
                   </div>
@@ -309,23 +310,23 @@
             onclick="toggleContent(this, event)"
           >
             <h4
-              class="text-sm font-semibold  b-color absolute bottom-24  transition-all duration-500 group-hover:bottom-24 left-5 lg:group-hover:bottom-24 group-hover:opacity-100 group.active:bottom-24 group.active:opacity-100 tracking-tight"
+              class="text-sm sm:text-base font-semibold  b-color absolute bottom-24  transition-all duration-500 group-hover:bottom-24 left-5 lg:group-hover:bottom-24 group-hover:opacity-100 group.active:bottom-24 group.active:opacity-100 tracking-tight"
             >
               Become Feature Candidate
             </h4>
             <span
-              class="c-text-sm font-medium text-stone-600 absolute bottom-14 left-5 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-16 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 w-11/12 pr-3"
+              class="c-text-sm c-md:text-xs md:text-sm font-medium text-stone-600 absolute bottom-14 left-5 transition-all duration-500 group-hover:bottom-16 lg:group-hover:bottom-16 group-hover:opacity-100 group.active:bottom-16 group.active:opacity-100 w-11/12 pr-3"
             >
             Boost visibility with a featured spot—connect with the right candidates faster!
             </span>
             <span
-              class="c-text-sm font-medium text-stone-100 absolute bottom-8 left-5 transition-all duration-500 group-hover:bottom-10 lg:group-hover:bottom-10 group-hover:opacity-100 group.active:bottom-10 group.active:opacity-100"
+              class="c-text-sm c-md:text-xs md:text-sm font-medium text-stone-50 group-hover:text-[#5c0931] absolute bottom-8 left-5 transition-all duration-500 group-hover:bottom-10 lg:group-hover:bottom-10 group-hover:opacity-100 group.active:bottom-10 group.active:opacity-100"
             >
               Starting from : <span>QAR 75</span>
             </span>
             <a
-              href="block"
-              class="bottom-[-40px] left-5 group-hover:bottom-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#5c0931] bg-[#5c0931] hover:bg-white hover:border hover:border-[#5c0931] text-xs rounded-full"
+              href="./feature-profile.html"
+              class="bottom-[-40px] left-5 group-hover:bottom-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 sm:py-1.5 text-white hover:text-[#5c0931] bg-[#5c0931] hover:bg-white hover:border hover:border-[#5c0931] text-xs rounded-full"
             >
               Learn More
             </a>
@@ -353,89 +354,105 @@
                     class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
                   >
                   
-                    <!-- Card 1 -->
-                    <div
-                      class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                    >
-                      <div class="flex flex-col justify-start gap-0.5">
-                        <span class="text-sm font-medium">Ahmad Khan</span>
-                        <span class="text-xs text-stone-800">Frontend Dev</span>
-                        <span class="text-xs text-stone-800">2 Years Experience</span>
-                      </div>
-                      <div class="flex flex-col justify-center items-center gap-1">
-                    <img src="../assets/star.svg" class="w-3" alt="" />
-                        <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                          >Apply</a
-                        >
-                        <span class="c-text-sm text-stone-600 tracking-tight">
-                          17 clicks
-                        </span>
-                      </div>
-                    </div>
-    
-
-                    <!-- Card 2 -->
-                    <div
-                      class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                    >
-                      <div class="flex flex-col justify-start gap-0.5">
-                        <span class="text-sm font-medium">Ahmad Khan</span>
-                        <span class="text-xs text-stone-800">Frontend Dev</span>
-                        <span class="text-xs text-stone-800">2 Years Experience</span>
-                      </div>
-                      <div class="flex flex-col justify-center items-center gap-1">
-                    <img src="../assets/star.svg" class="w-3" alt="" />
-                        <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                          >Apply</a
-                        >
-                        <span class="c-text-sm text-stone-600 tracking-tight">
-                          17 clicks
-                        </span>
-                      </div>
-                    </div>
-    
-
-                    <!-- Card 3 -->
-                    <div
-                      class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                    >
-                      <div class="flex flex-col justify-start gap-0.5">
-                        <span class="text-sm font-medium">Ahmad Khan</span>
-                        <span class="text-xs text-stone-800">Frontend Dev</span>
-                        <span class="text-xs text-stone-800">2 Years Experience</span>
-                      </div>
-                      <div class="flex flex-col justify-center items-center gap-1">
-                    <img src="../assets/star.svg" class="w-3" alt="" />
-                        <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                          >Apply</a
-                        >
-                        <span class="c-text-sm text-stone-600 tracking-tight">
-                          17 clicks
-                        </span>
-                      </div>
-                    </div>
-    
-
-                    <!-- Card 4 -->
-                    <div
-                      class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                    >
-                      <div class="flex flex-col justify-start gap-0.5">
-                        <span class="text-sm font-medium">Ahmad Khan</span>
-                        <span class="text-xs text-stone-800">Frontend Dev</span>
-                        <span class="text-xs text-stone-800">2 Years Experience</span>
-                      </div>
-                      <div class="flex flex-col justify-center items-center gap-1">
-                    <img src="../assets/star.svg" class="w-3" alt="" />
-                        <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                          >Apply</a
-                        >
-                        <span class="c-text-sm text-stone-600 tracking-tight">
-                          17 clicks
-                        </span>
-                      </div>
-                    </div>
-    
+                   <!-- Card 1 -->
+                   <div
+                   class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                 >
+                   <div class="flex flex-col justify-start gap-0.5">
+                     <span class="text-sm font-medium">Ahmad Khan</span>
+                     <span class="text-xs text-stone-800">Frontend Dev</span>
+                     <span class="text-xs text-stone-800"
+                       >2 Years Experience</span
+                     >
+                     <span class="text-xs text-stone-800">Unemployed</span>
+                   </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                     <img src="../assets/star.svg" class="w-3" alt="" />
+                     <a
+                       href="./profile.html"
+                       class="px-4 py-2 m-btn text-sm rounded-full"
+                       >View Profile</a
+                     >
+                     <span class="c-text-sm text-stone-600 tracking-tight">
+                       17 clicks
+                     </span>
+                   </div>
+                 </div>
+ 
+                 <!-- Card 2 -->
+                 <div
+                   class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                 >
+                   <div class="flex flex-col justify-start gap-0.5">
+                     <span class="text-sm font-medium">Ahmad Khan</span>
+                     <span class="text-xs text-stone-800">Frontend Dev</span>
+                     <span class="text-xs text-stone-800"
+                       >2 Years Experience</span
+                     >
+                     <span class="text-xs text-stone-800">Unemployed</span>
+                   </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                     <img src="../assets/star.svg" class="w-3" alt="" />
+                     <a
+                       href="./profile.html"
+                       class="px-4 py-2 m-btn text-sm rounded-full"
+                       >View Profile</a
+                     >
+                     <span class="c-text-sm text-stone-600 tracking-tight">
+                       17 clicks
+                     </span>
+                   </div>
+                 </div>
+ 
+                 <!-- Card 3 -->
+                 <div
+                   class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                 >
+                   <div class="flex flex-col justify-start gap-0.5">
+                     <span class="text-sm font-medium">Ahmad Khan</span>
+                     <span class="text-xs text-stone-800">Frontend Dev</span>
+                     <span class="text-xs text-stone-800"
+                       >2 Years Experience</span
+                     >
+                     <span class="text-xs text-stone-800">Unemployed</span>
+                   </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                     <img src="../assets/star.svg" class="w-3" alt="" />
+                     <a
+                       href="./profile.html"
+                       class="px-4 py-2 m-btn text-sm rounded-full"
+                       >View Profile</a
+                     >
+                     <span class="c-text-sm text-stone-600 tracking-tight">
+                       17 clicks
+                     </span>
+                   </div>
+                 </div>
+ 
+                 <!-- Card 4 -->
+                 <div
+                   class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                 >
+                   <div class="flex flex-col justify-start gap-0.5">
+                     <span class="text-sm font-medium">Ahmad Khan</span>
+                     <span class="text-xs text-stone-800">Frontend Dev</span>
+                     <span class="text-xs text-stone-800"
+                       >2 Years Experience</span
+                     >
+                     <span class="text-xs text-stone-800">Unemployed</span>
+                   </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                     <img src="../assets/star.svg" class="w-3" alt="" />
+                     <a
+                       href="./profile.html"
+                       class="px-4 py-2 m-btn text-sm rounded-full"
+                       >View Profile</a
+                     >
+                     <span class="c-text-sm text-stone-600 tracking-tight">
+                       17 clicks
+                     </span>
+                   </div>
+                 </div>
                   </div>
 
                    <!-- 2nd slide -->
@@ -443,91 +460,107 @@
                    class="swiper-slide flex flex-col gap-2 items-center justify-center px-1"
                  >
                  
-                   <!-- Card 1 -->
-                   <div
-                     class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                   >
-                     <div class="flex flex-col justify-start gap-0.5">
-                       <span class="text-sm font-medium">Ahmad Khan</span>
-                       <span class="text-xs text-stone-800">Frontend Dev</span>
-                       <span class="text-xs text-stone-800">2 Years Experience</span>
-                     </div>
-                     <div class="flex flex-col justify-center items-center gap-1">
-                   <img src="../assets/star.svg" class="w-3" alt="" />
-                       <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                         >Apply</a
-                       >
-                       <span class="c-text-sm text-stone-600 tracking-tight">
-                         17 clicks
-                       </span>
-                     </div>
-                   </div>
-   
+                  <!-- Card 1 -->
+                  <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-0.5">
+                    <span class="text-sm font-medium">Ahmad Khan</span>
+                    <span class="text-xs text-stone-800">Frontend Dev</span>
+                    <span class="text-xs text-stone-800"
+                      >2 Years Experience</span
+                    >
+                    <span class="text-xs text-stone-800">Unemployed</span>
+                  </div>
+                  <div class="flex flex-col justify-center items-center gap-1">
+                    <img src="../assets/star.svg" class="w-3" alt="" />
+                    <a
+                      href="./profile.html"
+                      class="px-4 py-2 m-btn text-sm rounded-full"
+                      >View Profile</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      17 clicks
+                    </span>
+                  </div>
+                </div>
 
-                   <!-- Card 2 -->
-                   <div
-                     class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                   >
-                     <div class="flex flex-col justify-start gap-0.5">
-                       <span class="text-sm font-medium">Ahmad Khan</span>
-                       <span class="text-xs text-stone-800">Frontend Dev</span>
-                       <span class="text-xs text-stone-800">2 Years Experience</span>
-                     </div>
-                     <div class="flex flex-col justify-center items-center gap-1">
-                   <img src="../assets/star.svg" class="w-3" alt="" />
-                       <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                         >Apply</a
-                       >
-                       <span class="c-text-sm text-stone-600 tracking-tight">
-                         17 clicks
-                       </span>
-                     </div>
-                   </div>
-   
+                <!-- Card 2 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-0.5">
+                    <span class="text-sm font-medium">Ahmad Khan</span>
+                    <span class="text-xs text-stone-800">Frontend Dev</span>
+                    <span class="text-xs text-stone-800"
+                      >2 Years Experience</span
+                    >
+                    <span class="text-xs text-stone-800">Unemployed</span>
+                  </div>
+                  <div class="flex flex-col justify-center items-center gap-1">
+                    <img src="../assets/star.svg" class="w-3" alt="" />
+                    <a
+                      href="./profile.html"
+                      class="px-4 py-2 m-btn text-sm rounded-full"
+                      >View Profile</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      17 clicks
+                    </span>
+                  </div>
+                </div>
 
-                   <!-- Card 3 -->
-                   <div
-                     class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                   >
-                     <div class="flex flex-col justify-start gap-0.5">
-                       <span class="text-sm font-medium">Ahmad Khan</span>
-                       <span class="text-xs text-stone-800">Frontend Dev</span>
-                       <span class="text-xs text-stone-800">2 Years Experience</span>
-                     </div>
-                     <div class="flex flex-col justify-center items-center gap-1">
-                   <img src="../assets/star.svg" class="w-3" alt="" />
-                       <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                         >Apply</a
-                       >
-                       <span class="c-text-sm text-stone-600 tracking-tight">
-                         17 clicks
-                       </span>
-                     </div>
-                   </div>
-   
+                <!-- Card 3 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-0.5">
+                    <span class="text-sm font-medium">Ahmad Khan</span>
+                    <span class="text-xs text-stone-800">Frontend Dev</span>
+                    <span class="text-xs text-stone-800"
+                      >2 Years Experience</span
+                    >
+                    <span class="text-xs text-stone-800">Unemployed</span>
+                  </div>
+                  <div class="flex flex-col justify-center items-center gap-1">
+                    <img src="../assets/star.svg" class="w-3" alt="" />
+                    <a
+                      href="./profile.html"
+                      class="px-4 py-2 m-btn text-sm rounded-full"
+                      >View Profile</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      17 clicks
+                    </span>
+                  </div>
+                </div>
 
-                   <!-- Card 4 -->
-                   <div
-                     class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2 rounded-xl shadow-sm shadow-black/40"
-                   >
-                     <div class="flex flex-col justify-start gap-0.5">
-                       <span class="text-sm font-medium">Ahmad Khan</span>
-                       <span class="text-xs text-stone-800">Frontend Dev</span>
-                       <span class="text-xs text-stone-800">2 Years Experience</span>
-                     </div>
-                     <div class="flex flex-col justify-center items-center gap-1">
-                   <img src="../assets/star.svg" class="w-3" alt="" />
-                       <a href="#" class="px-4 py-2 m-btn text-sm rounded-full"
-                         >Apply</a
-                       >
-                       <span class="c-text-sm text-stone-600 tracking-tight">
-                         17 clicks
-                       </span>
-                     </div>
-                   </div>
-   
+                <!-- Card 4 -->
+                <div
+                  class="flex justify-between gap-2 w-full bg-white hover:bg-stone-50 px-2 py-2.5 rounded-xl shadow-sm shadow-black/40"
+                >
+                  <div class="flex flex-col justify-start gap-0.5">
+                    <span class="text-sm font-medium">Ahmad Khan</span>
+                    <span class="text-xs text-stone-800">Frontend Dev</span>
+                    <span class="text-xs text-stone-800"
+                      >2 Years Experience</span
+                    >
+                    <span class="text-xs text-stone-800">Unemployed</span>
+                  </div>
+                  <div class="flex flex-col justify-center items-center gap-1">
+                    <img src="../assets/star.svg" class="w-3" alt="" />
+                    <a
+                      href="./profile.html"
+                      class="px-4 py-2 m-btn text-sm rounded-full"
+                      >View Profile</a
+                    >
+                    <span class="c-text-sm text-stone-600 tracking-tight">
+                      17 clicks
+                    </span>
+                  </div>
+                </div>
                  </div>
-    
+
 
                 </div>
                 <!-- Swiper Pagination -->
@@ -545,40 +578,53 @@
   
   
    
-    <footer class="px-0">
+
+    <footer class="px-0 w-full">
       <div
-        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
+        class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
       >
-        <a href="./find-talent.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/find-talent.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Find Talent</span
-            >
+        <a
+          href="./find-talent.html"
+          class="flex flex-col items-center gap-1 md:gap-1.5"
+        >
+          <img src="../assets/find-talent.svg" alt="" class="h-4 md:h-5" />
+          <span
+            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+            >Find Talent</span
+          >
         </a>
 
-        <a href="./post-job.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/post-job.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Post Job</span
-            >
+        <a
+          href="./post-job.html"
+          class="flex flex-col items-center gap-1 md:gap-1.5"
+        >
+          <img src="../assets/post-job.svg" alt="" class="h-4 md:h-5" />
+          <span
+            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+            >Post Job</span
+          >
         </a>
 
-        <a href="./advertise-business.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/business-ads.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Business Ads</span
-            >
+        <a
+          href="./advertise-business.html"
+          class="flex flex-col items-center gap-1 md:gap-1.5"
+        >
+          <img src="../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
+          <span
+            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+            >Business Ads</span
+          >
         </a>
 
-        <a href="./contact-us.html" class="flex flex-col items-center gap-1">
-            <img src="../assets/contact-us.svg" alt="" class="h-4" />
-            <span
-              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Contact Us</span
-            >
+        <a
+          href="./contact-us.html"
+          class="flex flex-col items-center gap-1 md:gap-1.5"
+        >
+          <img src="../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
+          <span
+            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+            >Contact Us</span
+          >
         </a>
       </div>
     </footer>
@@ -589,408 +635,462 @@
 
     
       <!-- JobSeeker tab  -->
-      <div id="jobSeekerTab" class="hidden">
-        <main class="main !mt-14 !mb-14">
-          
-    
-          <!-- body  -->
-          <div class="flex flex-col gap-4 rounded-xl">
-    
-    
-             <!-- find talent  -->
-             <a href="./feature-profile.html" class="">
-              <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-               <!-- image section  -->
-               <div class="relative w-full h-[200px]   rounded-t-2xl object">
-                 <img
-                   src="../assets/jobseeker.webp"
-                   class="w-full h-full object-cover object-top transition-transform duration-500"
-                   alt="jobseeker"
-                 />
-               </div>
-     
-               <!-- text section  -->
-                <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-                  
-                  <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                 <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-     
-                   <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-     
-                   <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-                   <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-                 </span>
-                 </span>
-                 </div>
-     
-                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                 <h2
-                   class="text-white text-lg font-semibold"
-                 >
-                 Feature your profile
-                 </h2>
-     
-                 <span class="text-stone-100 text-sm">Showcase Your Profile, Get Noticed.</span>
-     
-               </div>
-                </div>
-     
-     
-     
-              </div>
-             </a>
-     
-    
-             <!-- Get a Professional Resume  -->
-             <a href="./professional-resume.html" class="">
-              <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-               <!-- image section  -->
-               <div class="relative w-full h-[200px]   rounded-t-2xl object">
-                 <img
-                   src="../assets/business.webp"
-                   class="w-full h-full object-cover object-top transition-transform duration-500"
-                   alt="jobseeker"
-                 />
-               </div>
-     
-               <!-- text section  -->
-                <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-                  
-                  <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                 <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-     
-                   <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-     
-                   <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-                   <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-                 </span>
-                 </span>
-                 </div>
-     
-                 <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                 <h2
-                   class="text-white text-lg font-semibold"
-                 >
-                 Get a Professional Resume
-                 </h2>
-     
-                 <span class="text-stone-100 text-sm">Your Dream Job Starts with a Perfect Resume.</span>
-     
-               </div>
-                </div>
-     
-     
-     
-              </div>
-             </a>
-     
-    
-    
-          </div>
-    
-    
-        </main>
-    
-        <footer class="px-0 ">
-            <div
-              class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1 bg-[#5c0931] bg-opacity-70  "
-            >
-              <a href="./find-job.html" class="flex">
-                <div class="flex flex-col items-center gap-0.5">
-                  <img src="../assets/job.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Find Job</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./professional-resume.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/cv.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Pro CV</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./feature-profile.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/becomeFeature.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Become Feature</span
-                  >
-                </div>
-              </a>
-      
-              <a href="./register-profile.html" class="flex">
-                <div class="flex flex-col items-center gap-1">
-                  <img src="../assets/register.svg" alt="" class="h-4" />
-                  <span
-                    class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-                    >Register</span
-                  >
-                </div>
-              </a>
-            </div>
-      
-           
-          </footer>
-     
-      </div>
-
-
-
-  <!-- Business tab  -->
-  <div id="businessTab" class="hidden">
-    <main class="main !mt-14 !mb-14">
-  
-      
-      <!-- body  -->
-      <div class="flex flex-col gap-4 rounded-xl">
-
-        <!-- find talent  -->
-         <a href="./find-talent.html" class="">
-         <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-          <!-- image section  -->
-          <div class="relative w-full h-[200px]   rounded-t-2xl object">
-            <img
-              src="../assets/find-talent.webp"
-              class="w-full h-full object-cover object-top transition-transform duration-500"
-              alt="jobseeker"
-            />
-          </div>
-
-          <!-- text section  -->
-           <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-             
-             <!-- spinner  -->
-            <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-            <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-
-              <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-
-              <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-              <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-            </span>
-            </span>
-            </div>
-
-            <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-            <h2
-              class="text-white text-lg font-semibold"
-            >
-              Find Talent
-            </h2>
-
-            <span class="text-stone-100 text-sm">Hire smarter, Find top talent.</span>
-
-          </div>
-           </div>
-
-
-
-         </div>
-        </a>
-
-
-       
-        <!-- Post a Job  -->
-        <a href="./post-job.html" class="">
-          <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-           <!-- image section  -->
-           <div class="relative w-full h-[200px]   rounded-t-2xl">
-             <img
-               src="../assets/post-job.webp"
-               class="w-full h-full object-cover object-top transition-transform duration-500"
-               alt="jobseeker"
-             />
-           </div>
- 
-           <!-- text section  -->
-            <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-              
-                 <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                  <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-      
-                    <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-      
-                    <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-                    <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-                  </span>
-                  </span>
-                  </div>
-      
- 
-             <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-             <h2
-               class="text-white text-lg font-semibold"
-             >
-             Post a Job
-             </h2>
- 
-             <span class="text-stone-100 text-sm">Reach top talent instantly.</span>
- 
-           </div>
-            </div>
- 
- 
- 
-          </div>
-         </a>
-
-
-
-
-         
-        <!--  Business Adevertisng   -->
-        <a href="./advertise-business.html" class="">
-          <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-           <!-- image section  -->
-           <div class="relative w-full h-[200px]   rounded-t-2xl">
-             <img
-               src="../assets/advertise-business.webp"
-               class="w-full h-full object-cover object-top transition-transform duration-500"
-               alt="jobseeker"
-             />
-           </div>
- 
-           <!-- text section  -->
-            <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-              
-                 <!-- spinner  -->
-                 <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                  <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-      
-                    <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-      
-                    <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-                    <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-                  </span>
-                  </span>
-                  </div>
-      
- 
-             <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-             <h2
-               class="text-white text-lg font-semibold"
-             >
-             Business Adevertisng
-             </h2>
- 
-             <span class="text-stone-100 text-sm">Your brand, everywhere it matters.</span>
- 
-           </div>
-            </div>
- 
- 
- 
-          </div>
-         </a>
-
-       <!--  HR Outsourcing   -->
-       <a href="./hr-outsourcing.html" class="">
-        <div class="flex flex-col h-[300px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative">
-         <!-- image section  -->
-         <div class="relative w-full h-[200px]   rounded-t-2xl">
-           <img
-             src="../assets/hr-outsource.webp"
-             class="w-full h-full object-cover object-top transition-transform duration-500"
-             alt="jobseeker"
-           />
-         </div>
-
-         <!-- text section  -->
-          <div class="flex   border-t-8 border-gray-300   group-hover:border-white relative">  
-            
-               <!-- spinner  -->
-               <div class=" absolute -top-12 left-[calc(80%-40px)] flex items-center ">
-                <span class=" h-20 w-20 flex items-center justify-center rounded-full border-8 border-white ">
-    
-                  <circle class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"></circle>
-    
-                  <span class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white">
-                  <img src="../assets/right-angle-red.svg" alt="" class=" flex w-6">
-                </span>
-                </span>
-                </div>
-    
-
-           <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-           <h2
-             class="text-white text-lg font-semibold"
-           >
-           HR Outsourcing
-           </h2>
-
-           <span class="text-stone-100 text-sm">Outsource HR, optimize efficiency.</span>
-
-         </div>
-          </div>
-
-
-
-        </div>
-       </a>
-
-      </div>
-      
-    </main>
-
-
-     
-  <footer class="px-0">
-    <div
-      class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 py-1  bg-[#5c0931] bg-opacity-70"
+      <div
+      id="jobSeekerTab"
+      class="hidden md:w-full flex md:items-center flex-col"
     >
-      <a href="./find-talent.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/find-talent.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Find Talent</span
-          >
-      </a>
+      <main class="main !mt-14 !mb-14">
+        <!-- body  -->
+        <div class="flex flex-col gap-4 rounded-xl">
+          <!-- find talent  -->
+          <a href="./feature-profile.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/jobseeker.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
 
-      <a href="./post-job.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/post-job.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Post Job</span
-          >
-      </a>
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 md:text-xl growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
 
-      <a href="./advertise-business.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/business-ads.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Business Ads</span
-          >
-      </a>
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
 
-      <a href="./contact-us.html" class="flex flex-col items-center gap-1">
-          <img src="../assets/contact-us.svg" alt="" class="h-4" />
-          <span
-            class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-            >Contact Us</span
-          >
-      </a>
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Feature your profile
+                  </h2>
+
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Showcase Your Profile, Get Noticed.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Get a Professional Resume  -->
+          <a href="./professional-resume.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/business.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Get a Professional Resume
+                  </h2>
+
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Your Dream Job Starts with a Perfect Resume.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <footer class="px-0 w-full">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
+        >
+          <a href="./find-job.html" class="flex">
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/job.svg" alt="" class="h-4 md:h-5" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Find Job</span
+              >
+            </div>
+          </a>
+
+          <a href="./professional-resume.html" class="flex">
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/cv.svg" alt="" class="h-4 md:h-5" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Pro CV</span
+              >
+            </div>
+          </a>
+
+          <a href="./feature-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img
+                src="../assets/becomeFeature.svg"
+                alt=""
+                class="h-4 md:h-5"
+              />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Become Feature</span
+              >
+            </div>
+          </a>
+
+          <a href="./register-profile.html" class="flex">
+            <div class="flex flex-col items-center gap-1 md:gap-1.5">
+              <img src="../assets/register.svg" alt="" class="h-4 md:h-5" />
+              <span
+                class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+                >Register</span
+              >
+            </div>
+          </a>
+        </div>
+      </footer>
     </div>
-  </footer>
-   
-  </div>
 
+    <!-- Business tab  -->
+    <div
+      id="businessTab"
+      class="hidden md:w-full flex md:items-center flex-col"
+    >
+      <main class="main !mt-14 !mb-14">
+        <!-- body  -->
+        <div class="flex flex-col gap-4 rounded-xl">
+          <!-- find talent  -->
+          <a href="./find-talent.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/find-talent.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
 
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
 
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
 
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Find Talent
+                  </h2>
 
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Hire smarter, Find top talent.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
 
+          <!-- Post a Job  -->
+          <a href="./post-job.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/post-job.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
 
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
 
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Post a Job
+                  </h2>
+
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Reach top talent instantly.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!--  Business Adevertisng   -->
+          <a href="./advertise-business.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/advertise-business.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    Business Adevertisng
+                  </h2>
+
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Your brand, everywhere it matters.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!--  HR Outsourcing   -->
+          <a href="./hr-outsourcing.html" class="">
+            <div
+              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
+            >
+              <!-- image section  -->
+              <div
+                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
+              >
+                <img
+                  src="../assets/hr-outsource.webp"
+                  class="w-full h-full object-cover object-center transition-transform duration-500"
+                  alt="jobseeker"
+                />
+              </div>
+
+              <!-- text section  -->
+              <div
+                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
+              >
+                <!-- spinner  -->
+                <div
+                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                >
+                  <span
+                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  >
+                    <circle
+                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
+                    ></circle>
+
+                    <span
+                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                    >
+                      <img
+                        src="../assets/right-angle-red.svg"
+                        alt=""
+                        class="flex w-6"
+                      />
+                    </span>
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
+                  <h2 class="text-white text-lg md:text-xl font-semibold">
+                    HR Outsourcing
+                  </h2>
+
+                  <span class="text-stone-100 text-sm md:text-base"
+                    >Outsource HR, optimize efficiency.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+
+      <footer class="px-0 w-full">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
+        >
+          <a
+            href="./find-talent.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/find-talent.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Find Talent</span
+            >
+          </a>
+
+          <a
+            href="./post-job.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/post-job.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Post Job</span
+            >
+          </a>
+
+          <a
+            href="./advertise-business.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Business Ads</span
+            >
+          </a>
+
+          <a
+            href="./contact-us.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Contact Us</span
+            >
+          </a>
+        </div>
+      </footer>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/a65c1abfe9.js"
