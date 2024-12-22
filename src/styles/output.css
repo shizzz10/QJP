@@ -618,10 +618,6 @@ video {
   right: -4rem;
 }
 
-.-right-8 {
-  right: -2rem;
-}
-
 .-top-12 {
   top: -3rem;
 }
@@ -710,10 +706,6 @@ video {
   right: 0.75rem;
 }
 
-.right-4 {
-  right: 1rem;
-}
-
 .right-5 {
   right: 1.25rem;
 }
@@ -752,10 +744,6 @@ video {
 
 .top-8 {
   top: 2rem;
-}
-
-.top-\[calc\(50\%-32px\)\] {
-  top: calc(50% - 32px);
 }
 
 .z-0 {
@@ -814,10 +802,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -856,10 +840,6 @@ video {
 
 .h-12 {
   height: 3rem;
-}
-
-.h-14 {
-  height: 3.5rem;
 }
 
 .h-16 {
@@ -1022,10 +1002,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[755px\] {
-  width: 755px;
 }
 
 .flex-shrink-0 {
@@ -1236,10 +1212,6 @@ video {
   --tw-border-opacity: 0.6;
 }
 
-.border-opacity-70 {
-  --tw-border-opacity: 0.7;
-}
-
 .bg-\[\#0A66C2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(10 102 194 / var(--tw-bg-opacity, 1));
@@ -1248,6 +1220,11 @@ video {
 .bg-\[\#1877F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 119 242 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#25D366\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 211 102 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#5c0931\] {
@@ -1547,6 +1524,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -1611,10 +1592,6 @@ video {
   font-weight: 800;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1647,10 +1624,6 @@ video {
   letter-spacing: 0.025em;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1674,6 +1647,11 @@ video {
 .text-purple-400 {
   --tw-text-opacity: 1;
   color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
 }
 
 .text-red-700 {
@@ -2138,14 +2116,18 @@ h1,h2,h3,h4,h5,h6{
   }
 
   .hide-full-width {
-    gap: 28px;
-    margin: 6px 12px;
-    width: 755px;
+    gap: 28px ;
+    margin: 6px 12px ;
+    width: 755px ;
   }
 
   body{
     display: flex;
     align-items: center;
+  }
+
+  .head-foot-width{
+    width: 755px !important;
   }
 }
 
@@ -2516,6 +2498,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media (min-width: 500px) {
+  .c-md\:h-8 {
+    height: 2rem;
+  }
+
   .c-md\:h-80 {
     height: 20rem;
   }
@@ -2526,6 +2512,14 @@ h1,h2,h3,h4,h5,h6{
 
   .c-md\:h-\[350px\] {
     height: 350px;
+  }
+
+  .c-md\:h-\[360px\] {
+    height: 360px;
+  }
+
+  .c-md\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .c-md\:w-8 {
@@ -2539,12 +2533,36 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media (min-width: 640px) {
+  .sm\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .sm\:w-32 {
     width: 8rem;
   }
 
+  .sm\:w-4 {
+    width: 1rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
   }
 
   .sm\:px-4 {
@@ -2552,14 +2570,34 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 1rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:py-1\.5 {
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
   }
 
+  .sm\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
@@ -2570,6 +2608,10 @@ h1,h2,h3,h4,h5,h6{
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:font-semibold {
+    font-weight: 600;
   }
 
   .group:hover .sm\:group-hover\:bottom-14 {
@@ -2622,6 +2664,10 @@ h1,h2,h3,h4,h5,h6{
     width: 7rem;
   }
 
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
   .md\:w-36 {
     width: 9rem;
   }
@@ -2650,6 +2696,10 @@ h1,h2,h3,h4,h5,h6{
     gap: 0.375rem;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2658,6 +2708,11 @@ h1,h2,h3,h4,h5,h6{
   .md\:px-2\.5 {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:\!text-xs {

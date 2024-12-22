@@ -229,12 +229,15 @@ color: #5c0931;
         width: 755px;
     }
     .hide-full-width {
-        gap: 28px;
-        margin: 6px 12px;
-        width: 755px;
+        gap: 28px ;
+        margin: 6px 12px ;
+        width: 755px ;
     }
     body{
         display: flex;
         align-items: center;
+    }
+    .head-foot-width{
+        width: 755px !important;
     }
 }
