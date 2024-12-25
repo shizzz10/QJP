@@ -11,209 +11,310 @@
     <title>Admin Home</title>
   </head>
   <body>
-    <header class="fixed top-0 w-full z-50 head-foot-width">
+      
+    <header class="w-full flex justify-center">
+      <div
+        class="fixed top-0 w-full head-foot-width z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1 md:px-10"
+      >
+        <div class="flex justify-between items-center h-full">
+          <a href="../../index.html" class="flex flex-shrink-0">
+            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
+          </a>
 
-        <a href="/"
-          class="h-12 b-bg-color text-white flex justify-center items-center border-b-4 border-white px-2 py-2"
-        >
-          <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-32" />
-        </a>
-  
-      </header>
+          <!-- profile  -->
+          <div class="flex items-end gap-2 sm:gap-4">
+           
+            <a href="" class="font-medium text-xs sm:text-sm text-stone-300 tracking-tighter footer-leading ">Log out</a>
+
+          
+        <!-- <a href="">
+          <picture>
+            <img src="../assets/profile3.webp" alt="" class="h-9 w-9 sm:h-10 sm:w-10  rounded-full object-cover object-top">
+          </picture>
+        </a> -->
+
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- -->
     <div id="" class="md:w-full flex md:items-center flex-col">
       <main class="main !mt-14 !mb-14">
         <!-- body  -->
         <div class="flex flex-col gap-4 rounded-xl">
-          
           <div class="flex">
-            <div class="flex gap-3 flex-col sm:gap-2 custom-width">
+            <div class="flex gap-4 flex-col sm:gap-2 custom-width">
               <div class="">
-                <h3
+                <!-- <h3
                   class="font-semibold sm:font-bold text-base sm:text-lg b-color"
                 >
                   Visit :
+                </h3> -->
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <!-- user Management -->
+
+                <div class="flex flex-col gap-2">
+
+                  <div class="flex">
+                    <h3
+                    class="font-semibold sm:font-bold text-sm sm:text-base b-color"
+                  >
+                  User Management
+                  </h3>
+                  </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <!-- Post a Job  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Post a Job
+                      </p>
+                    </div></a
+                  >
+
+                  <!-- Register New Employer -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                      Register New Employer
+                      </p>
+                    </div></a
+                  >
+
+                  <!-- Approve Job Seekers  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Approve Job Seekers
+                      </p>
+                    </div></a
+                  >
+
+                  <!-- Send Alerts to Job Seekers  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Send Alerts to Job Seekers
+                      </p>
+                    </div></a
+                  >
+                </div>
+              </div>
+
+              <!-- Database  Management -->
+              <div class="flex flex-col gap-2">
+                
+                <div class="flex">
+                  <h3
+                  class="font-semibold sm:font-bold text-sm sm:text-base b-color"
+                  >
+                  Database  Management
                 </h3>
               </div>
               <div class="flex flex-wrap gap-2">
-                
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
-                  >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                  <!--  List of Jobs  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
                     >
-                    Post a Job
-                    </p>
-                  </div></a
-                >
-
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        List of Jobs
+                      </p>
+                    </div></a
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    List of Jobs
-                    </p>
-                  </div></a
-                >
 
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                  <!-- Update Images  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Update Images
+                      </p>
+                    </div></a
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    List of Job Seekers
-                    </p>
-                  </div></a
-                >
+                </div>
 
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+              </div>
+
+              <!-- Other -->
+               <div class="flex flex-col gap-2">
+
+                <div class="flex">
+                  <h3
+                  class="font-semibold sm:font-bold text-sm sm:text-base b-color"
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Approve Job Seekers
-                    </p>
-                  </div></a
-                >
+                  Other
+                </h3>
+              </div>
 
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+              <div class="flex flex-wrap gap-2">
+                  <!-- Ads Management  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Ads Management
+                      </p>
+                    </div></a
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Ads Management
-                    </p>
-                  </div></a
-                >
 
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                  <!-- Send Alerts to Employers  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Send Alerts to Employers
+                      </p>
+                    </div></a
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Update Images
-                    </p>
-                  </div></a
-                >
 
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                  <!-- Jobseeker Data Queries  -->
+                  <a href="" class="">
+                    <div
+                      class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
+                    >
+                      <img
+                        src="../assets/qjp-logo.webp"
+                        class="h-5 sm:h-6"
+                        alt=""
+                      />
+                      <p
+                        class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
+                      >
+                        Jobseeker Data Queries
+                      </p>
+                    </div></a
                   >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Send Alerts to Job Seekers
-                    </p>
-                  </div></a
-                >
-
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
-                  >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Send Alerts to Employers
-                    </p>
-                  </div></a
-                >
-
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
-                  >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Create Employer Account
-                    </p>
-                  </div></a
-                >
-
-                <a href="" class="">
-                  <div
-                    class="bg-[#5c0931] hover:bg-opacity-95 flex flex-col border border-stone-200 px-1 rounded-xl items-center justify-around py-1 w-24 h-24 sm:w-28 sm:h-28 shadow-sm shadow-black/50 ease-in-out transform scale-100 hover:scale-[1.01] duration-300 hover:shadow-black/70"
-                  >
-                    <img
-                      src="../assets/qjp-logo.webp"
-                      class="h-5 sm:h-6"
-                      alt=""
-                    />
-                    <p
-                      class="text-xs sm:text-sm font-medium flex flex-wrap text-center text-stone-50 hover:text-stone:200"
-                    >
-                    Jobseeker Data Queries
-                    </p>
-                  </div></a
-                >
-
+                </div>
+              </div>
 
               </div>
             </div>
           </div>
         </div>
       </main>
+
+      
+      <footer class="px-0 w-full flex justify-center">
+        <div
+          class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full head-foot-width px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
+        >
+          <a
+            href=""
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/find-talent.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Home</span
+            >
+          </a>
+
+          <a
+            href=""
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/post-job.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Send Alert </span
+            >
+          </a>
+
+          <a
+            href="./admin-user-managment.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >User Management</span
+            >
+          </a>
+
+          <a
+            href="./contact-us.html"
+            class="flex flex-col items-center gap-1 md:gap-1.5"
+          >
+            <img src="../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
+            <span
+              class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
+              >Register Employer </span
+            >
+          </a>
+        </div>
+      </footer>
 
     </div>
 

@@ -12,246 +12,212 @@
   </head>
   <body>
     
-    <header class="fixed top-0 w-full z-50 head-foot-width">
+    <header class="w-full flex justify-center">
+      <div
+        class="fixed top-0 w-full head-foot-width z-50 h-12 b-bg-color text-white border-b-4 border-white backdrop:flex flex-col gap-2 px-2 py-1 md:px-10"
+      >
+        <div class="flex justify-between items-center h-full">
+          <a href="../../index.html" class="flex flex-shrink-0">
+            <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
+          </a>
 
-        <a href="/"
-          class="h-12 b-bg-color text-white flex justify-center items-center border-b-4 border-white px-2 py-2"
-        >
-          <img src="../assets/qjp-logo.webp" alt="qjs logo" class="w-32" />
+          <!-- profile  -->
+          <div class="flex items-end gap-2 sm:gap-4">
+           
+            <a href="" class="font-medium text-xs sm:text-sm text-stone-300 tracking-tighter footer-leading mb-1">Log out</a>
+
+          
+        <a href="">
+          <picture>
+            <img src="../assets/profile3.webp" alt="" class="h-9 w-9 sm:h-10 sm:w-10  rounded-full object-cover object-top">
+          </picture>
         </a>
-  
-      </header>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+
 
   
     <div
       id=""
       class=" md:w-full flex md:items-center flex-col"
     >
-      <main class="main !mt-14 !mb-14">
+      <main class="main !mt-16 !mb-14">
         <!-- body  -->
+
+        <div class="flex justify-end items-end">
+          <a href="" class="px-2.5 sm:px-5 py-2 m-btn text-xs rounded-l-full font-medium shadow-md shadow-black/30 ease-in-out">Contact Admin</a>
+        </div>
+
         <div class="flex flex-col gap-4 rounded-xl">
-          <a href="./find-talent.html" class="">
-            <div
-              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
-            >
-              <!-- image section  -->
-              <div
-                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
-              >
-                <img
-                  src="../assets/find-talent.webp"
-                  class="w-full h-full object-cover object-center transition-transform duration-500"
-                  alt="jobseeker"
-                />
-              </div>
-
-              <!-- text section  -->
-              <div
-                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
-              >
-                <!-- spinner  -->
+        
+          
+            <!-- services -->
+            <div class="flex flex-col gap-1">
+  
+              <div class="flex gap-2 flex-wrap justify-between w-full">
                 <div
-                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
+                  class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-pink-50 hover:bg-pink-200 active:bg-pink-200"
+                  ontouchstart="toggleContent(this, event)"
+                  onclick="toggleContent(this, event)"
                 >
-                  <span
-                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
+                  <a
+                    href="./find-talent.html"
+                    class="w-full h-full cursor-pointer"
                   >
-                    <circle
-                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
-                    ></circle>
-
                     <span
-                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
+                      class="text-sm sm:text-base font-semibold text-pink-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
                     >
-                      <img
-                        src="../assets/right-angle-red.svg"
-                        alt=""
-                        class="flex w-6"
-                      />
+                      Find Talent
                     </span>
-                  </span>
+                    <span
+                      class="c-text-sm c-md:text-xs md:text-sm font-medium text-stone-400 group-hover:text-pink-500 absolute bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                    >
+                      Free <span></span>
+                    </span>
+                    <a
+                      href="block"
+                      class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                    >
+                      Learn More
+                    </a>
+  
+                    <!-- emoji -->
+                    <picture
+                      class="absolute -right-16 -top-2 bg-pink-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                    >
+                    </picture>
+  
+                    <img
+                      src="../assets/find-talent-emoji.webp"
+                      class="h-8 absolute right-1 top-8"
+                      alt=""
+                    />
+                  </a>
                 </div>
-
-                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg md:text-xl font-semibold">
-                    Find Talent
-                  </h2>
-
-                  <span class="text-stone-100 text-sm md:text-base"
-                    >Hire smarter, Find top talent.</span
+  
+                <div
+                  class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-blue-50 hover:bg-blue-200 active:bg-blue-200"
+                  ontouchstart="toggleContent(this, event)"
+                  onclick="toggleContent(this, event)"
+                >
+                  <a href="./post-job.html" class="w-full h-full cursor-pointer">
+                    <span
+                      class="text-sm sm:text-base font-semibold text-blue-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                    >
+                      Post a Job
+                    </span>
+                    <span
+                      class="c-text-sm font-medium text-stone-400 group-hover:text-blue-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                    >
+                      Starting from : <span>QAR 60</span>
+                    </span>
+                    <a
+                      href="block"
+                      class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                    >
+                      Learn More
+                    </a>
+  
+                    <!-- emoji -->
+                    <picture
+                      class="absolute -right-16 -top-2 bg-blue-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                    >
+                    </picture>
+  
+                    <img
+                      src="../assets/job-posting-emoji.webp"
+                      class="h-8 absolute right-1 top-8"
+                      alt=""
+                    />
+                  </a>
+                </div>
+  
+                <div
+                  class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-purple-50 hover:bg-purple-200 active:bg-purple-200"
+                  ontouchstart="toggleContent(this, event)"
+                  onclick="toggleContent(this, event)"
+                >
+                  <a
+                    href="advertise-business.html"
+                    class="w-full h-full cursor-pointer"
                   >
+                    <span
+                      class="text-sm sm:text-base font-semibold text-purple-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                    >
+                      Business Advertising
+                    </span>
+                    <span
+                      class="c-text-sm font-medium text-stone-400 group-hover:text-purple-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                    >
+                      Starting from : <span>QAR 500</span>
+                    </span>
+                    <a
+                      href="block"
+                      class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                    >
+                      Learn More
+                    </a>
+  
+                    <!-- emoji -->
+                    <picture
+                      class="absolute -right-16 -top-2 bg-purple-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                    >
+                    </picture>
+  
+                    <img
+                      src="../assets/business-adver-emoji.webp"
+                      class="h-8 absolute right-1 top-8"
+                      alt=""
+                    />
+                  </a>
+                </div>
+  
+                <div
+                  class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-green-50 hover:bg-green-200 active:bg-green-200"
+                  ontouchstart="toggleContent(this, event)"
+                  onclick="toggleContent(this, event)"
+                >
+                  <a
+                    href="hr-outsourcing.html"
+                    class="w-full h-full cursor-pointer"
+                  >
+                    <span
+                      class="text-sm sm:text-base font-semibold text-green-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                    >
+                      HR Outsourcing
+                    </span>
+                    <span
+                      class="c-text-sm font-medium text-stone-400 group-hover:text-green-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                    >
+                      Starting from : <span>QAR 2000</span>
+                    </span>
+                    <a
+                      href="block"
+                      class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                    >
+                      Learn More
+                    </a>
+  
+                    <!-- emoji -->
+                    <picture
+                      class="absolute -right-16 -top-2 bg-green-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                    >
+                    </picture>
+  
+                    <img
+                      src="../assets/hr-outsourcing-emoji.webp"
+                      class="h-8 absolute right-1 top-8"
+                      alt=""
+                    />
+                  </a>
                 </div>
               </div>
             </div>
-          </a>
 
-          <!-- Post a Job  -->
-          <a href="./post-job.html" class="">
-            <div
-              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
-            >
-              <!-- image section  -->
-              <div
-                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
-              >
-                <img
-                  src="../assets/post-job.webp"
-                  class="w-full h-full object-cover object-center transition-transform duration-500"
-                  alt="jobseeker"
-                />
-              </div>
-
-              <!-- text section  -->
-              <div
-                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
-              >
-                <!-- spinner  -->
-                <div
-                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
-                >
-                  <span
-                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
-                  >
-                    <circle
-                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
-                    ></circle>
-
-                    <span
-                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
-                    >
-                      <img
-                        src="../assets/right-angle-red.svg"
-                        alt=""
-                        class="flex w-6"
-                      />
-                    </span>
-                  </span>
-                </div>
-
-                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg md:text-xl font-semibold">
-                    Post a Job
-                  </h2>
-
-                  <span class="text-stone-100 text-sm md:text-base"
-                    >Reach top talent instantly.</span
-                  >
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!--  Business Adevertisng   -->
-          <a href="./advertise-business.html" class="">
-            <div
-              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
-            >
-              <!-- image section  -->
-              <div
-                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
-              >
-                <img
-                  src="../assets/advertise-business.webp"
-                  class="w-full h-full object-cover object-center transition-transform duration-500"
-                  alt="jobseeker"
-                />
-              </div>
-
-              <!-- text section  -->
-              <div
-                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
-              >
-                <!-- spinner  -->
-                <div
-                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
-                >
-                  <span
-                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
-                  >
-                    <circle
-                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
-                    ></circle>
-
-                    <span
-                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
-                    >
-                      <img
-                        src="../assets/right-angle-red.svg"
-                        alt=""
-                        class="flex w-6"
-                      />
-                    </span>
-                  </span>
-                </div>
-
-                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg md:text-xl font-semibold">
-                    Business Adevertisng
-                  </h2>
-
-                  <span class="text-stone-100 text-sm md:text-base"
-                    >Your brand, everywhere it matters.</span
-                  >
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!--  HR Outsourcing   -->
-          <a href="./hr-outsourcing.html" class="">
-            <div
-              class="flex flex-col h-[300px] c-md:h-[350px] md:h-[390px] group bg-[#5c0931] hover:bg-[#6e0839] rounded-2xl overflow-hidden relative"
-            >
-              <!-- image section  -->
-              <div
-                class="relative w-full h-[200px] c-md:h-[240px] md:h-[270px] rounded-t-2xl"
-              >
-                <img
-                  src="../assets/hr-outsource.webp"
-                  class="w-full h-full object-cover object-center transition-transform duration-500"
-                  alt="jobseeker"
-                />
-              </div>
-
-              <!-- text section  -->
-              <div
-                class="flex border-t-8 border-gray-300 group-hover:border-white relative"
-              >
-                <!-- spinner  -->
-                <div
-                  class="absolute -top-12 left-[calc(80%-40px)] flex items-center"
-                >
-                  <span
-                    class="h-20 w-20 flex items-center justify-center rounded-full border-8 border-white"
-                  >
-                    <circle
-                      class="absolute h-16 w-16 growing-btn animate-growing-btn flex items-center justify-center rounded-full"
-                    ></circle>
-
-                    <span
-                      class="absolute h-12 w-12 flex items-center justify-center rounded-full bg-white"
-                    >
-                      <img
-                        src="../assets/right-angle-red.svg"
-                        alt=""
-                        class="flex w-6"
-                      />
-                    </span>
-                  </span>
-                </div>
-
-                <div class="flex flex-col gap-1 px-4 py-2 mt-4">
-                  <h2 class="text-white text-lg md:text-xl font-semibold">
-                    HR Outsourcing
-                  </h2>
-
-                  <span class="text-stone-100 text-sm md:text-base"
-                    >Outsource HR, optimize efficiency.</span
-                  >
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
       </main>
 
