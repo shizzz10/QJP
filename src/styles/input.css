@@ -139,6 +139,18 @@ color: #5c0931;
 .whatsapp-btn{
     animation: whatsapp-growing 3s ease-out infinite;
 }
+/* Active State (Cross Icon) */
+#menu-btn.active .menu-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  #menu-btn.active .menu-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-btn.active .menu-line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
 @keyframes whatsapp-growing {
     0%, 100% {
         transform: scale(1);
