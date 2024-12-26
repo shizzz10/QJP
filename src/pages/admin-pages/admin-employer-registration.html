@@ -349,11 +349,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       // image upload
-      const uploadImage = document.getElementById("uploadImage");
+      const uploadLogo = document.getElementById("uploadLogo");
       const profileImage = document.getElementById("profileImage");
 
       // Handle image preview
-      uploadImage.addEventListener("change", (event) => {
+      uploadLogo.addEventListener("change", (event) => {
         const file = event.target.files[0];
         if (file) {
           const reader = new FileReader();
@@ -361,6 +361,7 @@
           reader.readAsDataURL(file);
         }
       });
+
 
     </script>
   </body>
