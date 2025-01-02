@@ -807,17 +807,35 @@ Describe yourself</textarea
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    
-    <script>
-     
 
-      const menuBtn = document.getElementById('menu-btn');
-      const menu = document.getElementById('menu');
-      
-      menuBtn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-        menuBtn.classList.toggle('active');
-      });
-      
-      </script>
+
+<script>
+  // image upload
+  const uploadImage = document.getElementById("uploadImage");
+  const profileImage = document.getElementById("profileImage");
+
+  // Handle image preview
+  uploadImage.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => (profileImage.src = e.target.result);
+      reader.readAsDataURL(file);
+    }
+  });
+
+  
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menuBtn.classList.toggle('active');
+  });
+  
+
+</script>
+
+
   </body>
 </html>

@@ -225,6 +225,33 @@ color: #5c0931;
 .swiper-pagination-bullet-active{
     background: #5c0931;
   }
+/* advertisment carousal css */
+
+.progress-indicator {
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+.progress-indicator.dot {
+    width: 8px;
+}
+.progress-indicator.active {
+    width: 30px;
+}
+.progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #5c0931;
+    width: 0;
+    transition: width 0.1s linear;
+}
+
 
 @media (min-width: 500px){
     .main {
