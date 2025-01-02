@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../../styles/output.css" />
-    <title>Admin Job List Page</title>
+    <title>All Job List Page</title>
   </head>
   <body>
     <header class="w-full flex justify-center">
@@ -94,7 +94,7 @@
                 <h3
                   class="font-semibold sm:font-bold text-base sm:text-lg b-color"
                 >
-                  Job List
+                 All Job List
                 </h3>
               </div>
 
@@ -135,7 +135,21 @@
 
                 <!-- Tabs  Content -->
 
-                <div id="activeJobs" class="hidden flex flex-col">
+                <div id="activeJobs" class="hidden flex flex-col gap-4">
+                      
+                  <div class="relative flex">
+                    <input
+                      type="text"
+                      placeholder="Search here"
+                      class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-black/25 focus:shadow-md focus:shadow-[#8E2157]/35 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                    />
+                    <img
+                      src="../../assets/search.svg"
+                      class="h-4 absolute top-3.5 right-3"
+                      alt=""
+                    />
+                  </div>
+
                   <div class="flex flex-col gap-2">
                      
                     <!-- Card 1 -->
@@ -227,7 +241,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -322,7 +336,7 @@
                             <a
                               href=""
                               class="flex px-5 sm:px-5 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs rounded-full w-fit h-fit"
-                              >Delete</a
+                              >Trash</a
                             >
                           </div>
                         </div>
@@ -420,7 +434,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -515,7 +529,7 @@
                             <a
                               href=""
                               class="flex px-5 sm:px-5 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs rounded-full w-fit h-fit"
-                              >Delete</a
+                              >Trash</a
                             >
                           </div>
                         </div>
@@ -524,7 +538,23 @@
                   </div>
                 </div>
 
-                <div id="expiredJobs" class="hidden flex flex-col">
+                <div id="expiredJobs" class="hidden flex flex-col gap-4">
+
+                      
+                  <div class="relative flex">
+                    <input
+                      type="text"
+                      placeholder="Search here"
+                      class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-black/25 focus:shadow-md focus:shadow-[#8E2157]/35 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                    />
+                    <img
+                      src="../../assets/search.svg"
+                      class="h-4 absolute top-3.5 right-3"
+                      alt=""
+                    />
+                  </div>
+
+
                   <div class="flex flex-col gap-2">
 
                     <!-- Card 1 -->
@@ -616,7 +646,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -809,7 +839,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -916,7 +946,23 @@
                   </div>
                 </div>
 
-                <div id="featuredJobs" class="hidden flex flex-col">
+                <div id="featuredJobs" class="hidden flex flex-col gap-4">
+
+                      
+                  <div class="relative flex">
+                    <input
+                      type="text"
+                      placeholder="Search here"
+                      class="w-full rounded-full px-2 placeholder:font-light text-black text-sm py-3 border shadow-sm shadow-black/25 focus:shadow-md focus:shadow-[#8E2157]/35 focus:border-[#8E2157] focus:ring-[#8E2157] focus:outline-none transition"
+                    />
+                    <img
+                      src="../../assets/search.svg"
+                      class="h-4 absolute top-3.5 right-3"
+                      alt=""
+                    />
+                  </div>
+
+
                   <div class="flex flex-col gap-2">
                       
                     <!-- Card 1 -->
@@ -1008,7 +1054,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -1103,7 +1149,7 @@
                             <a
                               href=""
                               class="flex px-5 sm:px-5 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs rounded-full w-fit h-fit"
-                              >Delete</a
+                              >Trash</a
                             >
                           </div>
                         </div>
@@ -1201,7 +1247,7 @@
 
                           <div class="flex mt-auto">
                             <a
-                              href=""
+                              href="./admin-postJob.html"
                               class="flex px-5 sm:px-5 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full w-fit h-fit"
                               >Edit</a
                             >
@@ -1296,7 +1342,7 @@
                             <a
                               href=""
                               class="flex px-5 sm:px-5 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs rounded-full w-fit h-fit"
-                              >Delete</a
+                              >Trash</a
                             >
                           </div>
                         </div>

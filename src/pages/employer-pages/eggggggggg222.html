@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css">
+    <style>
+        .swiper {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .swiper-slide {
+            height: 300px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .custom-pagination {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .progress-indicator {
+            height: 4px;
+            background: #ddd;
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: width 0.3s ease;
+        }
+        .progress-indicator.dot {
+            width: 8px;
+        }
+        .progress-indicator.active {
+            width: 30px;
+        }
+        .progress-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: #6b46c1;
+            width: 0;
+            transition: width 0.1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+        <div class="custom-pagination"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script>
+        let progressInterval;
+        let progressValue = 0;
+        const slideTime = 3000;
+        const updateInterval = 30;
+
+        function createPagination(totalSlides) {
+            const pagination = document.querySelector('.custom-pagination');
+            pagination.innerHTML = '';
+            
+            for (let i = 0; i < totalSlides; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'progress-indicator dot';
+                indicator.innerHTML = '<div class="progress-fill"></div>';
+                indicator.addEventListener('click', () => {
+                    swiper.slideTo(i);
+                });
+                pagination.appendChild(indicator);
+            }
+        }
+
+        function resetProgress() {
+            clearInterval(progressInterval);
+            progressValue = 0;
+            const indicators = document.querySelectorAll('.progress-indicator');
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.add('dot');
+                indicator.classList.remove('active');
+                progressBars[index].style.width = '0%';
+            });
+        }
+
+        function startProgress(index) {
+            const indicators = document.querySelectorAll('.progress-indicator');
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            resetProgress();
+            indicators[index].classList.remove('dot');
+            indicators[index].classList.add('active');
+
+            progressInterval = setInterval(() => {
+                progressValue += (updateInterval / slideTime) * 100;
+                
+                if (progressValue >= 100) {
+                    clearInterval(progressInterval);
+                } else {
+                    progressBars[index].style.width = `${progressValue}%`;
+                }
+            }, updateInterval);
+        }
+
+        const swiper = new Swiper('.swiper', {
+            speed: 300,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,  // Enable loop behavior
+            on: {
+                init: function() {
+                    createPagination(this.slides.length);
+                    startProgress(0);
+                },
+                slideChange: function() {
+                    startProgress(this.realIndex);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
