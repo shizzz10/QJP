@@ -128,164 +128,188 @@
        </div>
 
      
-       <!-- services -->
-       <div class="flex flex-col gap-1">
-        <div class="flex gap-2 items-center">
-          <img src="../assets/star.svg" class="w-3" alt="" />
-          <h4 class="text-base sm:text-lg font-medium m-color">Jobseeker Services</h4>
-        </div>
        
-        <div class="flex gap-2 flex-wrap justify-between w-full">
-          <div
-            class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-pink-50 hover:bg-pink-200 active:bg-pink-200"
-            ontouchstart="toggleContent(this, event)"
-            onclick="toggleContent(this, event)"
-          >
-          <a href="./professional-resume.html" class="w-full h-full cursor-pointer">
-            <span
-              class="text-sm sm:text-base font-semibold text-pink-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
-            >
-            Professional Resume
-            </span>
-            <span
-              class="c-text-sm c-md:text-xs md:text-sm font-medium text-stone-400 group-hover:text-pink-500 absolute bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
-            >
-            Starting from : <span>QAR 120</span>
-            </span>
-            <a
-              href="block"
-              class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
-            >
-              Learn More
-            </a>
-       
-            <!-- emoji -->
-            <picture
-              class="absolute -right-16 -top-2 bg-pink-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
-            >
-            </picture>
-       
-            <img
-              src="../assets/find-talent-emoji.webp"
-              class="h-8 absolute right-1 top-8"
-              alt=""
-            />
-          </a>
+           <!-- Advertisement Swiper -->
+           <div class="swiper w-full h-full adSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/advertise-business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/find-talent.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+            </div>
+            <div class="swiper-scrollbar b-color"></div>
           </div>
-       
-          <div
-            class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-blue-50 hover:bg-blue-200 active:bg-blue-200"
-            ontouchstart="toggleContent(this, event)"
-            onclick="toggleContent(this, event)"
-          >
-          <a href="" class="w-full h-full cursor-pointer">
-            <span
-              class="text-sm sm:text-base font-semibold text-blue-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
-            >
-            Linkedin profile Optimization
-            </span>
-            <span
-              class="c-text-sm font-medium text-stone-400 group-hover:text-blue-500 absolute  sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
-            >
-              Starting from : <span>QAR 100</span>
-            </span>
-            <a
-              href="block"
-              class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
-            >
-              Learn More
-            </a>
-       
-            <!-- emoji -->
-            <picture
-              class="absolute -right-16 -top-2 bg-blue-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
-            >
-            </picture>
-       
-            <img
-              src="../assets/job-posting-emoji.webp"
-              class="h-8 absolute right-1 top-8"
-              alt=""
-            />
-          </a>
+
+          <!-- services -->
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/star.svg" class="w-3" alt="" />
+              <h4 class="text-base sm:text-lg font-medium m-color">
+                Jobseeker Services
+              </h4>
+            </div>
+
+            <div class="flex gap-2 flex-wrap justify-between w-full">
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-pink-50 hover:bg-pink-200 active:bg-pink-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <a
+                  href="./professional-resume.html"
+                  class="w-full h-full cursor-pointer"
+                >
+                  <span
+                    class="text-sm sm:text-base font-semibold text-pink-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                  >
+                    Professional Resume
+                  </span>
+                  <span
+                    class="c-text-sm c-md:text-xs md:text-sm font-medium text-stone-400 group-hover:text-pink-500 absolute bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                  >
+                    Starting from : <span>QAR 120</span>
+                  </span>
+                  <a
+                    href="block"
+                    class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                  >
+                    Learn More
+                  </a>
+
+                  <!-- emoji -->
+                  <picture
+                    class="absolute -right-16 -top-2 bg-pink-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                  >
+                  </picture>
+
+                  <img
+                    src="../assets/resume-emoji.webp"
+                    class="h-8 absolute right-1 top-8"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-blue-50 hover:bg-blue-200 active:bg-blue-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <a href="" class="w-full h-full cursor-pointer">
+                  <span
+                    class="text-sm sm:text-base font-semibold text-blue-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                  >
+                    Linkedin profile Optimization
+                  </span>
+                  <span
+                    class="c-text-sm font-medium text-stone-400 group-hover:text-blue-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                  >
+                    Starting from : <span>QAR 100</span>
+                  </span>
+                  <a
+                    href="block"
+                    class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                  >
+                    Learn More
+                  </a>
+
+                  <!-- emoji -->
+                  <picture
+                    class="absolute -right-16 -top-2 bg-blue-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                  >
+                  </picture>
+
+                  <img
+                    src="../assets/linkedin-emoji.webp"
+                    class="h-8 absolute right-1 top-8"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-purple-50 hover:bg-purple-200 active:bg-purple-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <a href="" class="w-full h-full cursor-pointer">
+                  <span
+                    class="text-sm sm:text-base font-semibold text-purple-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                  >
+                    WhatsApp Job Alert
+                  </span>
+                  <span
+                    class="c-text-sm font-medium text-stone-400 group-hover:text-purple-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                  >
+                    Free <span></span>
+                  </span>
+                  <a
+                    href="block"
+                    class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                  >
+                    Learn More
+                  </a>
+
+                  <!-- emoji -->
+                  <picture
+                    class="absolute -right-16 -top-2 bg-purple-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                  >
+                  </picture>
+
+                  <img
+                    src="../assets/whatsapp-emoji.webp"
+                    class="h-8 absolute right-1 top-8"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div
+                class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-green-50 hover:bg-green-200 active:bg-green-200"
+                ontouchstart="toggleContent(this, event)"
+                onclick="toggleContent(this, event)"
+              >
+                <a
+                  href="feature-profile.html"
+                  class="w-full h-full cursor-pointer"
+                >
+                  <span
+                    class="text-sm sm:text-base font-semibold text-green-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
+                  >
+                    Become Feature
+                  </span>
+                  <span
+                    class="c-text-sm font-medium text-stone-400 group-hover:text-green-500 absolute sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
+                  >
+                    Starting from : <span>QAR 75</span>
+                  </span>
+                  <a
+                    href="block"
+                    class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
+                  >
+                    Learn More
+                  </a>
+
+                  <!-- emoji -->
+                  <picture
+                    class="absolute -right-16 -top-2 bg-green-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
+                  >
+                  </picture>
+
+                  <img
+                    src="../assets/become-feature-emoji.webp"
+                    class="h-8 absolute right-1 top-8"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
           </div>
-       
-          <div
-            class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-purple-50 hover:bg-purple-200 active:bg-purple-200"
-            ontouchstart="toggleContent(this, event)"
-            onclick="toggleContent(this, event)"
-          >
-          <a href="" class="w-full h-full cursor-pointer">
-            <span
-              class="text-sm sm:text-base font-semibold text-purple-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
-            >
-            WhatsApp Job Alert
-            </span>
-            <span
-              class="c-text-sm font-medium text-stone-400 group-hover:text-purple-500 absolute  sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
-            >
-            Free <span></span>
-            </span>
-            <a
-              href="block"
-              class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
-            >
-              Learn More
-            </a>
-       
-            <!-- emoji -->
-            <picture
-              class="absolute -right-16 -top-2 bg-purple-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
-            >
-            </picture>
-       
-            <img
-              src="../assets/business-adver-emoji.webp"
-              class="h-8 absolute right-1 top-8"
-              alt=""
-            />
-          </a>
-          </div>
-       
-          <div
-            class="c-w-48 h-24 relative overflow-hidden group flex flex-col gap-1 w-full rounded-xl shadow-sm shadow-black/40 bg-green-50 hover:bg-green-200 active:bg-green-200"
-            ontouchstart="toggleContent(this, event)"
-            onclick="toggleContent(this, event)"
-          >
-          <a href="feature-profile.html" class="w-full h-full cursor-pointer">
-            <span
-              class="text-sm sm:text-base font-semibold text-green-400 absolute bottom-14 left-1.5 transition-all duration-500 sm:group-hover:bottom-14 lg:group-hover:bottom-14 group-hover:opacity-100 group.active:bottom-14 group.active:opacity-100 tracking-tight w-[66%] leading-4"
-            >
-            Become Feature
-            </span>
-            <span
-              class="c-text-sm font-medium text-stone-400 group-hover:text-green-500 absolute  sm:text-xs bottom-5 left-1.5 transition-all duration-500 sm:group-hover:bottom-6 lg:group-hover:bottom-6 group-hover:opacity-100 group.active:bottom-6 group.active:opacity-100 w-[66%] leading-3"
-            >
-            Starting from : <span>QAR 75</span>
-            </span>
-            <a
-              href="block"
-              class="hidden bottom-[-40px] left-2 group-hover:bottom-2 group-hover:left-2 group-hover:opacity-100 opacity-0 transition-all duration-300 absolute px-4 py-1 text-white hover:text-[#8E2157] bg-[#8E2157] hover:bg-white hover:border hover:border-[#8E2157] text-xs rounded-full"
-            >
-              Learn More
-            </a>
-       
-            <!-- emoji -->
-            <picture
-              class="absolute -right-16 -top-2 bg-green-200 p-8 rounded-full transition-all duration-400 group-hover:bottom-2.5 lg:group-hover:bottom-3 group.active:bottom-3 h-28 w-28"
-            >
-            </picture>
-       
-            <img
-              src="../assets/hr-outsourcing-emoji.webp"
-              class="h-8 absolute right-1 top-8"
-              alt=""
-            />
-          </a>
-          </div>
-      
-        </div>
-       </div>
 
           <!-- Open job Post  -->
           <div
@@ -1610,6 +1634,21 @@ selectedBtn.classList.remove("text-white");
         },
         loop: true,
       });
+
+      
+
+      var adswiper = new Swiper(".adSwiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+    });
+
 
       
     </script>

@@ -321,6 +321,23 @@
             </div>
           </div>
 
+          
+           <!-- Advertisement Swiper -->
+           <div class="swiper w-full h-full adSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/advertise-business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/find-talent.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+            </div>
+            <div class="swiper-scrollbar b-color"></div>
+          </div>
+
           <!-- Featured Jobseekers  -->
           <div class="swiper mySwiper w-full flex flex-col gap-2">
             <!-- head -->
@@ -1139,6 +1156,22 @@
         },
         loop: true,
       });
+
+       
+
+      var adswiper = new Swiper(".adSwiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+    });
+
+
     </script>
   </body>
 </html>
