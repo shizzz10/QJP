@@ -88,17 +88,22 @@
     <!-- deafultContent tab  -->
     <div id="deafultContent" class="md:w-full flex md:items-center flex-col">
       <main class="!mt-12 !mb-14">
-        <!-- Product Swiper -->
-  <div class="swiper prod-swiper w-full head-foot-width h-32">
-    <div class="swiper-wrapper cursor-pointer">
-      <div class="swiper-slide flex">
-        <img src="../assets/Banner Feature Profile.webp" alt="" class="w-full h-full object-fit object-center">
-      </div>
-      <div class="swiper-slide flex justify-center items-center text-lg">
-        <img src="../assets/Banner Feature Profile.webp" alt="" class="w-full h-full object-fit object-center">
-      </div>
-    </div>
-  </div>
+  
+           <!-- Advertisement Swiper -->
+           <div class="swiper adSwiper head-foot-width">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/advertise-business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/find-talent.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+              <div class="swiper-slide h-[180px] c-md:h-[240px] md:h-[300px] flex items-center justify-center">
+                <img src="../assets/business.webp" class="w-full h-full object-cover rounded-xl" alt="">
+            </div>
+            </div>
+            <div class="swiper-scrollbar b-color"></div>
+          </div>
 
         <div class="main flex flex-col gap-4">
           <!-- head  -->
@@ -1018,16 +1023,20 @@
       // swiper carousal
 
     
-            // swipper
-            var swiper = new Swiper(".prod-swiper", {
-      direction: "vertical",
-      autoplay: {
-  delay: 3000, // 3 seconds
-  disableOnInteraction: false, // Ensures auto-play continues after manual slide navigation
-},
-loop: true,
-speed: 800, 
+         
+
+      var adswiper = new Swiper(".adSwiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
     });
+
 
       function showAdvertTab(tabId, selectedBtn) {
         // Hide all tab contents explicitly

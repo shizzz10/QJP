@@ -1571,6 +1571,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2969,10 +2974,6 @@ h1,h2,h3,h4,h5,h6{
 
   .md\:ml-3 {
     margin-left: 0.75rem;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {

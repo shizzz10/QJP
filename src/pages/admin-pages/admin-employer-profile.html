@@ -7,7 +7,6 @@
     <title>Employer Profile</title>
   </head>
   <body>
-
     <header class="w-full flex justify-center">
       <div
         class="fixed head-foot-width top-0 w-full z-50 h-12 b-bg-color text-white border-b-4 border-white px-4 md:px-10"
@@ -15,36 +14,19 @@
         <div class="flex justify-between items-center h-full">
           <!-- Logo -->
           <a href="./admin-home.html" class="flex flex-shrink-0">
-            <img
-              src="../../assets/qjp-logo.webp"
-              alt="qjs logo"
-              class="w-28"
-            />
+            <img src="../../assets/qjp-logo.webp" alt="qjs logo" class="w-28" />
           </a>
-    
+
           <!-- Profile and Hamburger Menu -->
           <div class="flex items-center gap-4">
-            <span class="hidden md:block text-white font-medium">Profile</span>
-    
             <!-- Links for About & Contact (Hidden on Small Screens) -->
             <div
               id="menu"
-              class="absolute top-12 left-0 w-full bg-[#5c0931] bg-opacity-90  hidden flex flex-col gap-2 text-xs px-2 py-2"
+              class="absolute top-12 left-0 w-full bg-[#5c0931] bg-opacity-90 hidden flex flex-col gap-2 text-xs px-2 py-2"
             >
-              
-              <a
-                href="./admin-home.html"
-                class="underline text-white"
-                >Home</a
-              >
-              <a
-                href=""
-                class="underline text-white"
-                >Send Alert</a
-              >
-              <a
-                href="./admin-user-managment.html"
-                class="underline text-white"
+              <a href="./admin-home.html" class="underline text-white">Home</a>
+              <a href="" class="underline text-white">Send Alert</a>
+              <a href="./admin-user-managment.html" class="underline text-white"
                 >User Managment</a
               >
               <a
@@ -52,20 +34,13 @@
                 class="underline text-white"
                 >Register Employer</a
               >
-              <a
-                href=""
-                class="underline text-white"
-                >Log Out</a
-              >
+              <a href="" class="underline text-white">Log Out</a>
             </div>
-    
+
             <!-- Hamburger Icon -->
-            <button
-              id="menu-btn"
-              class="flex flex-col justify-between w-6 h-6"
-            >
+            <button id="menu-btn" class="flex flex-col justify-between w-6 h-6">
               <span
-                class="block w-6 h-1 bg-white transition-transform origin-center menu-line  duration-500 ease-in-out"
+                class="block w-6 h-1 bg-white transition-transform origin-center menu-line duration-500 ease-in-out"
               ></span>
               <span
                 class="block w-6 h-1 bg-white transition-opacity menu-line"
@@ -83,6 +58,12 @@
       <main class="main !mt-14 !mb-14">
         <!-- body  -->
         <div class="flex flex-col gap-4 rounded-xl">
+          <div class="">
+            <h3 class="font-semibold sm:font-bold text-base sm:text-lg b-color">
+              Employer Profile
+            </h3>
+          </div>
+
           <!-- profile card  -->
           <form
             id="editForm"
@@ -104,7 +85,7 @@
                   ><span class="c-text-uxs tracking-tight">26/12/24</span>
                 </div>
               </div>
-            <!-- profile pic  -->
+              <!-- profile pic  -->
               <div class="flex flex-col justify-center gap-1">
                 <!-- profile Picture   -->
                 <div class="flex flex-col gap-1 items-center justify-center">
@@ -151,30 +132,28 @@
                   </div>
                 </div>
                 <div class="flex flex-col items-center gap-1">
-                    <h4 class="font-semibold text-base leading-4 text-stone-800">
-                        Abc Builders
-                    </h4>
-                    <h4 class="font-medium text-base leading-4">
-                        Ahmad Khan
-                    </h4>
+                  <h4 class="font-semibold text-base leading-4 text-stone-800">
+                    Abc Builders
+                  </h4>
+                  <h4 class="font-medium text-base leading-4">Ahmad Khan</h4>
                 </div>
               </div>
 
               <!-- edit profile link  -->
               <div class="flex w-20">
                 <div class="flex flex-col gap-1">
-                <a
-                  href="./admin-edit-employer.html"
-                  class="w-20 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full flex justify-center"
-                  >Edit Profile</a
-                >
+                  <a
+                    href="./admin-edit-employer.html"
+                    class="w-20 py-1 bg-green-600 hover:bg-white hover:border hover:border-green-600 hover:text-green-600 text-white text-xs rounded-full flex justify-center"
+                    >Edit Profile</a
+                  >
 
-                <a
-                  href=""
-                  class="w-20 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs h-fit rounded-full flex justify-center"
-                  >Trash</a
-                >
-              </div>
+                  <a
+                    href=""
+                    class="w-20 py-1 bg-red-600 hover:bg-white hover:border hover:border-red-600 hover:text-red-600 text-white text-xs h-fit rounded-full flex justify-center"
+                    >Trash</a
+                  >
+                </div>
               </div>
             </div>
 
@@ -183,210 +162,151 @@
             <div class="flex flex-col gap-7">
               <!-- personal info  -->
               <div
-                class="flex flex-col gap-1 bg-stone-100  p-2 rounded-2xl shadow-sm shadow-black/10"
+                class="flex flex-col gap-1 bg-stone-100 p-2 rounded-2xl shadow-sm shadow-black/10"
               >
                 <div class="flex flex-col gap-3">
                   <!-- Username  -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/at-red.svg"
-                        class="w-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="username" class="font-normal text-xs pl-2"
-                        >Username</label
-                      >
-                      <input
-                      readonly
-                        id="username"
-                        type="text"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="abc@gmail.com"
-                      />
-                    </div>
-                    </div>
-
-
-                    
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/at-red.svg"
+                          class="w-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
-
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          id="username"
+                          type="text"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="abc311"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- Email  -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/envelope-red.svg"
-                        class="w-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="email" class="font-normal text-xs pl-2"
-                        >Email</label
-                      >
-                      <input
-                      readonly
-                        id="email"
-                        type="email"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="abc@gmail.com"
-                      />
-                    </div>
-                    </div>
-
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/envelope-red.svg"
+                          class="w-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
-                    
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          id="email"
+                          type="email"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="abc@gmail.com"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- Contact Number  -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/card.svg"
-                        class="h-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="number" class="font-normal text-xs pl-2"
-                        >Contact Number</label
-                      >
-                      <input
-                      readonly
-                        id="number"
-                        type="text"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="+974 1234 4567"
-                      />
-                    </div>
-                    </div>
-
-                    
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/card.svg"
+                          class="h-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          id="number"
+                          type="text"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="+974 1234 4567"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- Organization Name   -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/Department.svg"
-                        class="h-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="org_name" class="font-normal text-xs pl-2"
-                        >Organization Name
-                      </label>
-                      <input
-                      readonly
-                        id="org_name"
-                        type="text"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="abc Builders"
-                      />
-                    </div>
-                    </div>
-                    
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/Department.svg"
+                          class="h-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          id="org_name"
+                          type="text"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="https://www.abc.com"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- LinkedIn Profile  -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/linkedin.svg"
-                        class="w-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="linkedin" class="font-normal text-xs pl-2"
-                        >LinkedIn Profile Link</label
-                      >
-                      <input
-                      readonly
-                        type="url"
-                        id="linkedin"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="Please Provide the url"
-                      />
-                    </div>
-                    </div>
-                    
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/linkedin.svg"
+                          class="w-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          type="url"
+                          id="linkedin"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="https://www.linkedin.com"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- Facebook Profile  -->
                   <div class="flex flex-col items-end gap-1">
                     <div class="flex items-end gap-2 w-full">
-                    <div>
-                      <img
-                        src="../../assets/facebook.svg"
-                        class="w-7 sm:w-8 mb-2.5"
-                        alt="email-svg"
-                      />
-                    </div>
-                    <div
-                      class="flex flex-col text-stone-500 font-medium w-full"
-                    >
-                      <label for="facebook" class="font-normal text-xs pl-2"
-                        >Facebook Profile Link</label
-                      >
-                      <input
-                      readonly
-                        type="url"
-                        id="facebook"
-                        class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                        placeholder="Please Provide the url"
-                      />
-                    </div>
-                </div>
-                    <div class="flex w-full">
-                        <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                          >Error here</span
-                        >
+                      <div>
+                        <img
+                          src="../../assets/facebook.svg"
+                          class="w-7 sm:w-8 mb-2.5"
+                          alt="email-svg"
+                        />
                       </div>
-
+                      <div
+                        class="flex flex-col text-stone-500 font-medium w-full"
+                      >
+                        <input
+                          readonly
+                          type="url"
+                          id="facebook"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="https://www.facebook.com"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <!-- Instagram Profile  -->
@@ -402,22 +322,14 @@
                       <div
                         class="flex flex-col text-stone-500 font-medium w-full"
                       >
-                        <label for="instagram" class="font-normal text-xs pl-2"
-                          >Instagram Profile Link</label
-                        >
                         <input
-                        readonly
+                          readonly
                           type="url"
                           id="instagram"
-                          class="border w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none shadow-sm shadow-black/5"
-                          placeholder="Please Provide the url"
+                          class="w-full rounded-full text-xs px-2 py-3 sm:py-3.5 bg-stone-100 focus:outline-none"
+                          placeholder="https://www.instagram.com"
                         />
                       </div>
-                    </div>
-                    <div class="flex w-full">
-                      <span class="c-text-xs text-red-500 sm:text-xs pl-12"
-                        >Error here</span
-                      >
                     </div>
                   </div>
                 </div>
@@ -435,7 +347,6 @@
         </div>
       </main>
 
-      
       <footer class="px-0 w-full flex justify-center">
         <div
           class="h-12 fixed bottom-0 z-50 flex gap-2 text-white items-center justify-between w-full head-foot-width px-4 md:px-10 py-1 bg-[#5c0931] bg-opacity-70"
@@ -451,22 +362,23 @@
             >
           </a>
 
-          <a
-            href=""
-            class="flex flex-col items-center gap-1 md:gap-1.5"
-          >
+          <a href="" class="flex flex-col items-center gap-1 md:gap-1.5">
             <img src="../../assets/post-job.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Send Alert </span
-            >
+              >Send Alert
+            </span>
           </a>
 
           <a
             href="./admin-user-managment.html"
             class="flex flex-col items-center gap-1 md:gap-1.5"
           >
-            <img src="../../assets/business-ads.svg" alt="" class="h-4 md:h-5" />
+            <img
+              src="../../assets/business-ads.svg"
+              alt=""
+              class="h-4 md:h-5"
+            />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
               >User Management</span
@@ -480,24 +392,21 @@
             <img src="../../assets/contact-us.svg" alt="" class="h-4 md:h-5" />
             <span
               class="font-medium text-xs sm:text-sm text-white tracking-tight footer-leading"
-              >Register Employer </span
-            >
+              >Register Employer
+            </span>
           </a>
         </div>
       </footer>
     </div>
 
     <script>
-         
-         const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-        
-        menuBtn.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-          menuBtn.classList.toggle('active');
-        });
-        
-    </script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
 
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menuBtn.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
