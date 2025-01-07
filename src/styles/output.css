@@ -2311,11 +2311,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .resume-bg{
-  background: linear-gradient(149deg, #fecaca   0%, #fca5a5     99.08%);
+  background: linear-gradient(149deg, #ffffff   0%, #d7d1d1     99.08%);
 }
 
 .resume-bg:hover{
-  background: linear-gradient(149deg, #fee2e2  0%, #fca5a5  99.08%);
+  background: linear-gradient(149deg, #ffffff  0%, #a19a9a  99.08%);
 }
 
 .swiper-pagination-bullet-active{
