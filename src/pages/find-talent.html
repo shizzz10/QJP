@@ -105,7 +105,7 @@
                 class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28 sm:w-32"
               >
                 <span class="m-color text-sm sm:text-base tracking-tight">JobSeeker</span>
-                <span class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                <span class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >1350</span
                 >
               </a>
@@ -115,7 +115,7 @@
                 class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28"
               >
                 <span class="m-color text-sm sm:text-base tracking-tight">Set to Join</span>
-                <span class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                <span class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >5150</span
                 >
               </a>
@@ -125,7 +125,7 @@
                 class="flex flex-col items-center transparent-bg-color px-1.5 py-2 rounded-xl w-28"
               >
                 <span class="m-color text-sm sm:text-base tracking-tight">Inside Qatar</span>
-                <span class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                <span class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >9350</span
                 >
               </a>
@@ -2156,6 +2156,36 @@
     });
 
 
+    // counter 
+
+    window.onload = () => {
+  const counters = document.querySelectorAll('.counter');  // Get all elements with class 'counter'
+
+  counters.forEach(counter => {
+    const targetNumber = parseInt(counter.textContent);  // Use the number in the span as the target number
+    const duration = 2000; // Duration in milliseconds (2 seconds)
+    let currentNumber = 0;
+
+    const increment = targetNumber / (duration / 50); // Increment every 50ms
+
+    const updateCounter = () => {
+      if (currentNumber < targetNumber) {
+        currentNumber += increment;
+        counter.textContent = Math.round(currentNumber);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = targetNumber;
+      }
+    };
+
+    // Start the animation after a small delay to allow page load
+    setTimeout(() => {
+      counter.classList.remove('opacity-0', 'scale-50');
+      counter.classList.add('opacity-100', 'scale-100');
+      updateCounter();
+    }, 200);
+  });
+};
 
     </script>
   </body>

@@ -108,7 +108,7 @@
                   >Listed Jobs</span
                 >
                 <span
-                  class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                  class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >4150</span
                 >
               </a>
@@ -121,7 +121,7 @@
                   >Job Applies</span
                 >
                 <span
-                  class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                  class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >5150</span
                 >
               </a>
@@ -134,7 +134,7 @@
                   >Jobseekers</span
                 >
                 <span
-                  class="m-color text-2xl sm:text-3xl font-bold tracking-tighter"
+                  class="counter m-color text-2xl sm:text-3xl font-bold tracking-tighter"
                   >9350</span
                 >
               </a>
@@ -3188,6 +3188,38 @@
         loop: true,
     });
 
+
+    
+    // counter 
+
+    window.onload = () => {
+  const counters = document.querySelectorAll('.counter');  // Get all elements with class 'counter'
+
+  counters.forEach(counter => {
+    const targetNumber = parseInt(counter.textContent);  // Use the number in the span as the target number
+    const duration = 2000; // Duration in milliseconds (2 seconds)
+    let currentNumber = 0;
+
+    const increment = targetNumber / (duration / 50); // Increment every 50ms
+
+    const updateCounter = () => {
+      if (currentNumber < targetNumber) {
+        currentNumber += increment;
+        counter.textContent = Math.round(currentNumber);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = targetNumber;
+      }
+    };
+
+    // Start the animation after a small delay to allow page load
+    setTimeout(() => {
+      counter.classList.remove('opacity-0', 'scale-50');
+      counter.classList.add('opacity-100', 'scale-100');
+      updateCounter();
+    }, 200);
+  });
+};
 
     </script>
   </body>
