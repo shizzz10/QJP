@@ -1799,9 +1799,9 @@ video {
   letter-spacing: 0.025em;
 }
 
-.text-\[\#3cbf0a\] {
+.text-\[\#5c0931\] {
   --tw-text-opacity: 1;
-  color: rgb(60 191 10 / var(--tw-text-opacity, 1));
+  color: rgb(92 9 49 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -1937,11 +1937,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#5c0931\] {
-  --tw-text-opacity: 1;
-  color: rgb(92 9 49 / var(--tw-text-opacity, 1));
 }
 
 .underline {
