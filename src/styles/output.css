@@ -1534,11 +1534,6 @@ video {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -2015,11 +2010,6 @@ video {
 .shadow-white\/10 {
   --tw-shadow-color: rgb(255 255 255 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .filter {
@@ -2607,11 +2597,6 @@ h1,h2,h3,h4,h5,h6{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.focus\:shadow-black\/20:focus {
-  --tw-shadow-color: rgb(0 0 0 / 0.2);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .focus\:shadow-white\/20:focus {
   --tw-shadow-color: rgb(255 255 255 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
@@ -2631,11 +2616,6 @@ h1,h2,h3,h4,h5,h6{
 .focus\:ring-\[\#8E2157\]:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(142 33 87 / var(--tw-ring-opacity, 1));
-}
-
-.focus\:ring-red-950:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(69 10 10 / var(--tw-ring-opacity, 1));
 }
 
 .focus\:ring-white:focus {
